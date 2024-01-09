@@ -9,3 +9,15 @@ Características Clave:
 
 Público Objetivo:
 Nos dirigimos específicamente a una audiencia madura que comparte una conexión especial con el mundo del arte. Creemos que este segmento de la población aprecia la profundidad y la belleza de las pinturas de manera única, y nuestro objetivo es satisfacer sus expectativas mediante una cuidada selección de obras que reflejen la diversidad y la riqueza del arte visual.
+
+Sitios de Referencia:
+Los tuvimos en base de que son visualmente atrayentes al publico y que contienen variedad de elementos como los que queremos proporcionar en nuestro sitio propio.
+https://www.tiendashop.ar/
+
+https://ventadearte.com.ar/producto/lo-oculto-tinta-sobre-papel-silvana-pinillos/
+
+https://www.hechotiendadearte.com.ar/
+
+https://www.tiendaquorum.com/
+
+https://www.singulart.com/es/
