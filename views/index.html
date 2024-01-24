@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Venta de pinturas e insumos">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pintec">
+    <meta property="og:description" content="Descubre una gran infinidad de pinturas y nuevos artistas!">
+    <meta property="og:image" content="/images/logo.png">
+    <meta property="og:url" content="http://localhost:3030">
+
+    <link rel="icon" href="/images/logo-ico-ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Pintec</title>
+</head>
+<body>
+    <header class="main-header">
+        <i class="fa-solid fa-bars"></i>
+        <img class="logo" src="/images/logo.png" alt="Logo">
+
+        <form action="/buscar" method="get">
+            <input type="text" id="search" name="q" placeholder="Artista, Categoría, Pintura...">
+        </form>
+        <nav>
+            <ul>
+                <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-home">
+        <figure class="banner">
+            <img src="/images/carrusel.png" alt="carrusel">
+            <i class="fa-solid fa-angle-left"></i>
+            <i class="fa-solid fa-angle-right"></i>
+            <i class="fa-solid fa-ellipsis"></i>
+        </figure>
+        <section>
+            <h2 class="subt">DESTACADOS</h2>
+            <div class="productos">
+                <article class="grupo">
+                    <img src="/images/img-product01.png" alt="producto1">
+                    <img src="/images/img-product02.png" alt="producto2">
+                    <img src="/images/img-product03.png" alt="producto3">
+                </article>
+                <article class="grupo">
+                    <img src="/images/img-product01.png" alt="producto1">
+                    <img src="/images/img-product02.png" alt="producto2">
+                    <img src="/images/img-product03.png" alt="producto3">
+                </article>
+            </div>
+            <h2 class="subt">RECOMENDADOS PARA TI</h2>
+            <div>
+                <article class="grupo">
+                    <img src="/images/product01.png" alt="producto1">
+                    <img src="/images/product02.png" alt="producto2">
+                    <img src="/images/product03.png" alt="producto3">
+                </article>
+            </div>
+        </section>
+        <footer class="main-footer">
+            <section>
+                <h3>Contáctanos</h3>
+                <p>tiendaonlinepintec@gmail.com</p>
+                <p>Av. del Libertador 1473, CABA. Argentina</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2762.173480579555!2d-58.394281278158644!3d-34.58401903311884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa199c2f643%3A0x49e543b8331abe7d!2sMuseo%20Nacional%20de%20Bellas%20Artes!5e0!3m2!1ses!2sar!4v1706124523018!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <section>
+                <h3>Medios de pago</h3>
+                <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
+                <h3>Formas de envio</h3>
+                <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
+            </section>
+            <section>
+                <img src="/images/logo.png" alt="Logo footer">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+
+            </section>
+        </footer>
+    </main>
+</body>
+</html>
