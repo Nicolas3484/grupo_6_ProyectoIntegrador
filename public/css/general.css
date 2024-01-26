@@ -1,0 +1,13 @@
+:root{
+    --colorMarron:#1E1200;
+    --colorHueso:#FDFFF0;
+    --subtitulosTamaño:24px;
+    --cuerpoTamaño:16px;
+    --subtitulos-font-family: "Inria Serif", serif;
+    --cuerpo-font-family: "IBM Plex Serif", serif;
+}
+
+*{
+    font-family: var(--cuerpo-font-family);
+    box-sizing: border-box;
+}
