@@ -11,11 +11,51 @@
 </head>
 <body class="main-registro">
     <header>
-
+    <!--FALTA COMPLETAR-->
     </header>
-    <main>
+    <main class="main-register">
+        <form class="formulario-register" action="/register" method="POST">
+            <!-- NOMBRE -->
+             <section class="datos-register"> 
+               <div class="descripcion-register">
+                <label class="label-register" for="nombre">Nombre</label>
+                 <input  class="cuadro-register" type="text" name="nombre" value="" id="nombre" placeholder="Ej: Agustina">
+                 <i class="icon-register fa-solid fa-user"></i>
+              </div>
+             </section>
+            <!-- EMAIL -->
+             <section class="datos-register"> 
+               <div class="descripcion-register">
+                <label class="label-register" for="correo">Correo electronico</label>
+                <input class="cuadro-register" type="email" name="email" value="" id="email" placeholder="Ej: julianaagus@gmail.com">
+              </div>
+            </section>
+            <!-- CONTRASEÑA -->
+            <section class="datos-register"> 
+                <div class="descripcion-register">
+                 <label class="label-register" for="contrasenia">Contraseña</label>
+                 <input class="cuadro-register" type="password" name="contrasenia" value="" id="contrasenia">
+                 <i class="icon-register fa-regular fa-eye"></i>
+               </div>
+            </section>
+            <!-- CONFIRMAR CONTRASEÑA -->
+            <section class="datos-register"> 
+                <div class="descripcion-register">
+                 <label class="label-register" for="contrasenia">Confirmar contraseña</label>
+                 <input class="cuadro-register" type="password" name="contrasenia" value="" id="contrasenia">
+                 <i class="icon-register fa-regular fa-eye-slash"></i>
+               </div>
+            </section>
+            <!--  BOTONES -->
+                <div class="botones-register">
+                    <button class="enviar-register" type="submit">REGISTRARSE</button>
+                </div>
+            <!-- YA TENGO CUENTA -->
+                <div class="tengoC-register">
+                 <a href="#"><label class="texto-register-fin" for="nombre">Ya tengo cuenta</label></a>
+               </div>
  
-    </main>
+   </main>
     <footer class="footer-gral" >
     <!-- SECCIÓN 1  CONTACTO UBICACION-->
     <section class="datos-footer">
@@ -73,10 +113,10 @@
     <!-- SECCIÓN 3: REDES SOCIALES-->
     <section class="redes-footer">
         <div class="sector-redes">
-        <img class="img-logo-footer" src ="./images/icons/logo_oscuro.jpeg" alt="logo-PINTEC">
+        <a href="/index.html"><img class="img-logo-footer" src ="./images/icons/logo_oscuro.jpeg" alt="logo-PINTEC"></a>
         </div>
         <ul class="icons-redes-footer">
-            <li class="link-redes-footer"><div class="cuadro-footer"><a href="#"><i class="fa-brands fa-twitter"></i></a></div></li>
+            <li class="link-redes-footer"><div class="cuadro-footer"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></div></li>
             <li class="link-redes-footer"><div class="cuadro-footer"><a href="#"><i class="fa-brands fa-instagram"></i></a></div></li>
             <li class="link-redes-footer"><div class="cuadro-footer"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></div></li>
 
