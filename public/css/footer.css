@@ -1,50 +1,57 @@
 @media (min-width: 0px) {
     .footer-gral {
-
-    }
+background-color: var(--marron);
+color: var(--amarillopastel);
+display: flex;
+flex-wrap: wrap;
+}
 
     .footer-gral .datos-footer {
-
-    }
+/* width: 40%; */
+}
 
     .footer-gral .datos-footer .titulo-footer {
-
-    }
+margin: 20px 10px 30px;
+}
 
     .footer-gral .datos-footer .correo-footer {
-
-    }
+display: flex;
+margin: 10px;
+}
 
     .footer-gral .datos-footer .correo-footer i {
-
-    }
+font-size: 20px;
+}
 
     .footer-gral .datos-footer .correo-footer a {
-
-    }
+color: var(--amarillopastel);
+font-size: 14px;
+}
 
     .footer-gral .datos-footer .ubicacion-footer {
 
     }
 
     .footer-gral .datos-footer .ubicacion-footer .ubicacion-plus-footer {
-
-    }
+display: flex;
+margin: 10px;
+}
 
     .footer-gral .datos-footer .ubicacion-footer .ubicacion-plus-footer i {
-
-    }
+font-size: 20px;
+}
 
     .footer-gral .datos-footer .ubicacion-footer .ubicacion-plus-footer h2 {
-
-    }
+font-size: 20px;
+}
 
     .footer-gral .datos-footer .ubicacion-footer .mapa-footer {
-
-    }
+}
 
     .footer-gral .pago-envio-footer {
-        
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     }
 
 }
