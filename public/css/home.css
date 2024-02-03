@@ -1,4 +1,7 @@
-.main-home {}
+.main-home {
+    background-color: var(--amarillopastel);
+    text-align: center;
+}
 
 .main-home .banner {}
 
@@ -6,20 +9,46 @@
 
 .main-home .banner i{}
 
-.main-home .pag {}
-
-.main-home .pag .subt {}
-
-.main-home .pag .productos {}
-
-.main-home .pag .productos .grupo {}
-
-.main-home .pag .productos .grupo img{
-    width: 100vw;
+.main-home .pag {
 }
 
-.main-home .pag .productosOfertas {}
+.main-home .pag .subt {
+    text-align: left;
+    padding: 15px 0px;
+    width: 80%;
+    margin: 0 auto;
+}
 
-.main-home .pag .productosOfertas .grupo {}
+.main-home .pag .productos {
+    width: 80%;
+    margin: 0 auto;
+    /* padding: 20px 0px; */
+    /* border-top: 1px solid var(--marron); */
+    /* border-bottom: 1px solid var(--marron); */
+}
 
-.main-home .pag .productosOfertas .grupo img {}
+.main-home .pag .productos .grupo {padding: 20px 0px;border-top: 1px solid var(--marron);border-bottom: 1px solid var(--marron);display: flex;flex-wrap: wrap;gap: 20px;}
+
+.main-home .pag .productos .grupo img{
+    width: 100%;
+    border: 1px solid var(--marron);
+}
+
+.main-home .pag .productosOfertas {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-home .pag .productosOfertas .grupo {
+    padding: 20px 0px;
+    border-top: 1px solid var(--marron);
+    border-bottom: 1px solid var(--marron);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.main-home .pag .productosOfertas .grupo img {
+    width: 100%;
+    border: 1px solid var(--marron);
+}
