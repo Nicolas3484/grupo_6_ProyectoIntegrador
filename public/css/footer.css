@@ -4,19 +4,21 @@
 color: var(--amarillopastel);
 display: flex;
 flex-wrap: wrap;
+width: 100vw;
 }
 
     .footer-gral .datos-footer {
-/* width: 40%; */
+width: 90%;
+margin: 0 auto;
 }
 
     .footer-gral .datos-footer .titulo-footer {
-margin: 20px 10px 30px;
+margin: 20px 0px 30px;
 }
 
     .footer-gral .datos-footer .correo-footer {
 display: flex;
-margin: 10px;
+/* margin: 10px; */
 }
 
     .footer-gral .datos-footer .correo-footer i {
@@ -25,16 +27,16 @@
 
     .footer-gral .datos-footer .correo-footer a {
 color: var(--amarillopastel);
-font-size: 14px;
+font-size: 13px;
 }
 
     .footer-gral .datos-footer .ubicacion-footer {
-
-    }
+width: 100%;
+margin: 20px 0px;
+}
 
     .footer-gral .datos-footer .ubicacion-footer .ubicacion-plus-footer {
 display: flex;
-margin: 10px;
 }
 
     .footer-gral .datos-footer .ubicacion-footer .ubicacion-plus-footer i {
@@ -42,10 +44,11 @@
 }
 
     .footer-gral .datos-footer .ubicacion-footer .ubicacion-plus-footer h2 {
-font-size: 20px;
+font-size: 14px;
 }
 
     .footer-gral .datos-footer .ubicacion-footer .mapa-footer {
+width: 100%;
 }
 
     .footer-gral .pago-envio-footer {
