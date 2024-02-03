@@ -8,10 +8,10 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Pintec">
     <meta property="og:description" content="Descubre una gran infinidad de pinturas y nuevos artistas!">
-    <meta property="og:image" content="/images/logo.png">
+    <meta property="og:image" content="/images/logo.jpg">
     <meta property="og:url" content="http://localhost:3030">
 
-    <link rel="icon" href="/images/logo-ico-ico" type="image/x-icon">
+    <link rel="icon" href="/images/logo-ico.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -19,71 +19,124 @@
 </head>
 <body>
     <header class="main-header">
-        <i class="fa-solid fa-bars"></i>
-        <img class="logo" src="/images/logo.png" alt="Logo">
+        <i class="fa-solid fa-bars menu"></i>
+        <figure>
+            <img class="logo" src="/images/logo.png" alt="Logo">
+        </figure>
 
         <form action="/buscar" method="get">
-            <input class="input" type="text" id="search" name="q" placeholder="Artista, Categoría, Pintura...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="input" type="text" id="search" name="buscador" placeholder="Artista, Categoría, Pintura...">
         </form>
         <nav class="nav-bar">
             <ul class="nav-ul">
                 <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
                 <li><a href=""><i class="fa-solid fa-user"></i></a></li>
-                <li><a href="/carrito de compra"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
     </header>
     <main class="main-home">
+        <!-- CARRUSEL -->
         <figure class="banner">
-            <img src="/images/carrusel.png" alt="carrusel">
+            <img src="/images/carrusel.jpg" alt="carrusel">
             <i class="fa-solid fa-angle-left"></i>
             <i class="fa-solid fa-angle-right"></i>
             <i class="fa-solid fa-ellipsis"></i>
         </figure>
-        <section>
+        <!-- PRODUCTOS <DESTACADOS>-->
+        <section class="pag">
             <h2 class="subt">DESTACADOS</h2>
             <div class="productos">
                 <div class="grupo">
-                    <img src="/images/img-product01.png" alt="producto1">
-                    <img src="/images/img-product02.png" alt="producto2">
-                    <img src="/images/img-product03.png" alt="producto3">
+                    <img src="/images/img-product01.jpg" alt="producto1">
+                    <img src="/images/img-product02.jpg" alt="producto2">
+                    <img src="/images/img-product03.jpg" alt="producto3">
                 </div>
                 <div class="grupo">
-                    <img src="/images/img-product01.png" alt="producto1">
-                    <img src="/images/img-product02.png" alt="producto2">
-                    <img src="/images/img-product03.png" alt="producto3">
+                    <img src="/images/img-product01.jpg" alt="producto1">
+                    <img src="/images/img-product02.jpg" alt="producto2">
+                    <img src="/images/img-product03.jpg" alt="producto3">
                 </div>
             </div>
+            <!-- PRODUCTOS <R. PARA TI>-->
             <h2 class="subt">RECOMENDADOS PARA TI</h2>
-            <div>
+            <div class="productosOfertas">
                 <div class="grupo">
-                    <img src="/images/product01.png" alt="producto1">
-                    <img src="/images/product02.png" alt="producto2">
-                    <img src="/images/product03.png" alt="producto3">
+                    <img src="/images/product01.jpg" alt="producto1">
+                    <img src="/images/product02.jpg" alt="producto2">
+                    <img src="/images/product03.jpg" alt="producto3">
                 </div>
             </div>
         </section>
     </main>
-    <footer class="main-footer">
-        <section class="footer-seccion">
-            <h3 class="footer-subt">Contáctanos</h3>
-            <p>tiendaonlinepintec@gmail.com</p>
-            <p>Av. del Libertador 1473, CABA. Argentina</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2762.173480579555!2d-58.394281278158644!3d-34.58401903311884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa199c2f643%3A0x49e543b8331abe7d!2sMuseo%20Nacional%20de%20Bellas%20Artes!5e0!3m2!1ses!2sar!4v1706124523018!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer class="footer-gral" >
+        <!-- SECCIÓN 1  CONTACTO UBICACION-->
+        <section class="datos-footer">
+            <h2 class="titulo-footer">Contactanos</h2>
+            <div class="correo-footer">
+            <i class="fa-solid fa-envelopes-bulk"></i>
+           <a class="link-email-footer" href="#"><h2 class="email-footer">tiendaonlinepintec@gmail.com</h2></a>
+            </div>
+            <div class="ubicacion-footer">
+                <div class="ubicacion-plus-footer">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h2 class="direccion-AV-footer">Av. del libertador 1473, CABA, Argentina</h2>
+                 </div>
+            <iframe class="mapa-footer" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.79778022414!2d-58.393028699999995!3d-34.583982999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa1b9cf78d5%3A0xa96188dae8b165db!2sAv.%20del%20Libertador%201473%2C%20C1425AAA%20CABA!5e0!3m2!1ses!2sar!4v1706192552734!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    
         </section>
-        <section class="footer-seccion">
-            <h3 class="footer-subt">Medios de pago</h3>
-            <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
-            <h3 class="footer-subt">Formas de envio</h3>
-            <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
+    
+        <!-- SECCIÓN 2: MEDIOS DE PAGO Y ENVIO-->
+        <section class="pago-envio-footer">
+            <h2 class="titulo-footer">Medios de pago</h2>
+            <div class="tarjetas-footer">
+                <ul class="fila-footer">
+                    <li><a href="#"><img class="img-pago-footer" src ="./images/otros/pago-1.jpg" alt="pago-1"></a></li>
+                    <li><a href="#"><img class="img-pago-footer" src ="./images/otros/pago-2.jpg" alt="pago-2"></a></li>
+                    <li><a href="#"><img class="img-pago-footer" src ="./images/otros/pago-3.jpg" alt="pago-3"></a></li>
+                    <li><a href="#"><img class="img-pago-footer" src ="./images/otros/pago-4.jpg" alt="pago-4"></a></li>
+    
+                </ul>
+                <ul class="fila2-footer">
+                    <li><a href="#"><img class="img-pago2-footer" src ="./images/otros/pago-5.jpg" alt="pago-5"></a></li>
+                    <li><a href="#"><img class="img-pago2-footer" src ="./images/otros/pago-6.jpg" alt="pago-6"></a></li>
+                    <li><a href="#"><img class="img-pago2-footer" src ="./images/otros/pago-7.jpg" alt="pago-7"></a></li>
+    
+                </ul>
+            </div>
+            <h2 class="titulo-footer">Formas de envio</h2>
+            <div class="tarjetas-footer">
+                <ul class="fila-Env-footer">
+                    <li><a href="#"><img class="img-envio-footer" src ="./images/otros/envio-1.jpg" alt="envio-1"></a></li>
+                    <li><a href="#"><img class="img-envio-footer" src ="./images/otros/envio-2.jpg" alt="envio-2"></a></li>
+                    <li><a href="#"><img class="img-envio-footer" src ="./images/otros/envio-3.jpg" alt="envio-3"></a></li>
+    
+                </ul>
+                <ul class="fila-Env-footer">
+                    <li><a href="#"><img class="img-envio-footer" src ="./images/otros/envio-4.jpg" alt="envio-4"></a></li>
+                    <li><a href="#"><img class="img-envio-footer" src ="./images/otros/envio-5.jpg" alt="envio-5"></a></li>
+                    <li><a href="#"><img class="img-envio-footer" src ="./images/otros/envio-6.jpg" alt="envio-6"></a></li>
+    
+                </ul>
+    
+            </div>
+    
         </section>
-        <section class="footer-seccion">
-            <img src="/images/logo.png" alt="Logo footer">
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-instagram"></i>
-
+        <!-- SECCIÓN 3: REDES SOCIALES-->
+        <section class="redes-footer">
+            <div class="sector-redes">
+            <a href="/index.html"><img class="img-logo-footer" src ="./images/logo.jpg" alt="logo-PINTEC"></a>
+            </div>
+            <ul class="icons-redes-footer">
+                <li class="link-redes-footer"><div class="cuadro-footer"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></div></li>
+                <li class="link-redes-footer"><div class="cuadro-footer"><a href="#"><i class="fa-brands fa-instagram"></i></a></div></li>
+                <li class="link-redes-footer"><div class="cuadro-footer"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></div></li>
+    
+            </ul>
         </section>
-    </footer>
+    
+        </footer>
 </body>
 </html>

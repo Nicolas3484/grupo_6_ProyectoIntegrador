@@ -2,20 +2,24 @@
 
 .main-home .banner {}
 
-.main-home .banner img{}
+.main-home .banner img{width: 100vw;}
 
 .main-home .banner i{}
 
-.main-home section {}
+.main-home .pag {}
 
-.main-home section {}
+.main-home .pag .subt {}
 
-.main-home {}
+.main-home .pag .productos {}
 
-.main-home {}
+.main-home .pag .productos .grupo {}
 
-.main-home {}
+.main-home .pag .productos .grupo img{
+    width: 100vw;
+}
 
-.main-home {}
+.main-home .pag .productosOfertas {}
 
-.main-home {}
+.main-home .pag .productosOfertas .grupo {}
+
+.main-home .pag .productosOfertas .grupo img {}

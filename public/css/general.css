@@ -2,10 +2,11 @@
 
     /* Paleta_Colores */
     --marron : #1E1200;
-    --amrillopastel : #fdfff0;
+    --amarillopastel : #fdfff0;
 }
 
 * {
     margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }

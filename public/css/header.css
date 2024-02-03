@@ -1,16 +1,123 @@
-.main-header {}
+@media (min-width: 0px) {
+    .main-header {
+        background-color: var(--marron);
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 23vh;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .main-header .menu {
+        color: var(--amarillopastel);
+        width: 15%;
+        text-align: left;
+        font-size: 30px;
+    }
+    
+    .main-header figure {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
 
-.main-header i {}
+    .main-header figure .logo {
+    width: 80%;
+    height: 80%;
+}
+    
+    .main-header form {
+    width: 15%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+    
+    .main-header form i {
+        color: var(--amarillopastel);
+        font-size: 30px;
+    }
+    
+    .main-header form .input{
+    display: none;
+}
+    
+    .main-header .nav-bar {
+    display: none;
+}
+    
+    .main-header .nav-bar .nav-ul{
+        list-style-type: none;
+        display: flex;
+        gap: 10px;
+    }
+    
+    .main-header .nav-bar .nav-ul li {
+        font-size: 30px;
+    }
+    
+    .main-header .nav-bar .nav-ul li a {}
+    
+    .main-header .nav-bar .nav-ul li a i{} 
+}
 
-.main-header .logo {}
+@media (min-width: 368px) {
+    .main-header {
+    }
+    
+    .main-header i {
+    }
+    
+    .main-header .logo {}
+    
+    .main-header form {}
+    
+    .main-header form i {
+    }
+    
+    .main-header form .input{}
+    
+    .main-header .nav-bar {}
+    
+    .main-header .nav-bar .nav-ul{
+    }
+    
+    .main-header .nav-bar .nav-ul li {
+    }
+    
+    .main-header .nav-bar .nav-ul li a {}
+    
+    .main-header .nav-bar .nav-ul li a i{} 
+}
 
-.main-header form {}
-
-.main-header form .input{}
-
-.main-header .nav-bar {}
-
-.main-header .nav-bar .nav-ul{}
-
-.main-header .nav-bar .nav-ul li{}
+@media (min-width: 768px) {
+    .main-header {
+    }
+    
+    .main-header i {
+    }
+    
+    .main-header .logo {}
+    
+    .main-header form {}
+    
+    .main-header form i {
+    }
+    
+    .main-header form .input{}
+    
+    .main-header .nav-bar {}
+    
+    .main-header .nav-bar .nav-ul{
+    }
+    
+    .main-header .nav-bar .nav-ul li {
+    }
+    
+    .main-header .nav-bar .nav-ul li a {}
+    
+    .main-header .nav-bar .nav-ul li a i{} 
+}
 
