@@ -1,13 +1,16 @@
-:root {
-
-    /* Paleta_Colores */
-    --marron : #1E1200;
-    --amarillopastel : #fdfff0;
+:root{
+    --colorMarron:#1E1200;
+    --colorHueso:#FDFFF0;
+    --subtitulosTamaño:24px;
+    --cuerpoTamaño:16px;
+    --subtitulos-font-family: "Inria Serif", serif;
+    --cuerpo-font-family: "IBM Plex Serif", serif;
 }
 
-* {
+*{
     margin: 0px;
     padding: 0px;
+    font-family: var(--cuerpo-font-family);
     box-sizing: border-box;
     list-style-type: none;
 }

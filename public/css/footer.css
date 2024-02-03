@@ -1,62 +1,469 @@
-@media (min-width: 0px) {
-    .footer-gral {
-background-color: var(--marron);
-color: var(--amarillopastel);
-display: flex;
-flex-wrap: wrap;
-width: 100vw;
-}
+/*----------------footer Telefono-------------------*/
 
-    .footer-gral .datos-footer {
-width: 90%;
-margin: 0 auto;
-}
-
-    .footer-gral .datos-footer .titulo-footer {
-margin: 20px 0px 30px;
-}
-
-    .footer-gral .datos-footer .correo-footer {
-display: flex;
-/* margin: 10px; */
-}
-
-    .footer-gral .datos-footer .correo-footer i {
-font-size: 20px;
-}
-
-    .footer-gral .datos-footer .correo-footer a {
-color: var(--amarillopastel);
-font-size: 13px;
-}
-
-    .footer-gral .datos-footer .ubicacion-footer {
-width: 100%;
-margin: 20px 0px;
-}
-
-    .footer-gral .datos-footer .ubicacion-footer .ubicacion-plus-footer {
-display: flex;
-}
-
-    .footer-gral .datos-footer .ubicacion-footer .ubicacion-plus-footer i {
-font-size: 20px;
-}
-
-    .footer-gral .datos-footer .ubicacion-footer .ubicacion-plus-footer h2 {
-font-size: 14px;
-}
-
-    .footer-gral .datos-footer .ubicacion-footer .mapa-footer {
-width: 100%;
-}
-
-    .footer-gral .pago-envio-footer {
-    width: 100%;
+/* SECCIÓN 1  CONTACTO UBICACION */
+.footer-gral{padding: 10px;color: var(--colorHueso);background-color: var(--colorMarron);display: flex;flex-wrap: wrap;}
+.footer-gral .datos-footer{
+    height: 170px;
+    gap: 5px;
+    width: 50%;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
-    }
-
+}
+.titulo-footer{
+    height: 20px;
+    font-size: 15px;
+    font-weight: 100;
+    font-family: var(--subtitulos-font-family);
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.footer-gral .datos-footer .correo-footer{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.footer-gral .datos-footer .correo-footer i{
+    display: flex;
 }
 
 
+.footer-gral .datos-footer .correo-footer .email-footer{
+    font-size: 8px;
+    text-decoration: none;
+    margin: 0;
+    color: var(--colorHueso);
+    font-weight: 100;
+}
+.footer-gral .ubicacion-footer i{
+    display: flex;
+    align-items: center;
+}
+.footer-gral .ubicacion-footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.footer-gral .ubicacion-footer .mapa-footer{
+    display: flex;
+    width: 80%;
+    height: 40%;
+    flex-wrap: wrap;
+}
+.link-email-footer{
+    display: flex;
+    text-decoration-color: var(--colorHueso);
+    align-items: center;
+}
+.footer-gral .ubicacion-footer .direccion-AV-footer{
+    font-weight: 100;
+    font-size: 7px;
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+.footer-gral .ubicacion-footer .ubicacion-plus-footer{height: 20px;display: flex;}
+
+/* SECCIÓN 2: MEDIOS DE PAGO Y ENVIO */
+.footer-gral .pago-envio-footer{
+    gap: 5px;
+    height: 60%;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-gral .pago-envio-footer .tarjetas-footer{gap: 2px;display: flex;flex-wrap: wrap;flex-direction: row;justify-content: space-around;}
+.footer-gral .pago-envio-footer .tarjetas-footer .fila-footer{height: 20px;gap: 8px;text-decoration: none;padding: 0;margin: 0;display: flex;flex-wrap: wrap;}
+.footer-gral .pago-envio-footer .tarjetas-footer .fila-footer li{display: flex;width: 20%;flex-wrap: wrap;}
+.footer-gral .pago-envio-footer .tarjetas-footer .fila-footer li a .img-pago-footer{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.footer-gral .pago-envio-footer .tarjetas-footer .fila2-footer{
+    height: 20px;
+    gap: 7px;
+    text-decoration: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+.footer-gral .pago-envio-footer .tarjetas-footer .fila2-footer li{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-gral .pago-envio-footer .tarjetas-footer .fila2-footer li a .img-pago2-footer{
+    height: 20px;
+}
+.footer-gral .pago-envio-footer .tarjetas-footer .fila-Env-footer{
+    height: 20px;
+    gap: 4px;
+    text-decoration: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.footer-gral .pago-envio-footer .tarjetas-footer .fila-Env-footer li{
+    display: flex;
+}
+
+.footer-gral .pago-envio-footer .tarjetas-footer .fila-Env-footer li a{}
+
+.footer-gral .pago-envio-footer .tarjetas-footer .fila-Env-footer li a .img-envio-footer{
+    height: 20px;
+}
+
+/* SECCIÓN 3: REDES SOCIALES */
+
+.footer-gral .redes-footer{display: flex;flex-wrap: wrap;}
+.footer-gral .redes-footer .img-logo-footer{display: flex;border: solid 2px var(--colorHueso);width: 25%;}
+
+.footer-gral .redes-footer .sector-redes .icons-redes-footer{}
+
+.footer-gral .redes-footer .sector-redes {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-gral .redes-footer .icons-redes-footer{
+    gap: 5px;
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer-gral .redes-footer .icons-redes-footer .link-redes-footer{
+    display: flex;
+}
+.footer-gral .redes-footer .icons-redes-footer .link-redes-footer i{
+    font-size: 10px;
+    color: var(--colorHueso);
+    font-weight: 100;
+}
+.footer-gral .icons-redes-footer li .cuadro-footer{border-radius: 100%;padding-bottom: 5px;align-items: center;justify-content: center;display: flex;height: 20px;width: 20px;border: 1px solid var(--colorHueso);flex-direction: row;align-content: center;}
+
+
+
+/*----------------footer Tablet-------------------*/
+@media (min-device-width: 426px) {
+
+    .footer-gral{padding: 25px;color: var(--colorHueso);background-color: var(--colorMarron);display: flex;flex-wrap: wrap;}
+    .footer-gral .datos-footer{
+        height: 170px;
+        gap: 5px;
+        width: 50%;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .titulo-footer{
+        height: 20px;
+        font-size: 15px;
+        font-weight: 100;
+        font-family: var(--subtitulos-font-family);
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .footer-gral .datos-footer .correo-footer{
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+    .footer-gral .datos-footer .correo-footer i{
+        display: flex;
+    }
+    
+    
+    .footer-gral .datos-footer .correo-footer .email-footer{
+        font-size: 12px;
+        text-decoration: none;
+        margin: 0;
+        color: var(--colorHueso);
+        font-weight: 100;
+    }
+    .footer-gral .ubicacion-footer i{
+        display: flex;
+        align-items: center;
+    }
+    .footer-gral .ubicacion-footer{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    .footer-gral .ubicacion-footer .mapa-footer{
+        display: flex;
+        width: 70%;
+        height: 40%;
+        flex-wrap: wrap;
+    }
+    .link-email-footer{
+        display: flex;
+        text-decoration-color: var(--colorHueso);
+        align-items: center;
+    }
+    .footer-gral .ubicacion-footer .direccion-AV-footer{
+        font-weight: 100;
+        font-size: 13px;
+        display: flex;
+        margin: 0;
+        align-items: center;
+    }
+    .footer-gral .ubicacion-footer .ubicacion-plus-footer{height: 20px;display: flex;}
+    
+    /* SECCIÓN 2: MEDIOS DE PAGO Y ENVIO */
+    .footer-gral .pago-envio-footer{
+        gap: 5px;
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-gral .pago-envio-footer .tarjetas-footer{gap: 2px;display: flex;flex-wrap: wrap;flex-direction: row;justify-content: space-around;}
+    .footer-gral .pago-envio-footer .tarjetas-footer .fila-footer{height: 20px;gap: 8px;text-decoration: none;padding: 0;margin: 0;display: flex;flex-wrap: wrap;}
+    .footer-gral .pago-envio-footer .tarjetas-footer .fila-footer li{display: flex;width: 20%;flex-wrap: wrap;}
+    .footer-gral .pago-envio-footer .tarjetas-footer .fila-footer li a .img-pago-footer{
+        width: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .footer-gral .pago-envio-footer .tarjetas-footer .fila2-footer{
+        height: 20px;
+        gap: 7px;
+        text-decoration: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    .footer-gral .pago-envio-footer .tarjetas-footer .fila2-footer li{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-gral .pago-envio-footer .tarjetas-footer .fila2-footer li a .img-pago2-footer{
+        height: 20px;
+    }
+    .footer-gral .pago-envio-footer .tarjetas-footer .fila-Env-footer{
+        height: 20px;
+        gap: 4px;
+        text-decoration: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+    .footer-gral .pago-envio-footer .tarjetas-footer .fila-Env-footer li{
+        display: flex;
+    }
+    
+    .footer-gral .pago-envio-footer .tarjetas-footer .fila-Env-footer li a{}
+    
+    .footer-gral .pago-envio-footer .tarjetas-footer .fila-Env-footer li a .img-envio-footer{
+        height: 20px;
+    }
+    
+    /* SECCIÓN 3: REDES SOCIALES */
+    
+    .footer-gral .redes-footer{width: 20%;display: flex;flex-wrap: wrap;}
+    .footer-gral .redes-footer .img-logo-footer{height: 80px;width: 110px;display: flex;border: solid 2px var(--colorHueso);}
+    
+    .footer-gral .redes-footer .sector-redes .icons-redes-footer{}
+    
+    .footer-gral .redes-footer .sector-redes {
+        height: 30px;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    
+    .footer-gral .redes-footer .icons-redes-footer{
+        gap: 8px;
+        width: 100%;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .footer-gral .redes-footer .icons-redes-footer .link-redes-footer{
+        display: flex;
+    }
+    .footer-gral .redes-footer .icons-redes-footer .link-redes-footer i{
+        font-size: 15px;
+        color: var(--colorHueso);
+        font-weight: 100;
+    }
+    .footer-gral .icons-redes-footer li .cuadro-footer{border-radius: 100%;padding-bottom: 3px;align-items: center;justify-content: center;display: flex;height: 30px;width: 30px;border: 1px solid var(--colorHueso);flex-direction: row;}
+    
+    
+}
+
+
+/*----------------footer Computadora-------------------*/
+@media (min-device-width: 769px){
+
+    .footer-gral{padding: 25px;color: var(--colorHueso);background-color: var(--colorMarron);display: flex;flex-wrap: wrap;}
+    .footer-gral .datos-footer{
+        height: 170px;
+        width: 50%;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .titulo-footer{
+        height: 20px;
+        font-size: 20px;
+        font-weight: 100;
+        font-family: var(--subtitulos-font-family);
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .footer-gral .datos-footer .correo-footer{
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+    .footer-gral .datos-footer .correo-footer i{
+        font-size: 20px;
+        display: flex;
+    }
+    
+    
+    .footer-gral .datos-footer .correo-footer .email-footer{
+        font-size: 20px;
+        text-decoration: none;
+        margin: 0;
+        color: var(--colorHueso);
+        font-weight: 100;
+    }
+    .footer-gral .ubicacion-footer i{
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .footer-gral .ubicacion-footer{
+        gap: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    .footer-gral .ubicacion-footer .mapa-footer{
+        margin-left: 15px;
+        display: flex;
+        width: 190px;
+        height: 90px;
+        flex-wrap: wrap;
+    }
+    .link-email-footer{
+        display: flex;
+        text-decoration-color: var(--colorHueso);
+        align-items: center;
+    }
+    .footer-gral .ubicacion-footer .direccion-AV-footer{
+        width: 100%;
+        font-weight: 100;
+        font-size: 18px;
+        display: flex;
+        margin: 0;
+        align-items: center;
+    }
+    .footer-gral .ubicacion-footer .ubicacion-plus-footer{width: 100%;height: 20px;display: flex;}
+    
+    /* SECCIÓN 2: MEDIOS DE PAGO Y ENVIO */
+    .footer-gral .pago-envio-footer{
+        gap: 15px;
+        width: 20%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-gral .pago-envio-footer .tarjetas-footer{gap: 2px;display: flex;flex-wrap: wrap;flex-direction: row;justify-content: flex-start;}
+    .footer-gral .pago-envio-footer .tarjetas-footer .fila-footer{height: 20px;gap: 8px;text-decoration: none;padding: 0;margin: 0;display: flex;flex-wrap: wrap;}
+    .footer-gral .pago-envio-footer .tarjetas-footer .fila-footer li{display: flex;width: 20%;flex-wrap: wrap;}
+    .footer-gral .pago-envio-footer .tarjetas-footer .fila-footer li a .img-pago-footer{
+        width: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .footer-gral .pago-envio-footer .tarjetas-footer .fila2-footer{
+        height: 20px;
+        gap: 7px;
+        text-decoration: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    .footer-gral .pago-envio-footer .tarjetas-footer .fila2-footer li{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-gral .pago-envio-footer .tarjetas-footer .fila2-footer li a .img-pago2-footer{
+        height: 20px;
+    }
+    .footer-gral .pago-envio-footer .tarjetas-footer .fila-Env-footer{
+        height: 20px;
+        gap: 4px;
+        text-decoration: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+    .footer-gral .pago-envio-footer .tarjetas-footer .fila-Env-footer li{
+        display: flex;
+    }
+    
+    .footer-gral .pago-envio-footer .tarjetas-footer .fila-Env-footer li a{}
+    
+    .footer-gral .pago-envio-footer .tarjetas-footer .fila-Env-footer li a .img-envio-footer{
+        height: 20px;
+    }
+    
+    /* SECCIÓN 3: REDES SOCIALES */
+    
+    .footer-gral .redes-footer{width: 30%;display: flex;flex-wrap: wrap;}
+    .footer-gral .redes-footer .img-logo-footer{height: 130px;width: 170px;display: flex;border: solid 2px var(--colorHueso);}
+    
+    .footer-gral .redes-footer .sector-redes .icons-redes-footer{}
+    
+    .footer-gral .redes-footer .sector-redes {
+        height: 140px;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    
+    .footer-gral .redes-footer .icons-redes-footer{
+        gap: 8px;
+        width: 100%;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .footer-gral .redes-footer .icons-redes-footer .link-redes-footer{
+        display: flex;
+    }
+    .footer-gral .redes-footer .icons-redes-footer .link-redes-footer i{
+        font-size: 23px;
+        color: var(--colorHueso);
+        font-weight: 100;
+    }
+    .footer-gral .icons-redes-footer li .cuadro-footer{border-radius: 100%;padding-bottom: 2px;align-items: center;justify-content: center;display: flex;height: 50px;width: 50px;border: 1px solid var(--colorHueso);flex-direction: row;}
+    
+    
+}
