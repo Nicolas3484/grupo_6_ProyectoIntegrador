@@ -1,33 +1,134 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.body .main-producto{
-    font-family: 'Courier New', Courier, monospace;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-img{
+.img{
     max-width: 100%;
 }
+.main-producto .nicolas{
+    display: flex;
+    flex-wrap: wrap;
+}
 
-/* header{
+.main-producto .nicolas .infoGeneral-detalle{flex: 1;background-color: #ded5cd;padding-left: 10%;background-position: 30% ;}
+
+.main-producto .nicolas .contenedor{
+    width: 50%;
+    background: white;
+    flex: 1;
+}
+.main-producto .nicolas .contenedor-carrito{
+    flex: 1;
+}
+
+.main-producto .nicolas .contenedor img {
+    width: 60%;
+    margin: 10%;
+}
+.main-producto .nicolas .infoGeneral-detalle .titulo-detalle h2{border-bottom: black;position: relative;display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-evenly;padding-bottom: 5%;text-decoration: underline;font-size: 31px;}
+
+#span{
+    color: #939393;
+}
+
+.price {
+    padding-bottom: 19px;
+    border-top: 1px solid #b1b1b1
+    /* display:flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+.price span{
+    font-size: 33px;
+    font-weight: 500;
+}
+#Heart{
     display: flex;
     align-items: center;
-    padding: 30px;
-    justify-content: center;
-} */
-main{
-    display: flex;
+    justify-content:  end;
+    padding-top: 3%;
+    padding-right: 3%;
+    font-size: 35px;
+    color: red;
+      }
+
+.contador{
+    
+     display: flex;
+    align-items: center;
     gap: 30px;
-    margin-bottom: 80px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #b1b1b1;
+}
+#carrito{
+    display: flex;
+    background-color: white;
+    height: 90%;
+    align-items: baseline;
+}
+#img-carrito{
+    position: relative;
+    right: 0.5em;
+    display: inline-block; /* Asegura que el icono se comporte como un bloque en línea */
+    font-size: 1.5em
+}
+.boton-add-carrito  p{
+    color: black
 }
 
-.contenedor{
-    flex: 1;
+.precio-cuotas{
+    font-size: 20px;
+    /* position: relative;display: flex;flex-direction: row; flex-wrap: nowrap;justify-content: space-evenly; */
+    display: flex;
+    padding-left: 15%;
+    padding-bottom: 14px;
 }
-.infoGeneral{
-    flex: 1;
+.price p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #939393;
+}
+.precio-cuotas span{
+    font-weight: 900;
+}
+
+#contador{
+    text-align: center;
+    position: relative;
+    padding: 1%;
+    width: 60px;
+    height: 100%;
+}
+
+.titulo-descripcion,
+.titulo-caracteristicas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.titulo-descripcion h4,
+.titulo-caracteristicas h4{
+    font-weight: 300;
+    color: #666;
+    font-size: 18px;    
+}
+
+.descripcion,
+.caracteristicas-artist{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #b1b1b1;
+    padding: 10px 0;
+}
+
+.texto-descripcion,
+.texto-caracteristicas{
+    line-height: 22px;
+    margin-top: 22px;
+    font-size: 14px;
+    color: #242525;
+}
+.input-container {
+    display: flex;
+    text-align: center;
+    position: relative;
+    padding: 1%;
+    height: 100%;
+    left: 15px
 }
