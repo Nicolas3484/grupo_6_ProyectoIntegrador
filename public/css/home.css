@@ -1,5 +1,5 @@
 .main-home {
-    background-color: var(--amarillopastel);
+    background-color: var(--colorHueso);
     text-align: center;
 }
 
@@ -17,21 +17,20 @@
     padding: 15px 0px;
     width: 80%;
     margin: 0 auto;
+    font-size: 20px;
 }
 
 .main-home .pag .productos {
     width: 80%;
     margin: 0 auto;
-    /* padding: 20px 0px; */
-    /* border-top: 1px solid var(--marron); */
-    /* border-bottom: 1px solid var(--marron); */
 }
 
-.main-home .pag .productos .grupo {padding: 20px 0px;border-top: 1px solid var(--marron);border-bottom: 1px solid var(--marron);display: flex;flex-wrap: wrap;gap: 20px;}
+.main-home .pag .productos .grupo {padding: 20px 0px;border-top: 1px solid var(--colorMarron);border-bottom: 1px solid var(--colorMarron);display: flex;flex-wrap: wrap;gap: 20px;}
 
-.main-home .pag .productos .grupo img{
-    width: 100%;
-    border: 1px solid var(--marron);
+.main-home .pag .productos .grupo div img{
+    width: 80%;
+    height: 100%;
+    border: 1px solid var(--colorMarron);
 }
 
 .main-home .pag .productosOfertas {
@@ -41,14 +40,198 @@
 
 .main-home .pag .productosOfertas .grupo {
     padding: 20px 0px;
-    border-top: 1px solid var(--marron);
-    border-bottom: 1px solid var(--marron);
+    border-top: 1px solid var(--colorMarron);
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .main-home .pag .productosOfertas .grupo img {
-    width: 100%;
-    border: 1px solid var(--marron);
+    width: 46%;
+    border: 1px solid var(--colorMarron);
+}
+
+.main-home .carrusel {}
+
+.main-home .carrusel .carrusel-div {
+    gap: 10px;
+}
+
+.main-home .carrusel .carrusel-div button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid;
+}
+
+.main-home .carrusel .carrusel-div2 .carousel-item {
+    height: 300px;
+}
+
+.main-home .carrusel .carrusel-div2 .carousel-item img{height: 100%;border-top: 1px solid var(--colorMarron);border-bottom: 1px solid var(--colorMarron);}
+
+.main-home .carrusel .carrusel-div2 .carousel-item .carousel-caption {}
+
+.main-home .carrusel .carrusel-div2 .carousel-item .carousel-caption h5 {}
+
+.main-home .carrusel .carrusel-div2 .carousel-item .carousel-caption p {}
+
+.main-home .carrusel .carousel-contro-prev {}
+
+.main-home .carrusel .carousel-contro-prev-icon {}
+
+.main-home .carrusel .carousel-contro-prev .visually-hidden {}
+
+.main-home .carrusel .carousel-contro-next {}
+
+.main-home .carrusel .carousel-contro-next-icon {}
+
+.main-home .carrusel .carousel-contro-next .visually-hidden {}
+
+
+
+
+
+
+@media (min-width: 426px) {
+    .main-home {
+
+    }
+    
+    .main-home .banner {}
+    
+    .main-home .banner img{}
+    
+    .main-home .banner i{}
+    
+    .main-home .pag {
+    }
+    
+    .main-home .pag .subt {
+
+    }
+    
+    .main-home .pag .productos {
+
+    }
+    
+    .main-home .pag .productos .grupo {}
+    
+    .main-home .pag .productos .grupo div img{
+
+    }
+    
+    .main-home .pag .productosOfertas {
+ 
+    }
+    
+    .main-home .pag .productosOfertas .grupo {
+
+    }
+    
+    .main-home .pag .productosOfertas .grupo img {
+width: 31%;
+}
+    
+    .main-home .carrusel {}
+    
+    .main-home .carrusel .carrusel-div {
+
+    }
+    
+    .main-home .carrusel .carrusel-div button {
+
+    }
+    
+    .main-home .carrusel .carrusel-div2 .carousel-item img{}
+    
+    .main-home .carrusel .carrusel-div2 .carousel-item .carousel-caption {}
+    
+    .main-home .carrusel .carrusel-div2 .carousel-item .carousel-caption h5 {}
+    
+    .main-home .carrusel .carrusel-div2 .carousel-item .carousel-caption p {}
+    
+    .main-home .carrusel .carousel-contro-prev {}
+    
+    .main-home .carrusel .carousel-contro-prev-icon {}
+    
+    .main-home .carrusel .carousel-contro-prev .visually-hidden {}
+    
+    .main-home .carrusel .carousel-contro-next {}
+    
+    .main-home .carrusel .carousel-contro-next-icon {}
+    
+    .main-home .carrusel .carousel-contro-next .visually-hidden {}
+}
+
+@media (min-width: 769px) {
+    .main-home {
+
+    }
+    
+    .main-home .banner {}
+    
+    .main-home .banner img{}
+    
+    .main-home .banner i{}
+    
+    .main-home .pag {
+    }
+    
+    .main-home .pag .subt {
+
+    }
+    
+    .main-home .pag .productos {
+
+    }
+    
+    .main-home .pag .productos .grupo {}
+    
+    .main-home .pag .productos .grupo div img{
+
+    }
+    
+    .main-home .pag .productosOfertas {
+ 
+    }
+    
+    .main-home .pag .productosOfertas .grupo {
+
+    }
+    
+    .main-home .pag .productosOfertas .grupo img {
+
+    }
+    
+    .main-home .carrusel {}
+    
+    .main-home .carrusel .carrusel-div {
+
+    }
+    
+    .main-home .carrusel .carrusel-div button {
+
+    }
+    
+    .main-home .carrusel .carrusel-div2 .carousel-item img{}
+    
+    .main-home .carrusel .carrusel-div2 .carousel-item .carousel-caption {}
+    
+    .main-home .carrusel .carrusel-div2 .carousel-item .carousel-caption h5 {}
+    
+    .main-home .carrusel .carrusel-div2 .carousel-item .carousel-caption p {}
+    
+    .main-home .carrusel .carousel-contro-prev {}
+    
+    .main-home .carrusel .carousel-contro-prev-icon {}
+    
+    .main-home .carrusel .carousel-contro-prev .visually-hidden {}
+    
+    .main-home .carrusel .carousel-contro-next {}
+    
+    .main-home .carrusel .carousel-contro-next-icon {}
+    
+    .main-home .carrusel .carousel-contro-next .visually-hidden {}
 }

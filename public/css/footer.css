@@ -1,6 +1,5 @@
 /*----------------footer Telefono-------------------*/
 
-/* SECCIÓN 1  CONTACTO UBICACION */
 .footer-gral{padding: 10px;color: var(--colorHueso);background-color: var(--colorMarron);display: flex;flex-wrap: wrap;}
 .footer-gral .datos-footer{
     height: 170px;
@@ -150,6 +149,11 @@
     font-weight: 100;
 }
 .footer-gral .icons-redes-footer li .cuadro-footer{border-radius: 100%;padding-bottom: 5px;align-items: center;justify-content: center;display: flex;height: 20px;width: 20px;border: 1px solid var(--colorHueso);flex-direction: row;align-content: center;}
+
+.footer-gral .redes-footer .sector-redes a{
+    display: flex;
+    justify-content: center;
+}
 
 
 
@@ -433,37 +437,42 @@
     
     /* SECCIÓN 3: REDES SOCIALES */
     
-    .footer-gral .redes-footer{width: 30%;display: flex;flex-wrap: wrap;}
-    .footer-gral .redes-footer .img-logo-footer{height: 130px;width: 170px;display: flex;border: solid 2px var(--colorHueso);}
-    
-    .footer-gral .redes-footer .sector-redes .icons-redes-footer{}
-    
-    .footer-gral .redes-footer .sector-redes {
-        height: 140px;
-        margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-    }
-    
-    .footer-gral .redes-footer .icons-redes-footer{
-        gap: 8px;
-        width: 100%;
-        display: flex;
-        padding: 0;
-        margin: 0;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-    }
-    .footer-gral .redes-footer .icons-redes-footer .link-redes-footer{
-        display: flex;
-    }
-    .footer-gral .redes-footer .icons-redes-footer .link-redes-footer i{
-        font-size: 23px;
-        color: var(--colorHueso);
-        font-weight: 100;
-    }
-    .footer-gral .icons-redes-footer li .cuadro-footer{border-radius: 100%;padding-bottom: 2px;align-items: center;justify-content: center;display: flex;height: 50px;width: 50px;border: 1px solid var(--colorHueso);flex-direction: row;}
+    .footer-gral .redes-footer{display: flex;flex-wrap: wrap;}
+.footer-gral .redes-footer .img-logo-footer{display: flex;border: solid 2px var(--colorHueso);width: 25%;}
+
+.footer-gral .redes-footer .sector-redes .icons-redes-footer{}
+
+.footer-gral .redes-footer .sector-redes {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-gral .redes-footer .icons-redes-footer{
+    gap: 5px;
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer-gral .redes-footer .icons-redes-footer .link-redes-footer{
+    display: flex;
+}
+.footer-gral .redes-footer .icons-redes-footer .link-redes-footer i{
+    font-size: 10px;
+    color: var(--colorHueso);
+    font-weight: 100;
+}
+.footer-gral .icons-redes-footer li .cuadro-footer{border-radius: 100%;padding-bottom: 5px;align-items: center;justify-content: center;display: flex;height: 20px;width: 20px;border: 1px solid var(--colorHueso);flex-direction: row;align-content: center;}
+
+.footer-gral .redes-footer .sector-redes a{
+    display: flex;
+    justify-content: center;
+}
     
     
 }

@@ -1,42 +1,37 @@
-@media (min-width: 0px) {
-    .main-header {
-        background-color: var(--marron);
+   .main-header {
+        background-color: var(--colorMarron);
         display: flex;
         flex-wrap: wrap;
         width: 100vw;
-        height: 23vh;
-        justify-content: space-around;
+        height: 70px;
+        justify-content: center;
         align-items: center;
         text-align: center;
     }
     
     .main-header .menu {
-        color: var(--amarillopastel);
-        width: 15%;
+        color: var(--colorHueso);
+        width: 25%;
         text-align: left;
         font-size: 30px;
+        padding-left: 25px;
     }
     
     .main-header figure {
-    width: 33%;
+    width: 50%;
     display: flex;
     justify-content: center;
+    margin: 0 !important;
 }
 
     .main-header figure .logo {
-    width: 80%;
-    height: 80%;
+    width: 36%;
 }
     
-    .main-header form {
-    width: 15%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
+    .main-header form {width: 25%;}
     
     .main-header form i {
-        color: var(--amarillopastel);
+        color: var(--colorHueso);
         font-size: 30px;
     }
     
@@ -51,37 +46,74 @@
     .main-header .nav-bar .nav-ul{
         list-style-type: none;
         display: flex;
-        gap: 10px;
+        padding: 0;
+        margin: 0;
     }
     
     .main-header .nav-bar .nav-ul li {
         font-size: 30px;
     }
     
-    .main-header .nav-bar .nav-ul li a {}
+    .main-header .nav-bar .nav-ul li a {
+    color: var(--colorHueso);
+}
     
     .main-header .nav-bar .nav-ul li a i{} 
-}
 
-@media (min-width: 368px) {
+@media (min-width: 426px) {
     .main-header {
+    height: 90px;
     }
     
     .main-header i {
+    order: -2;
     }
+
+    .main-header figure {
+    width: 31%;
+    position: relative;
+}
+
+i.fa-solid.fa-bars.menu {width: 15%;}
     
-    .main-header .logo {}
+    .main-header .logo {
+    top: -31px;
+    position: absolute;
+}
     
-    .main-header form {}
+    .main-header form {
+    order: -1;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 24%;
+}
     
     .main-header form i {
+    position: relative;
+    left: 28px;
+    color: var(--colorMarron);
+    font-size: 21px;
     }
     
-    .main-header form .input{}
+    .main-header form .input{
+    display: inline;
+    padding: 10px 0px 5px 30px;
+    font-size: 11px;
+}
     
-    .main-header .nav-bar {}
+    .main-header .nav-bar {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-left: 25px;
+}
     
     .main-header .nav-bar .nav-ul{
+    gap: 22px;
     }
     
     .main-header .nav-bar .nav-ul li {
@@ -89,7 +121,9 @@
     
     .main-header .nav-bar .nav-ul li a {}
     
-    .main-header .nav-bar .nav-ul li a i{} 
+    .main-header .nav-bar .nav-ul li a i{
+    font-size: 24px;
+} 
 }
 
 @media (min-width: 768px) {

@@ -12,8 +12,22 @@
     <meta property="og:url" content="http://localhost:3030">
 
     <link rel="icon" href="/images/logo-ico.ico" type="image/x-icon">
+    
+    <!-- BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+    <!-- GLIDER css-->
+    
+    <link rel="stylesheet" type="text/css" href="/css/library/glider.min.css">
+
+    <!---->
     <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- GLIDER js -->
+    <script src="/js/library/glider.min.js" defer></script>
+    <script src="/js/configs/configGlider.js" defer></script>
+    
+    <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Pintec</title>
 </head>
@@ -21,7 +35,7 @@
     <header class="main-header">
         <i class="fa-solid fa-bars menu"></i>
         <figure>
-            <img class="logo" src="/images/logo.png" alt="Logo">
+            <img class="logo" src="/images/icons/logo_oscuro.jpeg" alt="Logo">
         </figure>
 
         <form action="/buscar" method="get">
@@ -38,35 +52,79 @@
     </header>
     <main class="main-home">
         <!-- CARRUSEL -->
-        <!-- <figure class="banner">
-            <img src="/images/carrusel.jpg" alt="carrusel">
-            <i class="fa-solid fa-angle-left"></i>
-            <i class="fa-solid fa-angle-right"></i>
-            <i class="fa-solid fa-ellipsis"></i>
-        </figure> -->
+        <div id="carouselExampleCaptions" class="carrusel carousel slide">
+            <div class="carrusel-div carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carrusel-div2 carousel-inner">
+              
+              <!-- PRIMER BANNER -->
+                <div class="carousel-item">
+                <img src="/images/banners/banner-1.webp" class="d-block w-100" alt="banner1">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Descubrí</h5>
+                  <p>Embellece tu mundo con arte auténtico</p>
+                </div>
+              </div>
+              
+              <!-- SEGUNDO BANNER -->
+              <div class="carousel-item">
+                <img src="/images/banners/banner-2.webp" class="d-block w-100" alt="banner2">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Disfrutá</h5>
+                  <p>Despierta tus sentidos con un estallido de colores y creatividad</p>
+                </div>
+              </div>
+
+              <!-- TERCER BANNER -->
+              <div class="carousel-item active">
+                <img src="/images/banners/banner-3.webp" class="d-block w-100" alt="banner3">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Explorá</h5>
+                  <p>Nuevos artistas, nuevas ideas</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- BUTTONS CARRUSEL -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+
         <!-- PRODUCTOS <DESTACADOS>-->
         <section class="pag">
             <h2 class="subt">DESTACADOS</h2>
-            <div class="productos">
-                <div class="grupo">
-                    <img src="/images/img-product01.jpg" alt="producto1">
-                    <img src="/images/img-product02.jpg" alt="producto2">
-                    <img src="/images/img-product03.jpg" alt="producto3">
-                    <img src="/images/img-product04.jpg" alt="producto4">
-                    <img src="/images/img-product01.jpg" alt="producto1">
-                    <img src="/images/img-product02.jpg" alt="producto2">
-                    <img src="/images/img-product03.jpg" alt="producto3">
-                    <img src="/images/img-product04.jpg" alt="producto4">
+            <!-- SLIDER -->
+            <div class="glider-contain productos">
+                <div class="glider grupo">
+                  <div><a href="/detalleproducto"><img src="/images/productos/producto-1.png" alt="producto1"></a></div>
+                  <div><img src="/images/productos/producto-2.png" alt="producto2"></div>
+                  <div><img src="/images/productos/producto-3.png" alt="producto3"></div>
+                  <div><img src="/images/productos/producto-4.png" alt="producto4"></div>
+                  <div><img src="/images/productos/producto-1.png" alt="producto1"></div>
+                  <div><img src="/images/productos/producto-2.png" alt="producto2"></div>
+                  <div><img src="/images/productos/producto-3.png" alt="producto3"></div>
+                  <div><img src="/images/productos/producto-4.png" alt="producto4"></div>
                 </div>
-            </div>
+              
+                
+              </div>
             <!-- PRODUCTOS <R. PARA TI>-->
             <h2 class="subt">RECOMENDADOS PARA TI</h2>
             <div class="productosOfertas">
                 <div class="grupo">
-                    <img src="/images/img-product01.jpg" alt="producto1">
-                    <img src="/images/img-product02.jpg" alt="producto2">
-                    <img src="/images/img-product03.jpg" alt="producto3">
-                    <img src="/images/img-product04.jpg" alt="producto4">
+                    <img src="/images/productos/producto-1.png" alt="producto1">
+                    <img src="/images/productos/producto-2.png" alt="producto2">
+                    <img src="/images/productos/producto-3.png" alt="producto3">
+                    <img src="/images/productos/producto-4.png" alt="producto4">
                 </div>
             </div>
         </section>
@@ -94,15 +152,15 @@
             <h2 class="titulo-footer">Medios de pago</h2>
             <div class="tarjetas-footer">
                 <ul class="fila-footer">
-                    <li><a href="#"><img class="img-pago-footer" src ="./images/otros/pago-1.jpg" alt="pago-1"></a></li>
+                    <li><a href="#"><img class="img-pago-footer" src ="./images/otros/pago-1.png" alt="pago-1"></a></li>
                     <li><a href="#"><img class="img-pago-footer" src ="./images/otros/pago-2.jpg" alt="pago-2"></a></li>
-                    <li><a href="#"><img class="img-pago-footer" src ="./images/otros/pago-3.jpg" alt="pago-3"></a></li>
-                    <li><a href="#"><img class="img-pago-footer" src ="./images/otros/pago-4.jpg" alt="pago-4"></a></li>
+                    <li><a href="#"><img class="img-pago-footer" src ="./images/otros/pago-3.png" alt="pago-3"></a></li>
+                    <li><a href="#"><img class="img-pago-footer" src ="./images/otros/pago-4.png" alt="pago-4"></a></li>
     
                 </ul>
                 <ul class="fila2-footer">
-                    <li><a href="#"><img class="img-pago2-footer" src ="./images/otros/pago-5.jpg" alt="pago-5"></a></li>
-                    <li><a href="#"><img class="img-pago2-footer" src ="./images/otros/pago-6.jpg" alt="pago-6"></a></li>
+                    <li><a href="#"><img class="img-pago2-footer" src ="./images/otros/pago-5.png" alt="pago-5"></a></li>
+                    <li><a href="#"><img class="img-pago2-footer" src ="./images/otros/pago-6.png" alt="pago-6"></a></li>
                     <li><a href="#"><img class="img-pago2-footer" src ="./images/otros/pago-7.jpg" alt="pago-7"></a></li>
     
                 </ul>
@@ -118,7 +176,7 @@
                 <ul class="fila-Env-footer">
                     <li><a href="#"><img class="img-envio-footer" src ="./images/otros/envio-4.jpg" alt="envio-4"></a></li>
                     <li><a href="#"><img class="img-envio-footer" src ="./images/otros/envio-5.jpg" alt="envio-5"></a></li>
-                    <li><a href="#"><img class="img-envio-footer" src ="./images/otros/envio-6.jpg" alt="envio-6"></a></li>
+                    <li><a href="#"><img class="img-envio-footer" src ="./images/otros/envio-6.png" alt="envio-6"></a></li>
     
                 </ul>
     
@@ -128,7 +186,7 @@
         <!-- SECCIÓN 3: REDES SOCIALES-->
         <section class="redes-footer">
             <div class="sector-redes">
-            <a href="/index.html"><img class="img-logo-footer" src ="./images/logo.jpg" alt="logo-PINTEC"></a>
+            <a href="/index.html"><img class="img-logo-footer" src ="./images/icons/logo_oscuro.jpeg" alt="logo-PINTEC"></a>
             </div>
             <ul class="icons-redes-footer">
                 <li class="link-redes-footer"><div class="cuadro-footer"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></div></li>
@@ -139,5 +197,8 @@
         </section>
     
         </footer>
+        <!-- BOOTSTRAP SCRIPT -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        
 </body>
 </html>
