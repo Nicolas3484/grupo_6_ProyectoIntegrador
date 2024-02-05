@@ -73,9 +73,9 @@
     height: 300px;
 }
 
-.main-home .carrusel .carrusel-div2 .carousel-item img{border-top: 1px solid var(--colorMarron);border-bottom: 1px solid var(--colorMarron);height: 100%;/* object-fit: contain; */}
+.main-home .carrusel .carrusel-div2 .carousel-item img{border-top: 1px solid var(--colorMarron);border-bottom: 1px solid var(--colorMarron);height: 100%;object-fit: contain;}
 
-.main-home .carrusel .carrusel-div2 .carousel-item .img1 {height: 50%;}
+.main-home .carrusel .carrusel-div2 .carousel-item .img1 {}
 
 .main-home .carrusel .carrusel-div2 .carousel-item .img2 {}
 
