@@ -22,5 +22,8 @@ app.get('/',(req,res) => {
   app.get('/Producto',(req,res) => {
     res.sendFile(path.join(__dirname,'./views/productoDetail.html'));
   })
+  app.get('/productCart',(req,res) => {
+    res.sendFile(path.join(__dirname,'./views/productCart.html'));
+  })
 // Server
 app.listen(port,() => console.log(`http://localhost:${port}`));

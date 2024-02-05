@@ -2,6 +2,7 @@
 ### INTEGRANTES:
 - Pablo Caneda
 - Nicolás González
+- Martin Araneda
 
 Objetivo del Proyecto:
 El objetivo principal de nuestra página web es proporcionar un entorno en línea donde los entusiastas del arte, especialmente aquellos de edad avanzada, puedan explorar, descubrir y adquirir pinturas excepcionales. Nos proponemos ofrecer una plataforma intuitiva y segura que fomente la apreciación del arte visual y facilite la compra de piezas únicas.
