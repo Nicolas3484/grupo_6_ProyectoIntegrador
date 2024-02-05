@@ -66,7 +66,14 @@
 }
 
 .main-home .carrusel .carrusel-div2 .carousel-item {
-    height: 300px;
+    position: relative;
+    left: 11em;
+    display: flex;
+    width: 25em;
+    /* flex-wrap: nowrap; */
+    /* align-content: stretch; */
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
 }
 
 .main-home .carrusel .carrusel-div2 .carousel-item img{height: 100%;border-top: 1px solid var(--colorMarron);border-bottom: 1px solid var(--colorMarron);}
