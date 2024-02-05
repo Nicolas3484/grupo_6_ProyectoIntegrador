@@ -1,0 +1,445 @@
+.carrito {
+    background-color: var(--colorHueso);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.carrito .header-cart .card .p .producto {
+    text-align: center;
+}
+
+.carrito .header-cart {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.carrito .header-cart h1 {
+    width: 80%;
+    text-align: center;
+}
+
+.carrito .header-cart .back-container {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrito .header-cart .back-container button {
+    border: none;
+    border-radius: 10px;
+    background-color: var(--colorMarron);
+    padding: 10px;
+    color: #fff;
+}
+
+.eliminar {
+    border: none;
+    border-radius: 10px;
+    background-color: var(--colorMarron);
+    padding: 10px;
+    color: #fff;
+    margin-inline: auto;
+    align-self: self-start;
+}
+
+.carrito .header-cart .back-container button:active {
+    position: relative;
+    top: 1px
+}
+
+.carrito .productos {
+    width: 100%;
+}
+
+.carrito .productos .card {
+    width: 80%;
+    margin: 10px auto;
+    background-color: var(--colorHueso);
+
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrito .productos .card .abm {
+    display: flex;
+    background-color: var(--colorMarron);
+    padding: 10px 20px;
+    width: 100px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    width: 50%;
+}
+
+.carrito .productos .card .abm button {
+    background-color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.carrito .productos .card .abm .number {
+    background-color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrito .productos .card .price {
+    color: green;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    width: 51%;
+}
+
+.carrito .compra {
+    width: 100%;
+
+}
+
+.carrito .pago {
+    width: 100%;
+}
+
+.productoALaVenta {
+    text-align: center;
+    /* border-inline-width: 4px; */
+    width: 60%;
+    font-size: 20px;
+    font-family: 'IBM Plex Serif';
+    display: inline;
+}
+
+.pago {
+    border: outset;
+    border-radius: 10px;
+    background-color: var(--colorMarron);
+    padding: 10px;
+    color: var(--colorHueso);
+    /* align-self: center; */
+    text-align: center;
+}
+
+@media (min-width: 426px) {
+
+    .carrito {
+        background-color: var(--colorHueso);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .carrito .header-cart .card .p .producto {
+        text-align: center;
+    }
+
+    .carrito .header-cart {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        align-content: center;
+        flex-direction: row;
+    }
+
+    .carrito .header-cart h1 {
+        width: 80%;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .carrito .header-cart .back-container {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carrito .header-cart .back-container button {
+        border: none;
+        border-radius: 10px;
+        background-color: var(--colorMarron);
+        padding: 10px 20px;
+        color: #fff;
+    }
+
+    .eliminar {
+        border: none;
+        border-radius: 10px;
+        background-color: var(--colorMarron);
+        padding: 10px;
+        color: #fff;
+
+    }
+
+    .carrito .header-cart .back-container button:active {
+        position: relative;
+        top: 1px
+    }
+
+    .carrito .productos {
+        width: 100%;
+    }
+
+    .carrito .productos .card {
+        width: 80%;
+        margin: 10px auto;
+        background-color: var(--colorHueso);
+        padding: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-content: space-between;
+    }
+
+    .carrito .productos .card .abm {
+        display: flex;
+        background-color: var(--colorMarron);
+        padding: 10px 20px;
+        width: 100px;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        width: 50%;
+    }
+
+    .carrito .productos .card .abm button {
+        background-color: white;
+        border: none;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        border-radius: 4px;
+    }
+
+    .carrito .productos .card .abm .number {
+        background-color: white;
+        border: none;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carrito .productos .card .price {
+        color: green;
+        font-size: 30px;
+        text-align: center;
+        display: block;
+        width: 51%;
+
+    }
+
+    .carrito .compra {
+        width: 100%;
+
+    }
+
+    .carrito .pago {
+        width: 100%;
+    }
+
+    .productoALaVenta {
+        text-align: center;
+        /* border-inline-width: 4px; */
+        width: 60%;
+        font-size: 20px;
+        font-family: 'IBM Plex Serif';
+        display: inline;
+        border: double;
+    }
+
+    .pago {
+        border: outset;
+        border-radius: 10px;
+        background-color: var(--colorMarron);
+        padding: 10px;
+        color: var(--colorHueso);
+        /* align-self: center; */
+        text-align: center;
+    }
+
+    .muestraProducto {
+        padding: 50px;
+        /* border: solid; */
+    }
+}
+
+/* Main Computadora  */
+@media (min-width: 769px) {
+    .carrito {
+        background-color: var(--colorHueso);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .carrito .header-cart .card .p .producto {
+        text-align: center;
+    }
+
+    .carrito .header-cart {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        align-content: center;
+        flex-direction: row;
+    }
+
+    .carrito .header-cart h1 {
+        width: 80%;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .carrito .header-cart .back-container {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carrito .header-cart .back-container button {
+        border: none;
+        border-radius: 10px;
+        background-color: var(--colorMarron);
+        padding: 10px 20px;
+        color: #fff;
+    }
+
+    .eliminar {
+        border: none;
+        border-radius: 10px;
+        background-color: var(--colorMarron);
+        padding: 10px;
+        color: #fff;
+
+    }
+
+    .carrito .header-cart .back-container button:active {
+        position: relative;
+        top: 1px
+    }
+
+    .carrito .productos {
+        width: 100%;
+    }
+
+    .carrito .productos .card {
+        width: 80%;
+        margin: 10px auto;
+        background-color: var(--colorHueso);
+        padding: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-content: space-between;
+    }
+
+    .carrito .productos .card .abm {
+        display: flex;
+        background-color: var(--colorMarron);
+        padding: 10px 20px;
+        width: 100px;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        width: 50%;
+    }
+
+    .carrito .productos .card .abm button {
+        background-color: white;
+        border: none;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        border-radius: 4px;
+    }
+
+    .carrito .productos .card .abm .number {
+        background-color: white;
+        border: none;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carrito .productos .card .price {
+        color: green;
+        font-size: 30px;
+        text-align: center;
+        display: block;
+        width: 51%;
+
+    }
+
+    .carrito .compra {
+        width: 100%;
+
+    }
+
+    .carrito .pago {
+        width: 100%;
+    }
+
+    .productoALaVenta {
+        text-align: center;
+        /* border-inline-width: 4px; */
+        width: 60%;
+        font-size: 20px;
+        font-family: 'IBM Plex Serif';
+        display: inline;
+    }
+
+    .pago {
+        border: outset;
+        border-radius: 10px;
+        background-color: var(--colorMarron);
+        padding: 10px;
+        color: var(--colorHueso);
+        /* align-self: center; */
+        text-align: center;
+    }
+
+    .muestraProducto {
+        padding: 50px;
+        border: solid;
+
+    }
+
+}
+
+
