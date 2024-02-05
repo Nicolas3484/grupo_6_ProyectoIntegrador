@@ -1,0 +1,268 @@
+.img{
+    max-width: 100%;
+}
+.main-producto .nicolas{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100vw;
+    background-color: var(--colorHueso);
+}
+
+.main-producto .nicolas .infoGeneral-detalle{background-color: #FDFFF0;/* width: 100%; */}
+
+.main-producto .nicolas .contenedor{
+    margin: 20px auto;
+    width: 90%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 20px; */
+    /* background-color: lightgray; */
+    flex-direction: row;
+    justify-content: center;
+}
+.main-producto .nicolas .contenedor-carrito{
+    flex: 1;
+}
+
+.main-producto .nicolas .contenedor img {
+    /* position:relative; */
+    width: 60%;
+    margin-top: 10px;
+    border: 3px solid black;
+    margin-bottom: 10px;
+}
+.main-producto .nicolas .infoGeneral-detalle .titulo-detalle h2{border-bottom: black;position: relative;display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-evenly;padding-bottom: 5%;text-decoration: underline;font-size: 31px;}
+
+#span{
+    color: #9a9a9a;
+}
+
+.price {
+    padding-bottom: 19px;
+    border-top: 1px solid #b1b1b1
+    /* display:flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+.price span{
+    font-size: 33px;
+    font-weight: 500;
+}
+#Heart{
+    display: flex;
+    align-items: center;
+    justify-content:  end;
+    /* padding-top: 3%; */
+    /* padding-right: 3%; */
+    font-size: 35px;
+    margin: 15px;
+    }
+
+.contador{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 14px;
+    /* border-bottom: 1px solid #b1b1b1; */
+}
+#carrito{
+    display: flex;
+    background-color: white;
+    height: 90%;
+    align-items: baseline;
+    font-size: 11px;
+}
+#img-carrito{
+    position: relative;
+    right: 0.5em;
+    display: inline-block;
+    font-size: 1.5em
+}
+.boton-add-carrito  p{
+    color: black
+}
+
+.precio-cuotas{
+    font-size: 20px;
+    /* position: relative;display: flex;flex-direction: row; flex-wrap: nowrap;justify-content: space-evenly; */
+    display: flex;
+    padding-left: 15%;
+    padding-bottom: 14px;
+}
+.price p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #939393;
+}
+.precio-cuotas span{
+    font-weight: 900;
+}
+
+#contador{
+    text-align: center;
+    position: relative;
+    padding: 1%;
+    width: 60px;
+    height: 100%;
+}
+
+.titulo-descripcion,
+.titulo-caracteristicas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.titulo-descripcion h4,
+.titulo-caracteristicas h4{
+    font-weight: 300;
+    color: #666;
+    font-size: 18px;    
+}
+
+.descripcion,
+.caracteristicas-artist{
+    display: flex;
+    flex-direction: column;
+    /* padding: 5px; */
+    border-bottom: 1px solid #b1b1b1;
+    /* border-top: 1px solid #b1b1b1; */
+}
+
+.texto-descripcion,
+.texto-caracteristicas{
+    line-height: 22px;
+    margin-top: 22px;
+    font-size: 14px;
+    color: #242525;
+    /* border-bottom: 1px solid #b1b1b1; */
+}
+.input-container {
+    display: flex;
+    text-align: center;
+    position: relative;
+    padding: 1%;
+    height: 100%;
+    left: 15px
+}
+
+.medios-de-pago {gap: px;display: flex;flex-wrap: wrap;flex-direction: row;justify-content: space-around;}
+.ver-medios-de-pago p{color: #9a9a9a;text-decoration-line: underline;}
+.ver-medios-de-pago{gap: 2px;display: flex;flex-wrap: wrap;flex-direction: row;/* border-bottom: 1px solid #b1b1b1; */justify-content: space-around;border-bottom: 1px solid #b1b1b1;}
+.fila-pago{border: 17px black;justify-content: space-between;height: 20px;/* gap: 9px; */text-decoration: none;padding: 0;margin: 0;display: flex;flex-wrap: wrap;}
+.fila-pago li{display: flex;width: 20%;flex-wrap: wrap;}
+.fila-pago li a .img-pago-producto{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+@media (min-width:769px){
+ /* DESKTOP */
+.main-producto .nicolas {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    background-color: var(--colorHueso);
+}
+
+.main-producto .nicolas .contenedor {
+    margin: 80px auto;
+    width: 38%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    order: 2;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+.main-producto .nicolas .infoGeneral-detalle {
+    width: 41%;
+    background-color: var(--colorHueso);
+    padding-left: 0%;
+    background-position: 30%;
+    order: 1;
+}
+    .main-producto .nicolas .contenedor-carrito{
+      
+    }
+    
+    .main-producto .nicolas .contenedor img {
+      width: 85%;
+    }
+    .main-producto .nicolas .infoGeneral-detalle .titulo-detalle h2{border-bottom: black;position: relative;display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-evenly;padding-bottom: 5%;text-decoration: underline;font-size: 31px;}
+    
+    #span{
+      
+    }
+    
+    .price {
+ 
+    }
+    .price span{
+    
+    }
+    #Heart{
+ 
+          }
+    
+    .contador{
+        
+
+    }
+    #carrito{
+  
+    }
+    #img-carrito{
+  }
+    .boton-add-carrito  p{
+      width: 85px;
+      height: 17px;
+      font-size: 11px;
+    }
+    
+    .precio-cuotas{
+ }
+    .price p{
+     
+    }
+    .precio-cuotas span{
+       position: relative;
+       left: 2px;
+    }
+    
+    #contador{
+    }
+    
+    .titulo-descripcion
+    .titulo-caracteristicas{
+    
+    }
+    .titulo-descripcion h4
+    .titulo-caracteristicas h4{
+    
+    }
+    
+    .descripcion,
+    .caracteristicas-artist{
+ 
+    }
+    
+    .texto-descripcion,
+    .texto-caracteristicas{
+      
+    }
+    .input-container {
+   
+    }
+    
+    .medios-de-pago {}
+    .fila-pago{}
+    .fila-pago li{}
+    .fila-pago li a .img-pago-producto{}}

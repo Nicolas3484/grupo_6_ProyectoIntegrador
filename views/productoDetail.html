@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=main, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="/images/logo-ico-ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<header class="main-header">
+    <i class="fa-solid fa-bars menu"></i>
+    <figure>
+        <img class="logo" src="/images/icons/logo_oscuro.jpeg" alt="Logo">
+    </figure>
+
+    <form action="/buscar" method="get">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input class="input" type="text" id="search" name="buscador" placeholder="Artista, Categoría, Pintura...">
+    </form>
+    <nav class="nav-bar">
+        <ul class="nav-ul">
+            <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+            <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+            <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+    </nav>
+    </header>
+<body>
+    <main class="main-producto">
+        <div class="nicolas">
+        <div class="contenedor">
+
+            <img src="/images/productos/producto-1.png" alt="producto1">
+           
+        </div>
+        
+        <div class="infoGeneral-detalle">
+            <div class="titulo-detalle"><i class="fa-regular fa-heart" id="Heart"></i>
+                <h2>Galaxia</h2>
+             
+              <div class="price">
+              <span>AR$ 180.000</span>
+              <span id="span"><!-- espacio en blanco -->‎ Iva inc.</span>
+              <p>
+               Paga en 3 y 6 cuotas sin interes
+           </p>
+            </div>
+            <div class="precio-cuotas">
+                <p>12 cuotas de 
+                    <span>$1900120313290</span>
+                </p>
+            </div>
+            
+        </div>
+            <div class="contenedor-carrito">
+                <div>
+                    <div class="contador">
+                        <div class="input-container">
+                            <button><i class="fa-solid fa-minus"></i></button>
+                        <input type="number" id="contador"  placeholder="1" value="1" id="value1" min="1">
+                            <button><i class="fa-solid fa-plus"></i></button>
+
+                    </div>
+                        <button class="boton-add-carrito" id="carrito"> 
+                            <i class ="fa-solid fa-plus"> </i><p>Añadir al carrito</p>
+                        </button>
+                        <i class ="fa-solid fa-cart-shopping" id="img-carrito"></i>
+                    </div>
+                   <div class="medios-de-pago">
+                    <ul class="fila-pago">
+                        <li><a href="#"><img class="img-pago-producto" src ="./images/otros/pago-1.png" alt="pago-1"></a></li>
+                        <li><a href="#"><img class="img-pago-producto" src ="./images/otros/pago-2.jpg" alt="pago-2"></a></li>
+                        <li><a href="#"><img class="img-pago-producto" src ="./images/otros/pago-3.png" alt="pago-3"></a></li>
+
+                    </ul>
+                    
+                    </div>
+                    <div class="ver-medios-de-pago">
+                        <p>Ver medios de pago</p>
+                    </div>
+                   </div>
+                    <div class="descripcion">
+                        <div class="titulo-descripcion">
+                        <h4>Descripcion</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="texto-descripcion">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem deserunt consequatur tempora labore numquam accusantium excepturi ipsa dolor minima possimus doloremque, aperiam nostrum autem atque hic obcaecati, vel praesentium id?</p>
+                    </div>
+                    </div>
+                    <div class="caracteristicas-artist">
+                        <div class="titulo-caracteristicas">
+                            <h4>Caracteristicas</h4>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        <div class="texto-caracteristicas">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quam ratione necessitatibus odit delectus tenetur harum qui libero repudiandae consequuntur, quos cum neque illo, nihil ab, incidunt possimus voluptatem maxime.</p>
+                        </div>
+                    </div>
+                        <div class="caracteristicas-artist">
+                        <div class="titulo-caracteristicas">
+                            <h4>Caracteristicas</h4>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        <div class="texto-caracteristicas">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quam ratione necessitatibus odit delectus tenetur harum qui libero repudiandae consequuntur, quos cum neque illo, nihil ab, incidunt possimus voluptatem maxime.</p>
+                        </div>
+                    </div>
+
+                
+                </div>
+            </div>
+        </div>
+            
+        </div>
+    </main>
+    <footer class="footer-gral" >
+        <!-- SECCIÓN 1  CONTACTO UBICACION-->
+        <section class="datos-footer">
+            <h2 class="titulo-footer">Contactanos</h2>
+            <div class="correo-footer">
+            <i class="fa-solid fa-envelopes-bulk"></i>
+           <a class="link-email-footer" href="#"><h2 class="email-footer">tiendaonlinepintec@gmail.com</h2></a>
+            </div>
+            <div class="ubicacion-footer">
+                <div class="ubicacion-plus-footer">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h2 class="direccion-AV-footer">Av. del libertador 1473, CABA, Argentina</h2>
+                 </div>
+            <iframe class="mapa-footer" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.79778022414!2d-58.393028699999995!3d-34.583982999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa1b9cf78d5%3A0xa96188dae8b165db!2sAv.%20del%20Libertador%201473%2C%20C1425AAA%20CABA!5e0!3m2!1ses!2sar!4v1706192552734!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    
+        </section>
+    
+        <!-- SECCIÓN 2: MEDIOS DE PAGO Y ENVIO-->
+        <section class="pago-envio-footer">
+            <h2 class="titulo-footer">Medios de pago</h2>
+            <div class="tarjetas-footer">
+                <ul class="fila-footer">
+                    <li><a href="#"><img class="img-pago-footer" src ="./images/otros/pago-1.png" alt="pago-1"></a></li>
+                    <li><a href="#"><img class="img-pago-footer" src ="./images/otros/pago-2.jpg" alt="pago-2"></a></li>
+                    <li><a href="#"><img class="img-pago-footer" src ="./images/otros/pago-3.png" alt="pago-3"></a></li>
+                    <li><a href="#"><img class="img-pago-footer" src ="./images/otros/pago-4.png" alt="pago-4"></a></li>
+    
+                </ul>
+                <ul class="fila2-footer">
+                    <li><a href="#"><img class="img-pago2-footer" src ="./images/otros/pago-5.png" alt="pago-5"></a></li>
+                    <li><a href="#"><img class="img-pago2-footer" src ="./images/otros/pago-6.png" alt="pago-6"></a></li>
+                    <li><a href="#"><img class="img-pago2-footer" src ="./images/otros/pago-7.jpg" alt="pago-7"></a></li>
+    
+                </ul>
+            </div>
+            <h2 class="titulo-footer">Formas de envio</h2>
+            <div class="tarjetas-footer">
+                <ul class="fila-Env-footer">
+                    <li><a href="#"><img class="img-envio-footer" src ="./images/otros/envio-1.jpg" alt="envio-1"></a></li>
+                    <li><a href="#"><img class="img-envio-footer" src ="./images/otros/envio-2.jpg" alt="envio-2"></a></li>
+                    <li><a href="#"><img class="img-envio-footer" src ="./images/otros/envio-3.jpg" alt="envio-3"></a></li>
+    
+                </ul>
+                <ul class="fila-Env-footer">
+                    <li><a href="#"><img class="img-envio-footer" src ="./images/otros/envio-4.jpg" alt="envio-4"></a></li>
+                    <li><a href="#"><img class="img-envio-footer" src ="./images/otros/envio-5.jpg" alt="envio-5"></a></li>
+                    <li><a href="#"><img class="img-envio-footer" src ="./images/otros/envio-6.png" alt="envio-6"></a></li>
+    
+                </ul>
+    
+            </div>
+    
+        </section>
+        <!-- SECCIÓN 3: REDES SOCIALES-->
+        <section class="redes-footer">
+            <div class="sector-redes">
+            <a href="/index.html"><img class="img-logo-footer" src ="./images/icons/logo_oscuro.jpeg" alt="logo-PINTEC"></a>
+            </div>
+            <ul class="icons-redes-footer">
+                <li class="link-redes-footer"><div class="cuadro-footer"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></div></li>
+                <li class="link-redes-footer"><div class="cuadro-footer"><a href="#"><i class="fa-brands fa-instagram"></i></a></div></li>
+                <li class="link-redes-footer"><div class="cuadro-footer"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></div></li>
+    
+            </ul>
+        </section>
+    
+        </footer>
+</body>
+
+</html>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
