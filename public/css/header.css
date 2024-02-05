@@ -1,0 +1,62 @@
+.main-header {
+    background-color: var(--colorMarron);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-header .menu {
+    color: var(--colorHueso);
+    width: 10%;
+    text-align: left;
+    font-size: 30px;
+    padding-left: 25px;
+}
+
+.main-header figure {
+width: 36%;
+display: flex;
+justify-content: center;
+margin: 0 !important;
+position: relative;
+}
+
+.main-header figure .logo {
+width: 36%;
+}
+
+.main-header form {width: 25%;}
+
+.main-header form i {
+    color: var(--colorHueso);
+    font-size: 30px;
+}
+
+.main-header form .input{
+display: none;
+}
+
+.main-header .nav-bar {
+display: none;
+}
+
+.main-header .nav-bar .nav-ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.main-header .nav-bar .nav-ul li {
+    font-size: 30px;
+}
+
+.main-header .nav-bar .nav-ul li a {
+color: var(--colorHueso);
+}
+
+.main-header .nav-bar .nav-ul li a i{}

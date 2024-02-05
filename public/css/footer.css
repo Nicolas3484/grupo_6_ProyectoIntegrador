@@ -1,7 +1,7 @@
 /*----------------footer Telefono-------------------*/
 
 /* SECCIÓN 1  CONTACTO UBICACION */
-.footer-gral{padding: 10px;color: var(--colorHueso);background-color: var(--colorMarron);display: flex;flex-wrap: wrap;}
+.footer-gral{margin-top: 1px;padding: 10px;color: var(--colorHueso);background-color: var(--colorMarron);display: flex;flex-wrap: wrap;}
 .footer-gral .datos-footer{
     height: 170px;
     gap: 5px;

@@ -13,7 +13,7 @@
 <header class="main-header">
     <i class="fa-solid fa-bars menu"></i>
     <figure>
-        <img class="logo" src="/images/logo.png" alt="Logo">
+        <img class="logo" src="/images/icons/logo_oscuro.jpeg" alt="Logo">
     </figure>
 
     <form action="/buscar" method="get">
@@ -27,7 +27,7 @@
             <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
         </ul>
     </nav>
-</header>
+    </header>
 <body>
     <main class="main-producto">
         <div class="nicolas">
@@ -38,12 +38,12 @@
         </div>
         
         <div class="infoGeneral-detalle">
-            <div class="titulo-detalle"><i class="fa-solid fa-heart" id="Heart"></i>
+            <div class="titulo-detalle"><i class="fa-regular fa-heart" id="Heart"></i>
                 <h2>Galaxia</h2>
              
               <div class="price">
               <span>AR$ 180.000</span>
-              <span id="span">‎ Iva inc.</span>
+              <span id="span"><!-- espacio en blanco -->‎ Iva inc.</span>
               <p>
                Paga en 3 y 6 cuotas sin interes
            </p>
@@ -59,17 +59,29 @@
                 <div>
                     <div class="contador">
                         <div class="input-container">
-                            <button><i class="fa-solid fa-plus"></i></button>
+                            <button><i class="fa-solid fa-minus"></i></button>
                         <input type="number" id="contador"  placeholder="1" value="1" id="value1" min="1">
-                        <button><i class="fa-solid fa-minus"></i></button>
+                            <button><i class="fa-solid fa-plus"></i></button>
 
                     </div>
                         <button class="boton-add-carrito" id="carrito"> 
-                            <i class="fa-solid fa-plus"> </i><p>Añadir al carrito</p>
+                            <i class ="fa-solid fa-plus"> </i><p>Añadir al carrito</p>
                         </button>
                         <i class ="fa-solid fa-cart-shopping" id="img-carrito"></i>
                     </div>
-                   
+                   <div class="medios-de-pago">
+                    <ul class="fila-pago">
+                        <li><a href="#"><img class="img-pago-producto" src ="./images/otros/pago-1.png" alt="pago-1"></a></li>
+                        <li><a href="#"><img class="img-pago-producto" src ="./images/otros/pago-2.jpg" alt="pago-2"></a></li>
+                        <li><a href="#"><img class="img-pago-producto" src ="./images/otros/pago-3.png" alt="pago-3"></a></li>
+
+                    </ul>
+                    
+                    </div>
+                    <div class="ver-medios-de-pago">
+                        <p>Ver medios de pago</p>
+                    </div>
+                   </div>
                     <div class="descripcion">
                         <div class="titulo-descripcion">
                         <h4>Descripcion</h4>
@@ -87,6 +99,7 @@
                         <div class="texto-caracteristicas">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quam ratione necessitatibus odit delectus tenetur harum qui libero repudiandae consequuntur, quos cum neque illo, nihil ab, incidunt possimus voluptatem maxime.</p>
                         </div>
+                    </div>
                         <div class="caracteristicas-artist">
                         <div class="titulo-caracteristicas">
                             <h4>Caracteristicas</h4>
