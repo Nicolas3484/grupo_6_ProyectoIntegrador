@@ -1,0 +1,234 @@
+.body-login{
+    margin: 0;
+}
+.main-login{
+    color: var(--colorHueso);
+    background-image: url("../images/otros/fondo-register.jpg");
+    background-position: left;
+}
+.main-login div.acceder-login{
+    backdrop-filter: blur(6px);
+    padding: 60px 0 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-login div.acceder-login div{
+}
+.main-login div.acceder-login div i{
+    display: none;
+}
+.main-login div.acceder-login div h2{
+    display: none;
+    margin: 0;
+}
+.main-login form{
+    /* backdrop-filter: blur(6px); */
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main-login form section.datos-login{
+    width: 70%;
+    display: flex;
+}
+.main-login form section.datos-login2{
+    width: 70%;
+    display: flex;
+}
+.main-login form section.datos-login div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main-login form section.datos-login label{width: 100%;}
+.main-login form section.datos-login input{
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+}
+.main-login form section.datos-login2 div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main-login form section.datos-login2 label{
+    width: 100%;
+}
+.main-login form section.datos-login2 input{
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+}
+.main-login form div.olvide-login{
+    margin-bottom: 20px;
+    margin-top: -15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main-login form div.olvide-login a{
+    text-decoration: none;
+}
+.main-login form div.olvide-login a label{color: var(--colorHueso);}
+.main-login form div.botones-login{
+    width: 60%;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-login form div.botones-login button{
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+}
+.main-login form div.botones-login p a{
+    text-decoration: none;
+    color: var(--colorHueso);
+}
+.main-login form div.botones-login p{text-align: center;margin: 0;}
+.main-login div.registrarse-login{
+    display: none;
+}
+.main-login div.registrarse-login h2{}
+.main-login div.registrarse-login p{}
+.main-login div.registrarse-login button{}
+.main-login div.registrarse-login button a{}
+
+/*----------------login Tablet-------------------*/
+@media (min-device-width: 426px){
+    .main-login form div.botones-login p a{}
+    .main-login form section.datos-login2{
+    width: 80%;
+}
+    .main-login{
+    display: flex;
+    justify-content: center;
+}
+    .main-login form div.botones-login p{}
+    .main-login div.acceder-login{display: flex;gap: 30px;}
+    .main-login div.acceder-login div{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    .main-login div.acceder-login div i{
+    font-size: 40px;
+    height: 40px;
+    display: flex;
+    align-items: flex-end;
+}
+    .main-login div.acceder-login div h2{
+    font-size: 40px;
+    display: flex;
+}
+    .main-login form{
+    display: flex;
+}
+    .main-login form section.datos-login{
+    width: 80%;
+}
+    .main-login form section.datos-login div{}
+    .main-login form section.datos-login label{}
+    .main-login form section.datos-login input{
+    height: 35px;
+}
+    .main-login form section.datos-login2 div{}
+    .main-login form section.datos-login2 label{}
+    .main-login form section.datos-login2 input{
+    height: 35px;
+}
+    .main-login form div.olvide-login{margin-top: 2px;width: 100%;}
+    .main-login form div.olvide-login a{}
+    .main-login form div.olvide-login a label{}
+    .main-login form div.botones-login{
+    width: 30%;
+}
+    .main-login form div.botones-login button{height: 30px;}
+    .main-login div.registrarse-login{}
+    .main-login div.registrarse-login h2{}
+    .main-login div.registrarse-login p{}
+    .main-login div.registrarse-login button{}
+    .main-login div.registrarse-login button a{}
+    
+}
+/*----------------registro Computadora-------------------*/
+@media (min-device-width: 769px){
+    .main-login form div.botones-login p a{
+    display: none;
+}
+    .main-login form section.datos-login2{}
+    .main-login{display: flex;backdrop-filter: blur(10px);flex-wrap: wrap;}
+    .main-login form div.botones-login p{}
+    .main-login div.acceder-login{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+    .main-login div.acceder-login div{display: flex;width: 320px;align-items: center;}
+    .main-login div.acceder-login div i{
+    display: flex;
+    align-items: flex-end;
+}
+    .main-login div.acceder-login div h2{}
+    .main-login form{
+    width: 8 0%;
+}
+    .main-login form section.datos-login{}
+    .main-login form section.datos-login div{}
+    .main-login form section.datos-login label{}
+    .main-login form section.datos-login input{}
+    .main-login form section.datos-login2 div{}
+    .main-login form section.datos-login2 label{}
+    .main-login form section.datos-login2 input{}
+    .main-login form div.olvide-login{
+    width: 100%;
+}
+    .main-login form div.olvide-login a{}
+    .main-login form div.olvide-login a label{}
+    .main-login form div.botones-login{width: 270px;}
+    .main-login form div.botones-login button{
+    background-color: var(--colorHueso);
+}
+    .main-login div.registrarse-login{
+    backdrop-filter: blur(6px);
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    .main-login div.registrarse-login h2{
+    width: 100%;
+    font-size: 40px;
+    display: flex;
+    margin: 0;
+    align-items: flex-end;
+    justify-content: center;
+}
+    .main-login div.registrarse-login p{
+    height: 250px;
+    text-align: center;
+    width: 70%;
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+    .main-login div.registrarse-login button{
+    padding: 5px;
+    background-color: var(--colorHueso);
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .main-login div.registrarse-login button a{text-decoration: none;color: var(--colorMarron);}
+}
