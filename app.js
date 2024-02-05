@@ -1,27 +1,15 @@
-const path = require('path');
 const express = require('express');
+const path = require('path');
+
 const app = express();
 const port = 3030;
-const carritoRouter = require('./routers/carrito')
 
-// Configs
-app.set('views',path.join(__dirname,'views'))
-app.set('view engine','ejs')
-app.use(express.static())
-app.use(express.json())
-app.use(express.static(path.join,__dirname,'..','public'))
-/* ROUTING */
-app.use('/cart',carritoRouter)
-app.use()
+const createPath = (filename) => path.join(__dirname, `./views/${filename}.html`);
+const newRoute = (pagename, filename) => app.get(`/${pagename}`, (req, res) => res.sendFile(createPath(filename)));
 
-// Rutas
-app.get('/',(req,res) => {
-    res.sendFile(path.join(__dirname,'./views/index.html'));
-  })
-  app.get("/home", (req, res) => {
-    res.redirect('/');
-  });
+app.use(express.static('public'));
 
-  
-// Server
-app.listen(port,() => console.log(`http://localhost:${port}`));
+
+newRoute("/", "productCart");
+
+app.listen(port, /*() => console.log(`http://localhost:${port}`)*/); 
