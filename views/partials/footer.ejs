@@ -1,74 +1,5 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="./css/styles.css"/>
-
-</head>
-<body class="main-registro">
-    <header class="main-header">
-        <i class="fa-solid fa-bars menu"></i>
-        <figure>
-            <img class="logo" src="/images/icons/logo_oscuro.jpeg" alt="Logo">
-        </figure>
-
-        <form action="/buscar" method="get">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input class="input" type="text" id="search" name="buscador" placeholder="Artista, Categoría, Pintura...">
-        </form>
-        <nav class="nav-bar">
-            <ul class="nav-ul">
-                <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-user"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main-register">
-        <form class="formulario-register" action="/register" method="POST">
-            <!-- NOMBRE -->
-             <section class="datos-register"> 
-               <div class="descripcion-register">
-                <label class="label-register" for="nombre">Nombre</label>
-                 <input  class="cuadro-register" type="text" name="nombre" value="" id="nombre" placeholder="Ej: Agustina">
-                 <i class="icon-register fa-solid fa-user"></i>
-              </div>
-             </section>
-            <!-- EMAIL -->
-             <section class="datos-register"> 
-               <div class="descripcion-register">
-                <label class="label-register" for="correo">Correo electronico</label>
-                <input class="cuadro-register" type="email" name="email" value="" id="email" placeholder="Ej: julianaagus@gmail.com">
-              </div>
-            </section>
-            <!-- CONTRASEÑA -->
-            <section class="datos-register"> 
-                <div class="descripcion-register">
-                 <label class="label-register" for="contrasenia">Contraseña</label>
-                 <input class="cuadro-register" type="password" name="contrasenia" value="" id="contrasenia">
-               </div>
-            </section>
-            <!-- CONFIRMAR CONTRASEÑA -->
-            <section class="datos-register"> 
-                <div class="descripcion-register">
-                 <label class="label-register" for="contrasenia">Confirmar contraseña</label>
-                 <input class="cuadro-register" type="password" name="contrasenia" value="" id="contrasenia">               </div>
-            </section>
-            <!--  BOTONES -->
-                <div class="botones-register">
-                    <button class="enviar-register" type="submit">REGISTRARSE</button>
-                </div>
-            <!-- YA TENGO CUENTA -->
-                <div class="tengoC-register">
-                 <a href="/login"><label class="texto-register-fin" for="nombre">Ya tengo cuenta</label></a>
-               </div>
- 
-   </main>
-   <footer class="footer-gral" >
+      <!-- Footer -->
+<footer class="footer-gral" >
     <!-- SECCIÓN 1  CONTACTO UBICACION-->
     <section class="datos-footer">
         <h2 class="titulo-footer">Contactanos</h2>
@@ -125,7 +56,7 @@
     <!-- SECCIÓN 3: REDES SOCIALES-->
     <section class="redes-footer">
         <div class="sector-redes">
-        <a href="/index.html"><img class="img-logo-footer" src ="./images/icons/logo_oscuro.jpeg" alt="logo-PINTEC"></a>
+        <a href="/index.ejs"><img class="img-logo-footer" src ="./images/icons/logo_oscuro.jpeg" alt="logo-PINTEC"></a>
         </div>
         <ul class="icons-redes-footer">
             <li class="link-redes-footer"><div class="cuadro-footer"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></div></li>
@@ -136,6 +67,3 @@
     </section>
 
     </footer>
-
-</body>
-</html>

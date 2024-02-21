@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+     <!-- head -->
+     <%- include("./partials/headOther") %>
+<body>
+    <!-- header -->
+    <%- include("./partials/header") %>
+
+    <main class="carrito">
+        <section class="header-cart">
+            <h1>Adquiri tus articulos</h1>
+            <div class="back-container">
+                <button>Atras</button>
+            </div>
+        </section>
+        <section class="productos">
+            
+            <article class="card">
+                <button class="eliminar">Eliminar</button>
+                <div>
+                    <img class="muestraProducto" src="/images/producto-1.png" alt="Galaxia">
+                </div>
+                <p class="productoALaVenta">Galaxia</p>
+                <div class="abm">
+                    <button>-</button>
+                    <p class="number">1</p>
+                    <button>+</button>
+                </div>
+                <span class="price">$180000</span>
+            </article>
+            <article class="card">
+                <button class="eliminar">Eliminar</button>
+                <div>
+                    <img class="muestraProducto" src="https://cdn.discordapp.com/attachments/953869331425534003/1203165879333027860/producto-2.png?ex=65d01a8b&is=65bda58b&hm=f589ed1960397745cfca70352519a7b4167c94afd47c3fb0a25822aad2e328ff&" alt="cuadro horrible 2">
+                </div>
+                <p class="productoALaVenta">Cuadro sucio pero impecable</p>
+                <div class="abm">
+                    <button>-</button>
+                    <p class="number">1</p>
+                    <button>+</button>
+                </div>
+                <span class="price">$18000</span>
+            </article>
+        </section>
+        <section class="compra">
+            <article>
+                <ul>
+                    <li>
+                        <p>Producto 1</p>
+                        <p>$180.000</p>
+                    </li>
+                    <li>
+                        <p>Producto 2</p>
+                        <p>$180.000</p>
+                    </li>
+                    <li>
+                        <p>Producto 3</p>
+                        <p>$180.000</p>
+                    </li>
+                    <li>
+                        <p>Total</p>
+                        <p>$540.000</p>
+                    </li>
+                </ul>
+        </section>
+        <section class="pago">
+            <button class="pago">Pagar</button>
+        </section>
+    </main>
+    
+      <!-- Footer -->
+      <%- include("./partials/footer") %>
+</body>
+</html>

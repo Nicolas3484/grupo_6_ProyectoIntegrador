@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+     <!-- head -->
+     <%- include("./partials/headOther") %>
+<body>
+    <!-- header -->
+    <%- include("./partials/header") %>
+    <main class="main-producto">
+        <div class="nicolas">
+        <div class="contenedor">
+
+            <img src="/images/productos/producto-1.png" alt="producto1">
+           
+        </div>
+        
+        <div class="infoGeneral-detalle">
+            <div class="titulo-detalle"><i class="fa-regular fa-heart" id="Heart"></i>
+                <h2>Galaxia</h2>
+             
+              <div class="price">
+              <span>AR$ 180.000</span>
+              <span id="span"><!-- espacio en blanco -->‎ Iva inc.</span>
+              <p>
+               Paga en 3 y 6 cuotas sin interes
+           </p>
+            </div>
+            <div class="precio-cuotas">
+                <p>12 cuotas de 
+                    <span>$1900120313290</span>
+                </p>
+            </div>
+            
+        </div>
+            <div class="contenedor-carrito">
+                <div>
+                    <div class="contador">
+                        <div class="input-container">
+                            <button><i class="fa-solid fa-minus"></i></button>
+                        <input type="number" id="contador"  placeholder="1" value="1" id="value1" min="1">
+                            <button><i class="fa-solid fa-plus"></i></button>
+
+                    </div>
+                        <button class="boton-add-carrito" id="carrito"> 
+                            <i class ="fa-solid fa-plus"> </i><p>Añadir al carrito</p>
+                        </button>
+                        <i class ="fa-solid fa-cart-shopping" id="img-carrito"></i>
+                    </div>
+                   <div class="medios-de-pago">
+                    <ul class="fila-pago">
+                        <li><a href="#"><img class="img-pago-producto" src ="./images/otros/pago-1.png" alt="pago-1"></a></li>
+                        <li><a href="#"><img class="img-pago-producto" src ="./images/otros/pago-2.jpg" alt="pago-2"></a></li>
+                        <li><a href="#"><img class="img-pago-producto" src ="./images/otros/pago-3.png" alt="pago-3"></a></li>
+
+                    </ul>
+                    
+                    </div>
+                    <div class="ver-medios-de-pago">
+                        <p>Ver medios de pago</p>
+                    </div>
+                   </div>
+                    <div class="descripcion">
+                        <div class="titulo-descripcion">
+                        <h4>Descripcion</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="texto-descripcion">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem deserunt consequatur tempora labore numquam accusantium excepturi ipsa dolor minima possimus doloremque, aperiam nostrum autem atque hic obcaecati, vel praesentium id?</p>
+                    </div>
+                    </div>
+                    <div class="caracteristicas-artist">
+                        <div class="titulo-caracteristicas">
+                            <h4>Caracteristicas</h4>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        <div class="texto-caracteristicas">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quam ratione necessitatibus odit delectus tenetur harum qui libero repudiandae consequuntur, quos cum neque illo, nihil ab, incidunt possimus voluptatem maxime.</p>
+                        </div>
+                    </div>
+                        <div class="caracteristicas-artist">
+                        <div class="titulo-caracteristicas">
+                            <h4>Caracteristicas</h4>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        <div class="texto-caracteristicas">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quam ratione necessitatibus odit delectus tenetur harum qui libero repudiandae consequuntur, quos cum neque illo, nihil ab, incidunt possimus voluptatem maxime.</p>
+                        </div>
+                    </div>
+
+                
+                </div>
+            </div>
+        </div>
+            
+        </div>
+    </main>
+      <!-- Footer -->
+      <%- include("./partials/footer") %>
+</body>
+
+</html>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
