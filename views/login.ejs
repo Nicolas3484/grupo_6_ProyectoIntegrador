@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+     <!-- head -->
+     <%- include("./partials/headOther") %>
+<body class="body-login">
+    <!-- header -->
+    <%- include("./partials/header") %>
+    <main class="main-login">
+        <div class="acceder-login">
+            <div>
+            <i class="fa-solid fa-door-closed"></i>
+            <h2>Acceder</h2>
+            </div>
+        <form class="formulario-login" action="/login" method="POST">
+            <!-- EMAIL -->
+             <section class="datos-login"> 
+               <div>
+                <label for="correo">Correo electronico</label>
+                <input type="email" name="email" value="" id="email">
+              </div>
+            </section>
+            <!-- CONTRASEÑA -->
+            <section class="datos-login2"> 
+                <div>
+                 <label for="contrasenia">Contraseña</label>
+                 <input type="password" name="contrasenia" value="" id="contrasenia">
+               </div>
+            </section>
+            <!-- OLVIDE MI CONTRASENIA -->
+            <div class="olvide-login">
+                <a href="#"><label class="texto-register-fin" for="nombre">Olvide mi contraseña</label></a>
+            </div>
+            <!--  BOTON ACCEDER -->
+                <div class="botones-login">
+                    <button type="submit">INICIAR SESION</button>
+                    <p><a href="/register">No tengo cuenta</a></p>
+                </div>
+         </form>
+         </div>
+          <!--  SECCION REGISTRARSE-->
+         <div class="registrarse-login">
+            <h2>Registrase</h2>
+            <p>Registrarse en este sitio te permite 
+                acceder al estado y la historia de tus 
+                pedidos. Simplemente completa los 
+                campos a continuación y 
+                configuraremos una nueva cuenta 
+                para ti en poco tiempo. Solo te 
+                pediremos la información necesaria 
+                para agilizar y facilitar el proceso de 
+                compra.</p>
+
+            <!--  BOTON REGISTRARSE -->
+
+            <button><a href="/register">REGISTRARSE</a></button>
+         </div>
+         
+   </main>
+      <!-- Footer -->
+      <%- include("./partials/footer") %>
+
+</body>
+</html>

@@ -42,7 +42,7 @@
     display: flex;
     flex-direction: column;
 }
-.main-login form section.datos-login label{width: 100%;}
+.main-login form section.datos-login label{width: 100%;height: 40px;}
 .main-login form section.datos-login input{
     width: 100%;
     border: none;
@@ -55,6 +55,7 @@
 }
 .main-login form section.datos-login2 label{
     width: 100%;
+    height: 40px;
 }
 .main-login form section.datos-login2 input{
     width: 100%;
@@ -133,12 +134,16 @@
     width: 80%;
 }
     .main-login form section.datos-login div{}
-    .main-login form section.datos-login label{}
+    .main-login form section.datos-login label{
+    height: 40px;
+}
     .main-login form section.datos-login input{
     height: 35px;
 }
     .main-login form section.datos-login2 div{}
-    .main-login form section.datos-login2 label{}
+    .main-login form section.datos-login2 label{
+    height: 40px;
+}
     .main-login form section.datos-login2 input{
     height: 35px;
 }
@@ -180,10 +185,14 @@
 }
     .main-login form section.datos-login{}
     .main-login form section.datos-login div{}
-    .main-login form section.datos-login label{}
+    .main-login form section.datos-login label{
+    height: 40px;
+}
     .main-login form section.datos-login input{}
     .main-login form section.datos-login2 div{}
-    .main-login form section.datos-login2 label{}
+    .main-login form section.datos-login2 label{
+    height: 40px;
+}
     .main-login form section.datos-login2 input{}
     .main-login form div.olvide-login{
     width: 100%;

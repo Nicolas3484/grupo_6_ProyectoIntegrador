@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+     <!-- head -->
+    <%- include("./partials/headOther") %>
+<body class="main-registro">
+    <!-- header -->
+    <%- include("./partials/header") %>
+    <main class="main-register">
+        <form class="formulario-register" action="/register" method="POST">
+            <!-- NOMBRE -->
+             <section class="datos-register"> 
+               <div class="descripcion-register">
+                <label class="label-register" for="nombre">Nombre</label>
+                 <input  class="cuadro-register" type="text" name="nombre" value="" id="nombre" placeholder="Ej: Agustina">
+                 <i class="icon-register fa-solid fa-user"></i>
+              </div>
+             </section>
+            <!-- EMAIL -->
+             <section class="datos-register"> 
+               <div class="descripcion-register">
+                <label class="label-register" for="correo">Correo electronico</label>
+                <input class="cuadro-register" type="email" name="email" value="" id="email" placeholder="Ej: julianaagus@gmail.com">
+              </div>
+            </section>
+            <!-- CONTRASEÑA -->
+            <section class="datos-register"> 
+                <div class="descripcion-register">
+                 <label class="label-register" for="contrasenia">Contraseña</label>
+                 <input class="cuadro-register" type="password" name="contrasenia" value="" id="contrasenia">
+               </div>
+            </section>
+            <!-- CONFIRMAR CONTRASEÑA -->
+            <section class="datos-register"> 
+                <div class="descripcion-register">
+                 <label class="label-register" for="contrasenia">Confirmar contraseña</label>
+                 <input class="cuadro-register" type="password" name="contrasenia" value="" id="contrasenia">               </div>
+            </section>
+            <!--  BOTONES -->
+                <div class="botones-register">
+                    <button class="enviar-register" type="submit">REGISTRARSE</button>
+                </div>
+            <!-- YA TENGO CUENTA -->
+                <div class="tengoC-register">
+                 <a href="/login" class="texto-register-fin" >Ya tengo cuenta</a>
+               </div>
+ 
+   </main>
+      <!-- Footer -->
+      <%- include("./partials/footer") %>
+</body>
+</html>
