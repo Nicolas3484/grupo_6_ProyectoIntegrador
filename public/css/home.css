@@ -65,6 +65,10 @@
     border: 2px solid;
 }
 
+.main-home .carrusel .carrusel-div2 {
+    background-color: black;
+}
+
 .main-home .carrusel .carrusel-div2 .carousel-item {
     position: relative;
     left: 11em;
@@ -76,25 +80,15 @@
     /* align-items: center; */
 }
 
-.main-home .carrusel .carrusel-div2 .carousel-item img{height: 100%;border-top: 1px solid var(--colorMarron);border-bottom: 1px solid var(--colorMarron);}
+.main-home .carrusel .carrusel-div2 .carousel-item img{border-top: 1px solid var(--colorMarron);border-bottom: 1px solid var(--colorMarron);height: 100%;object-fit: contain;}
 
-.main-home .carrusel .carrusel-div2 .carousel-item .carousel-caption {}
+.main-home .carrusel .carrusel-div2 .carousel-item .img1 {}
 
-.main-home .carrusel .carrusel-div2 .carousel-item .carousel-caption h5 {}
+.main-home .carrusel .carrusel-div2 .carousel-item .img2 {}
 
-.main-home .carrusel .carrusel-div2 .carousel-item .carousel-caption p {}
+.main-home .carrusel .carrusel-div2 .carousel-item .img3 {}
 
-.main-home .carrusel .carousel-contro-prev {}
 
-.main-home .carrusel .carousel-contro-prev-icon {}
-
-.main-home .carrusel .carousel-contro-prev .visually-hidden {}
-
-.main-home .carrusel .carousel-contro-next {}
-
-.main-home .carrusel .carousel-contro-next-icon {}
-
-.main-home .carrusel .carousel-contro-next .visually-hidden {}
 
 
 
@@ -138,8 +132,10 @@
     }
     
     .main-home .pag .productosOfertas .grupo img {
-width: 31%;
-}
+
+width: 31%;
+
+}
     
     .main-home .carrusel {}
     
@@ -170,6 +166,12 @@
     .main-home .carrusel .carousel-contro-next-icon {}
     
     .main-home .carrusel .carousel-contro-next .visually-hidden {}
+
+    .main-home .carrusel .carrusel-div2 .carousel-item .img1 {}
+
+    .main-home .carrusel .carrusel-div2 .carousel-item .img2 {}
+
+    .main-home .carrusel .carrusel-div2 .carousel-item .img3 {}
 }
 
 @media (min-width: 769px) {
@@ -209,8 +211,10 @@
     }
     
     .main-home .pag .productosOfertas .grupo img {
-width: 23%;
-}
+
+width: 23%;
+
+}
     
     .main-home .carrusel {}
     
@@ -241,4 +245,10 @@
     .main-home .carrusel .carousel-contro-next-icon {}
     
     .main-home .carrusel .carousel-contro-next .visually-hidden {}
+
+    .main-home .carrusel .carrusel-div2 .carousel-item .img1 {}
+
+    .main-home .carrusel .carrusel-div2 .carousel-item .img2 {}
+
+    .main-home .carrusel .carrusel-div2 .carousel-item .img3 {}
 }
