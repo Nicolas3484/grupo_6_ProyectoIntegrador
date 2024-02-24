@@ -27,5 +27,6 @@ app.get('/',(req,res) => {
   app.get('/productCart',(req,res) => {
     res.render(path.join(__dirname,'./views/productCart.ejs'));
   })
+
 // Server
 app.listen(port,() => console.log(`http://localhost:${port}`));
