@@ -22,6 +22,17 @@ app.get('/',(req,res) => {
   app.get('/Producto1',(req,res) => {
     res.sendFile(path.join(__dirname,'./views/productCart.html'));
   })
+  app.get('/admin',(req,res) => {
+    res.sendFile(path.join(__dirname,'./admin/adminListProduct.html'));
+  })
+  app.get('/admin1',(req,res) => {
+    res.sendFile(path.join(__dirname,'./admin/adminProducto.html'));
+  })
+  app.get('/asd',(req,res) => {
+    res.sendFile(path.join(__dirname,'./admin/asd.html'));
+  })
+
+
   
 // Server
 app.listen(port,() => console.log(`http://localhost:${port}`));
