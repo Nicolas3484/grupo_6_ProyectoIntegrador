@@ -4,29 +4,18 @@ const path = require('path');
 const port = 3030;
 
 // Configs
-app.use(express.static('public'))
-app.set("view engine","ejs")
-app.set("views",path.join(__dirname,"./views"))
 
+app.set("view engine", "ejs")
+app.set("views", path.join(__dirname, "./views"))
+/* MIDDLEWARE */
+app.use(express.static('public'))
 // Rutas
-app.get('/',(req,res) => {
-    res.render(path.join(__dirname,'./views/index.ejs'));
-  })
-  app.get("/home", (req, res) => {
-    res.render('/');
-  });
-  app.get('/register',(req,res) => {
-    res.render(path.join(__dirname,'./views/register.ejs'));
-  })
-  app.get('/login',(req,res) => {
-    res.render(path.join(__dirname,'./views/login.ejs'));
-  })
-  app.get('/Producto',(req,res) => {
-    res.render(path.join(__dirname,'./views/productoDetail.ejs'));
-  })
-  app.get('/productCart',(req,res) => {
-    res.render(path.join(__dirname,'./views/productCart.ejs'));
-  })
+const authRoutes = require("./routes/authentication.routes");
+const cartRoutes = require("./routes/cart.routes");
+const otherRouthes = require("./routes/other.routes");
+const productRoutes = require("./routes/products.routes");
+const adminRoutes = require("./routes/admin.routes");
+
 
 // Server
-app.listen(port,() => console.log(`http://localhost:${port}`));
+app.listen(port, () => console.log(`http://localhost:${port}`));
