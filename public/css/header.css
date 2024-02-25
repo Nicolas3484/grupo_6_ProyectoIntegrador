@@ -141,7 +141,7 @@ i.fa-solid.fa-bars.menu {width: 10%;}
     display: none;
 }
 
-.main-header .menu-2:active{
+.main-header .minimenu:active{
     display: block;
 }
 

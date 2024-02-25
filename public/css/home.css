@@ -126,8 +126,19 @@
 
     }
     
-    .main-home .pag .productos .grupo {}
+    .main-home .pag .productos .grupo {
+
+    }
     
+    .glider-track {
+        display: flex;
+        height: 260px;
+    }
+
+    .glider-track > img {
+        width: 15%;
+        
+    }
     .main-home .pag .productos .grupo div img{
 
     }
