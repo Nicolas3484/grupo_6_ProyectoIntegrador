@@ -3,14 +3,9 @@
     text-align: center;
 }
 
-.main-home .banner {}
 
 .main-home .banner img{width: 100vw;}
 
-.main-home .banner i{}
-
-.main-home .pag {
-}
 
 .main-home .pag .subt {
     text-align: left;
@@ -47,8 +42,16 @@
     justify-content: center;
 }
 
-.main-home .pag .productosOfertas .grupo img {
-    width: 46%;
+.main-home .pag .productosOfertas .grupo a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row-reverse;
+    width: 65%;
+}
+
+.main-home .pag .productosOfertas .grupo a img {
+    width: 100%;
     border: 1px solid var(--colorMarron);
 }
 
@@ -73,20 +76,33 @@
     height: 300px;
 }
 
-.main-home .carrusel .carrusel-div2 .carousel-item img{border-top: 1px solid var(--colorMarron);border-bottom: 1px solid var(--colorMarron);height: 100%;object-fit: contain;}
+.bg-img {
+    background-image: url(/images/banners/banner-1.webp);
+}
 
-.main-home .carrusel .carrusel-div2 .carousel-item .img1 {}
+.bg-img2 {
+    background-image: url(/images/banners/banner-2.webp);
+}
 
-.main-home .carrusel .carrusel-div2 .carousel-item .img2 {}
+.bg-img3 {
+    background-image: url(/images/banners/banner-3.webp);
+    background-position: top!important;
+}
 
-.main-home .carrusel .carrusel-div2 .carousel-item .img3 {}
+.bg-img4 {
+    background-image: url(/images/banners/banner-4.webp);
+    background-position: left!important;
+}
 
+.bg-img5 {
+    background-image: url(/images/banners/banner-5.webp);
+}
 
-
-
-
-
-
+.c-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 @media (min-width: 426px) {
     .main-home {
@@ -129,6 +145,13 @@
 width: 31%;
 
 }
+.main-home .pag .productosOfertas .grupo a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row-reverse;
+    width: 31%;
+}
     
     .main-home .carrusel {}
     
@@ -165,6 +188,10 @@ width: 31%;
     .main-home .carrusel .carrusel-div2 .carousel-item .img2 {}
 
     .main-home .carrusel .carrusel-div2 .carousel-item .img3 {}
+    
+    .bg-img3 {
+        background-image: url(/images/banners/banner-3.webp);
+    }
 }
 
 @media (min-width: 769px) {
@@ -193,6 +220,13 @@ width: 31%;
     
     .main-home .pag .productos .grupo div img{
 
+    }
+    .main-home .pag .productosOfertas .grupo a {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row-reverse;
+        width: 23%;
     }
     
     .main-home .pag .productosOfertas {

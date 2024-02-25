@@ -4,35 +4,37 @@
         flex-wrap: wrap;
         width: 100vw;
         height: 70px;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         text-align: center;
     }
     
     .main-header .menu {
         color: var(--colorHueso);
-        width: 25%;
         text-align: left;
         font-size: 30px;
-        padding-left: 25px;
+        padding-left: 30px;
+        width: 33%;
+        order: -3;
     }
     
     .main-header figure {
-    width: 50%;
     display: flex;
     justify-content: center;
     margin: 0 !important;
+    width: 33%;
 }
 
     .main-header figure .logo {
     width: 100px;
 }
     
-    .main-header form {width: 25%;}
+    .main-header form {width: 33%;display: flex;justify-content: right;}
     
     .main-header form i {
         color: var(--colorHueso);
         font-size: 30px;
+        padding-right: 30px;
     }
     
     .main-header form .input{
@@ -60,47 +62,48 @@
     
     .main-header .nav-bar .nav-ul li a i{} 
 
+
 @media (min-width: 426px) {
     .main-header {
     height: 90px;
     }
     
     .main-header i {
-    order: -2;
     }
 
     .main-header figure {
     width: 31%;
     position: relative;
+    justify-content: center;
+    order: -1;
 }
 
-i.fa-solid.fa-bars.menu {width: 15%;}
+i.fa-solid.fa-bars.menu {width: 10%;}
     
     .main-header .logo {
-    top: -31px;
-    position: absolute;
 }
     
     .main-header form {
-    order: -1;
+    order: -2;
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
-    width: 24%;
+    width: 16%;
 }
     
     .main-header form i {
     position: relative;
-    left: 28px;
+    left: 25px;
     color: var(--colorMarron);
     font-size: 21px;
+    padding: 0;
     }
     
     .main-header form .input{
     display: inline;
-    padding: 10px 0px 5px 30px;
-    font-size: 11px;
+    padding: 10px 9% 3px;
+    font-size: 15px;
 }
     
     .main-header .nav-bar {
@@ -119,14 +122,45 @@ i.fa-solid.fa-bars.menu {width: 15%;}
     .main-header .nav-bar .nav-ul li {
     }
     
-    .main-header .nav-bar .nav-ul li a {}
+    .main-header .nav-bar .nav-ul li a {
+}
     
     .main-header .nav-bar .nav-ul li a i{
     font-size: 24px;
 } 
+
+
+.main-header .menu-2 {
+    z-index: 10;
+    border: 2px solid var(--colorMarron);
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: var(--colorHueso);
+    position: absolute;
+    min-width: 150px
 }
 
-@media (min-width: 768px) {
+.main-header fa-solid:hover .menu-2 {
+    display: block;
+}
+
+.main-header .menu-2 .m-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.main-header .menu-2 .m-menu .m-m-options {}
+
+.main-header .menu-2 .m-menu .m-m-options a {
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+}
+}
+
+@media (min-width: 769px) {
     .main-header {
     }
     
@@ -135,14 +169,21 @@ i.fa-solid.fa-bars.menu {width: 15%;}
     
     .main-header .logo {}
     
-    .main-header form {}
+    .main-header form {
+    order: -1;
+}
     
     .main-header form i {
     }
     
-    .main-header form .input{}
+    .main-header form .input{
+    padding: 10px 0px 3px 20%;
+}
     
-    .main-header .nav-bar {}
+    .main-header .nav-bar {
+    padding: 0px 30px 0px 0px;
+    justify-content: right;
+}
     
     .main-header .nav-bar .nav-ul{
     }
@@ -153,5 +194,29 @@ i.fa-solid.fa-bars.menu {width: 15%;}
     .main-header .nav-bar .nav-ul li a {}
     
     .main-header .nav-bar .nav-ul li a i{} 
+
+    .main-header figure {
+    order: -2;
+    width: 10%;
+    justify-content: left;
+    right: 13%;
+}
+
+.main-header form {
+    order: -2;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 16%;
+}
+
+.main-header .menu-2 {}
+
+.main-header .menu-2 .m-menu {}
+
+.main-header .menu-2 .m-menu .m-m-options {}
+
+.main-header .menu-2 .m-menu .m-m-options a {}
 }
 

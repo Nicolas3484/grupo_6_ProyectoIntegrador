@@ -11,7 +11,7 @@
     <header class="main-header">
         <i class="fa-solid fa-bars menu"></i>
         <figure>
-            <img class="logo" src="/images/icons/logo_oscuro.jpeg" alt="Logo">
+            <a href="/home"><img class="logo" src="/images/icons/logo_oscuro.jpeg" alt="Logo"></a>
         </figure>
 
         <form action="/buscar" method="get">
@@ -21,8 +21,13 @@
         <nav class="nav-bar">
             <ul class="nav-ul">
                 <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-user"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="/register"><i class="fa-solid fa-user"></i></a>
+                    <ul class="m-menu">
+                      <li class="m-m-options"><a href="/register"> Registrarte</a></li>
+                      <li class="m-m-options"><a href="/login"> Iniciar Sesión</a></li>
+                    </ul>
+                </li>
+                <li><a href="/productcart"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -39,7 +44,7 @@
             <article class="card">
                 <button class="eliminar">Eliminar</button>
                 <div>
-                    <img class="muestraProducto" src="/images/producto-1.png" alt="Galaxia">
+                    <img class="muestraProducto" src="/images/productos/producto-1.png" alt="Galaxia">
                 </div>
                 <p class="productoALaVenta">Galaxia</p>
                 <div class="abm">
@@ -52,7 +57,7 @@
             <article class="card">
                 <button class="eliminar">Eliminar</button>
                 <div>
-                    <img class="muestraProducto" src="https://cdn.discordapp.com/attachments/953869331425534003/1203165879333027860/producto-2.png?ex=65d01a8b&is=65bda58b&hm=f589ed1960397745cfca70352519a7b4167c94afd47c3fb0a25822aad2e328ff&" alt="cuadro horrible 2">
+                    <img class="muestraProducto" src= "https://cdn.discordapp.com/attachments/953869331425534003/1203165879333027860/producto-2.png?ex=65d01a8b&is=65bda58b&hm=f589ed1960397745cfca70352519a7b4167c94afd47c3fb0a25822aad2e328ff&" alt="cuadro horrible 2">
                 </div>
                 <p class="productoALaVenta">Cuadro sucio pero impecable</p>
                 <div class="abm">
