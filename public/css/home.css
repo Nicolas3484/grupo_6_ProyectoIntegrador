@@ -77,7 +77,7 @@
 }
 
 .bg-img {
-    background-image: url(/images/banners/banner-1.webp);
+    background-image: url(/images/banners/banner-7.webp);
 }
 
 .bg-img2 {
@@ -165,7 +165,10 @@ width: 31%;
     
     .main-home .carrusel .carrusel-div2 .carousel-item img{}
     
-    .main-home .carrusel .carrusel-div2 .carousel-item .carousel-caption {}
+    .main-home .carrusel .carrusel-div2 .carousel-item .carousel-caption {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+        border-radius: 100px;
+}
     
     .main-home .carrusel .carrusel-div2 .carousel-item .carousel-caption h5 {}
     
@@ -189,8 +192,12 @@ width: 31%;
 
     .main-home .carrusel .carrusel-div2 .carousel-item .img3 {}
     
+    .bg-img {
+        background-image: url(/images/banners/banner-1.webp);
+    }
     .bg-img3 {
-        background-image: url(/images/banners/banner-3.webp);
+        background-image: url(/images/banners/banner-6.webp);
+        background-position: center!important;
     }
 }
 

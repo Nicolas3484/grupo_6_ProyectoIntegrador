@@ -53,14 +53,15 @@
     }
     
     .main-header .nav-bar .nav-ul li {
-        font-size: 30px;
+        font-size: 24px;
+        color: var(--colorHueso);
     }
     
     .main-header .nav-bar .nav-ul li a {
     color: var(--colorHueso);
 }
     
-    .main-header .nav-bar .nav-ul li a i{} 
+
 
 
 @media (min-width: 426px) {
@@ -137,10 +138,10 @@ i.fa-solid.fa-bars.menu {width: 10%;}
     overflow: hidden;
     background-color: var(--colorHueso);
     position: absolute;
-    min-width: 150px
+    display: none;
 }
 
-.main-header fa-solid:hover .menu-2 {
+.main-header .menu-2:active{
     display: block;
 }
 
@@ -151,12 +152,14 @@ i.fa-solid.fa-bars.menu {width: 10%;}
     text-align: left;
 }
 
-.main-header .menu-2 .m-menu .m-m-options {}
+.main-header .menu-2 .m-menu .m-m-options {border-bottom: 1px solid;display: flex;}
 
 .main-header .menu-2 .m-menu .m-m-options a {
     color: black;
-    padding: 5px;
+    padding: 7px;
     text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
 }
 }
 
