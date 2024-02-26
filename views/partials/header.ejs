@@ -1,7 +1,7 @@
 <header class="main-header">
     <i class="fa-solid fa-bars menu"></i>
     <figure>
-        <a href="/"><img class="logo" src="/images/icons/logo_oscuro.jpeg" alt="Logo"></a>
+        <a href="/home"><img class="logo" src="/images/icons/logo_oscuro.jpeg" alt="Logo"></a>
     </figure>
 
     <form action="/buscar" method="get">
@@ -11,8 +11,15 @@
     <nav class="nav-bar">
         <ul class="nav-ul">
             <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
-            <li><a href="/login"><i class="fa-solid fa-user"></i></a></li>
-            <li><a href="/productCart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li><i class="fa-solid fa-user user"></i></a>
+                <div class="menu-2"> <!--La idea era clickear el icono (.user) y en base a eso que aparezca el (.menu-2), no me salió :c */ -->
+                <ul class="m-menu">
+                  <li class="m-m-options"><a href="/register"> Registrarte</a></li>
+                  <li class="m-m-options"><a href="/login"> Iniciar Sesión</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="/productcart"><i class="fa-solid fa-cart-shopping"></i></a></li>
         </ul>
     </nav>
 </header>
