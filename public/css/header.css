@@ -60,7 +60,10 @@
     .main-header .nav-bar .nav-ul li a {
     color: var(--colorHueso);
 }
-    
+
+.menu-2:hover {
+    display: block;
+}
 
 
 
@@ -137,13 +140,10 @@ i.fa-solid.fa-bars.menu {width: 10%;}
     border-radius: 2px;
     overflow: hidden;
     background-color: var(--colorHueso);
+    display: block;
     position: absolute;
-    display: none;
 }
 
-.main-header .minimenu:active{
-    display: block;
-}
 
 .main-header .menu-2 .m-menu {
     padding: 0;
@@ -152,11 +152,11 @@ i.fa-solid.fa-bars.menu {width: 10%;}
     text-align: left;
 }
 
-.main-header .menu-2 .m-menu .m-m-options {border-bottom: 1px solid;display: flex;}
+.main-header .menu-2 .m-menu .m-m-options {border-bottom: 1px solid black;display: flex;}
 
 .main-header .menu-2 .m-menu .m-m-options a {
     color: black;
-    padding: 7px;
+    padding: 5px 0px 5px 0px;
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
@@ -180,7 +180,7 @@ i.fa-solid.fa-bars.menu {width: 10%;}
     }
     
     .main-header form .input{
-    padding: 10px 0px 3px 20%;
+    padding: 10px 0px 3px 30px;
 }
     
     .main-header .nav-bar {
