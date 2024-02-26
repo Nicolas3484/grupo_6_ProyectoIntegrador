@@ -1,0 +1,30 @@
+<!-- listProduct.ejs -->
+<link rel="stylesheet" href="/css/styles.css">
+<header role="banner">
+    <img src="/images/icons/logo_oscuro.ico" alt="" class="logito">
+    <h1> Pintec Admin Panel</h1>
+</header>
+
+<body>
+    
+
+<nav role='navigation'>
+    <ul class="main">
+        <li class="dashboard"><a href="admindashboard">Dashboard</a></li>
+        <li class="edit"><a href="#">Edit Website</a></li>
+        <li class="write"><a href="#">Write news</a></li>
+        <li class="comments"><a href="#">Ads</a></li>
+        <li class="users"><a href="#">Manage Users</a></li>
+    </ul>
+</nav>
+
+<main role="main">
+    <section class="panel important">
+        <h2>Welcome</h2>
+        <% /* Mostrar el nombre del usuario actual */ %>
+        <p>Welcome, <%= userName %></p>
+    </section>
+    
+</main>
+<script src="/js/functions/dashboard.js"></script>
+</body>
