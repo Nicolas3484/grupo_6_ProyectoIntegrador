@@ -150,6 +150,7 @@ i.fa-solid.fa-bars.menu {width: 10%;}
     margin: 0;
     list-style: none;
     text-align: left;
+    width: 96px;
 }
 
 .main-header .menu-2 .m-menu .m-m-options {border-bottom: 1px solid black;display: flex;}

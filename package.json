@@ -1,10 +1,10 @@
 {
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "express-partials": "^0.3.0",
-    "jquery": "^3.7.1",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.0.3"
   },
   "name": "grupo_6_proyectointegrador",
   "version": "1.0.0",
@@ -17,11 +17,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^5.3.2",
-    "ejs": "^3.1.9",
-    "express": "^4.18.2",
-    "nodemon": "^3.0.3"
-  }
+  "license": "ISC"
 }
