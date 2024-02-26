@@ -1,4 +1,4 @@
-
+/* 
 module.exports = (req,res) => {
     const arrProductos = [
         {
@@ -28,4 +28,7 @@ module.exports = (req,res) => {
     return res.send("ESTE PRODUCTO CON EL NUMERO DE ID: " + productFind.name + " Y SU CATEGORIA ES: " + (nameCategory ? nameCategory : categoryQuery) + ", el precio es de: $" + priceQuery)
     } 
     res.send("ESTE PRODUCTO CON EL NUMERO DE ID: "  + productFind.name)
+} */
+module.exports = (req,res) =>{
+    res.render("productoDetail")
 }

@@ -12,13 +12,19 @@ app.use(partials())
 app.use(express.json());
 app.use(express.static(path.join(__dirname, './public')));
 // Rutas
-const authRoutes = require("./routes/authentication.routes");
-const cartRoutes = require("./routes/cart.routes");
-const otherRouthes = require("./routes/other.routes");
-const productRoutes = require("./routes/products.routes");
-const adminRoutes = require("./routes/admin.routes");
+const authRoutes = require("./src/routes/authentication.routes");
+const cartRoutes = require("./src/routes/cart.routes");
+const otherRouthes = require("./src/routes/other.routes");
+const productRoutes = require("./src/routes/products.routes");
+const adminRoutes = require("./src/routes/admin.routes");
 
+
+app.use("/",otherRouthes)
 app.use("/admin", adminRoutes)
+app.use("/producto", productRoutes)
+app.use("/registrar", authRoutes)
+app.use("/iniciar", authRoutes)
+app.use("/carrito", cartRoutes)
  module.exports = app;
 // Server
 app.listen(port, () => console.log(`http://localhost:${port}`));
