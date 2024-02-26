@@ -1,9 +1,14 @@
-module.exports = (req, res) => {
-    const products = require("../../database/products.json"); // 1° traer datos de DB
-    const { id } = req.params; // 2° obtener el id del producto que se quiere modificar
-    const product = products.find((p) => p.id === +id); // 3° buscamos el producto
-  
+/* module.exports = (req, res) => {
+    const products = require("../../database/products.json"); 
+    const { id } = req.params; 
+    const product = products.find((p) => p.id === +id); 
     res.render("admin/updateProduct", { product}, (err,) => {
       err && res.send(err.message);
     });
-  };
+  }; */
+
+  const products = require("../../database/products.json")
+  module.exports = (req, res) => {
+    res.render("admin/updateProduct", { 
+      products
+     })} 
