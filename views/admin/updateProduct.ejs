@@ -3,6 +3,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
+<%- include('dashboard.ejs') %>
+<body>
+  
 
 <div class="container">
 
@@ -12,7 +15,7 @@
       </div>
       <div class="panel-body">
   
-        <form action="designer-finish.html" class="form-horizontal" role="form">
+        <form action="" method="post" class="form-horizontal" role="form">
   
           <div class="form-group">
             
@@ -22,25 +25,31 @@
           <div class="form-group">
             <label for="name" class="col-sm-3 control-label">Titulo</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" name="name" id="name" placeholder="">
+              <input type="text" class="form-control" value="<%= product.title %>" name="title" id="title" placeholder="">
             </div>
           </div> <!-- form-group // -->
           <div class="form-group">
             <label for="name" class="col-sm-3 control-label">Subtitulo</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" name="name" id="name" placeholder="">
+              <input type="text" class="form-control" name="id" id="id" placeholder="">
+            </div>
+          </div> <!-- form-group // -->
+          <div class="form-group">
+            <label for="name" class="col-sm-3 control-label">Precio</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" name="price" id="price" placeholder="">
             </div>
           </div> <!-- form-group // -->
           <div class="form-group">
             <label for="about" class="col-sm-3 control-label">Descripcion</label>
             <div class="col-sm-9">
-              <textarea class="form-control"></textarea>
+              <textarea class="form-control" name="description" id="description"></textarea>
             </div>
           </div> <!-- form-group // -->
           <div class="form-group">
             <label for="qty" class="col-sm-3 control-label">Autores</label>
             <div class="col-sm-3">
-              <input type="text" class="form-control" name="qty" id="qty" placeholder="">
+              <input type="text" class="form-control" name="chef" id="chef" placeholder="">
             </div>
           </div> <!-- form-group // -->
           <div class="form-group">
@@ -67,7 +76,7 @@
           <hr>
           <div class="form-group">
             <div class="col-sm-offset-3 col-sm-9">
-              <button type="submit" class="btn btn-primary">Confirmar</button>
+              <button type="submit" method="post" class="btn btn-primary">Confirmar</button>
             </div>
           </div> <!-- form-group // -->
         </form>
@@ -76,3 +85,4 @@
     </section><!-- panel// -->
   
   </div> <!-- container// -->
+</body>

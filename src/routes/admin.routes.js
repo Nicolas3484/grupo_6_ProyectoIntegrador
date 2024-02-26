@@ -3,9 +3,12 @@ const router = express.Router();
 const adminController = require("../controllers/admin");
 
 // "/admin"
-router.get("/", adminController.listProducts); 
-router.get("/lista-productos", adminController.products); 
-router.get("/lista-productos1", adminController.wasd); 
-router.get("/lista-productos2", adminController.aa); 
+router.get("/", adminController.asd); 
+router.get("/productos", adminController.listProducts); 
+router.get("/nuevo-producto", adminController.newProduct); 
+router.post("/nuevo-producto", adminController.storeProduct);
+
+
+router.get("/editar-producto/:id", adminController.updateProduct); 
 
 module.exports = router;

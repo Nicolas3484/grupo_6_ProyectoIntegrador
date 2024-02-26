@@ -8,13 +8,12 @@ html {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
 }
 .logo{
   display: flex;
   height: 75px;
   flex: 1;
-  width: 418px;
+  /* width: 418px; */
   flex-wrap: nowrap;
   flex-direction: row;
 }
@@ -41,11 +40,12 @@ body.login {
     padding-right: 0.6em;
     color: #3d2c2c;
 }
+.nombrePanel{}
 .logito{
     display: flex;
     margin-right: 5px;
     /* height: 60px; */
-    width: 89px;
+    width: 200px;
     align-items: flex-end;
     justify-content: flex-start;
     align-content: space-between;
@@ -466,7 +466,7 @@ td {
   }
 
   .panel {
-    width: 47%;
+    width: 90%;
     clear: none;
   }
   .panel.important {
@@ -475,4 +475,10 @@ td {
   .panel.secondary {
     width: 23%;
   }
+}
+.lista{
+ 
+}
+.virtual-list .table-list{
+  
 }

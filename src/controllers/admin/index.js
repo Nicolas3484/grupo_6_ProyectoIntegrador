@@ -1,6 +1,7 @@
 module.exports = {
-    listProducts: require("./dashboard"),
-    products: require ("./productos"),
-    wasd: require ("./ee"),
-    aa:require ("./dashboardAgus")
+    listProducts: require("./listProduct.controller"),
+    asd: require("./dashboard"),
+    newProduct: require ("./newProduct.controller"),
+    storeProduct: require("./storeProduct.controller"),
+    updateProduct: require("./updateProduct.controller")
   };

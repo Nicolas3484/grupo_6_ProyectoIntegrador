@@ -1,8 +1,12 @@
 <!-- listProduct.ejs -->
 <link rel="stylesheet" href="/css/styles.css">
 <header role="banner">
+    <div class="logo">
     <img src="/images/icons/logo_oscuro.ico" alt="" class="logito">
-    <h1> Pintec Admin Panel</h1>
+    <h1 class="nombrePanel">
+        Pintec Admin Panel
+    </h1>
+</div>
 </header>
 
 <body>
@@ -11,20 +15,22 @@
 <nav role='navigation'>
     <ul class="main">
         <li class="dashboard"><a href="admindashboard">Dashboard</a></li>
-        <li class="edit"><a href="#">Edit Website</a></li>
-        <li class="write"><a href="#">Write news</a></li>
-        <li class="comments"><a href="#">Ads</a></li>
-        <li class="users"><a href="#">Manage Users</a></li>
+        <li class="edit"><a href="/admin/productos">Productos</a></li>
+        <li class="write"><a href="/admin/nuevo-producto#">New Product</a></li>
+        <li class="comments"><a href="#3">Ads</a></li>
+        <li class="users"><a href="#4">Manage Users</a></li>
     </ul>
 </nav>
 
 <main role="main">
     <section class="panel important">
         <h2>Welcome</h2>
-        <% /* Mostrar el nombre del usuario actual */ %>
-        <p>Welcome, <%= userName %></p>
-    </section>
+  </section>
     
-</main>
+</main>   
+
+<div class="dashboard-admin-content p-5 mx-auto">
+
+</div>
 <script src="/js/functions/dashboard.js"></script>
 </body>
