@@ -2,6 +2,8 @@
 <html lang="en">
      <!-- head -->
      <%- include("./partials/headOther",{title:"Detalle de Producto"}) %>
+     <link rel="stylesheet" href="/css/styles.css"/>
+
 <body>
     <!-- header -->
     <%- include("./partials/header") %>
@@ -9,16 +11,16 @@
         <div class="nicolas">
         <div class="contenedor">
 
-            <img src="/images/productos/producto-1.png" alt="producto1">
+            <img src="/images/productos/<%= producto.imagen %>" alt="producto">
            
         </div>
         
         <div class="infoGeneral-detalle">
             <div class="titulo-detalle"><i class="fa-regular fa-heart" id="Heart"></i>
-                <h2>Galaxia</h2>
+                <h2> <%= producto.titulo %></h2>
              
               <div class="price">
-              <span>AR$ 180.000</span>
+              <span><%= producto.precio %></span>
               <span id="span"><!-- espacio en blanco -->‎ Iva inc.</span>
               <p>
                Paga en 3 y 6 cuotas sin interes
@@ -60,11 +62,11 @@
                    </div>
                     <div class="descripcion">
                         <div class="titulo-descripcion">
-                        <h4>Descripcion</h4>
+                        <h4><%= producto.descripcion %></h4>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
                     <div class="texto-descripcion">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem deserunt consequatur tempora labore numquam accusantium excepturi ipsa dolor minima possimus doloremque, aperiam nostrum autem atque hic obcaecati, vel praesentium id?</p>
+                        <p><%= producto.subtitulo %></p>
                     </div>
                     </div>
                     <div class="caracteristicas-artist">
@@ -82,7 +84,7 @@
                             <i class="fa-solid fa-chevron-down"></i>
                             </div>
                         <div class="texto-caracteristicas">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quam ratione necessitatibus odit delectus tenetur harum qui libero repudiandae consequuntur, quos cum neque illo, nihil ab, incidunt possimus voluptatem maxime.</p>
+                            <p>Pintada por <%= producto.autores %></p>
                         </div>
                     </div>
 

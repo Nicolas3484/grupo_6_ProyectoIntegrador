@@ -17,7 +17,11 @@ new Glider(document.querySelector('.glider'), {
           slidesToShow: '2.5',
           slidesToScroll: '1',
           itemWidth: 150,
-          duration: 0.25
+          duration: 0.25,
+          arrows: {
+            prev: '.glider-prev',
+            next: '.glider-next'
+          },
         }
       },{
         // screens greater than >= 769px
@@ -26,7 +30,11 @@ new Glider(document.querySelector('.glider'), {
           slidesToShow: 3.5,
           slidesToScroll: 1,
           itemWidth: 150,
-          duration: 0.25
+          duration: 0.25,
+          arrows: {
+            prev: '.glider-prev',
+            next: '.glider-next'
+          },
         }
       }
     ]

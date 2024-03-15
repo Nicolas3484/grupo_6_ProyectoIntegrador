@@ -4,5 +4,5 @@ const produtsControllers = require("../controllers/products")
 
 /* Productos */
 /* router.get("/",produtsControllers.list) */
-router.get("/:id/:category?", produtsControllers.detail)
+router.get("/producto/:id/:category?", produtsControllers.detail)
 module.exports = router
