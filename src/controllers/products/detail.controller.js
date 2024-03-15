@@ -30,5 +30,13 @@ module.exports = (req,res) => {
     res.send("ESTE PRODUCTO CON EL NUMERO DE ID: "  + productFind.name)
 } */
 module.exports = (req,res) =>{
-    res.render("productoDetail")
+    const fs = require('fs')
+    const path = require('path')
+    let products = JSON.parse(fs.readFileSync(path.join(__dirname,'../../database/products.json'), 'utf-8'))
+    const id = req.params.id;
+const searchProduct = products.find((p)=>{
+return p.id == +id})
+    res.render("productoDetail",{
+        producto: searchProduct,
+    })
 }

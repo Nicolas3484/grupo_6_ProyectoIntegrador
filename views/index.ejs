@@ -9,13 +9,6 @@
     <main class="main-home">
       <!-- CARRUSEL -->
       <div id="carouselExampleCaptions" class="carrusel carousel slide">
-          <div class="carrusel-div carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          </div>
           <div class="carrusel-div2 carousel-inner">
             
             <!-- PRIMER BANNER -->
@@ -76,78 +69,23 @@
         </div>
 
       <!-- PRODUCTOS <DESTACADOS>-->
-      <section class="pag">
+        <section class="pag">
           <h2 class="subt">DESTACADOS</h2>
           <!-- SLIDER -->
           <div class="glider-contain productos">
-              <div class="glider grupo">
-                <div class="contenedor-imagen"><a href="/producto/detalle"><img src="/images/productos/producto-1.png" alt="producto1"></a>
+            <div class="glider grupo">
+                <% for( let index = 0; index < producto.length; index++ ) { %>          
+                <div class="contenedor-imagen"><a href="/producto/<%=producto[index].id%>"><img src="/images/productos/<%=producto[index].imagen%>" alt="producto1"></a>
                   <div class="overlay">
-                    <h4><a href="/producto/detalle">Titulo</a></h4>
+                    <h4><a href="/producto/<%=producto[index].id%>"><%= producto[index].titulo%></a></h4>
                     <i class="fas fa-heart"></i>
                     <div class="desc">
-                      <p>Creador</p>
-                      <p>Material</p>
-                      <p>Precio $$$</p>
+                      <p>Creador <%=producto[index].autores%></p>
+                      <p>Precio <%=producto[index].precio%></p>
                     </div>
                   </div>
                 </div>
-                <div class="contenedor-imagen"><a href="/producto/detalle"><img src="/images/productos/producto-2.png" alt="producto2"></a>
-                  <div class="overlay">
-                    <h4><a href="/producto/detalle">Titulo</a></h4>
-                    <i class="fas fa-heart"></i>
-                    <div class="desc">
-                      <p>Creador</p>
-                      <p>Material</p>
-                      <p>Precio $$$</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="contenedor-imagen"><a href="/producto/detalle"><img src="/images/productos/producto-3.png" alt="producto3"></a>
-                  <div class="overlay">
-                    <h4><a href="/producto/detalle">Titulo</a></h4>
-                    <i class="fas fa-heart"></i>
-                    <div class="desc">
-                      <p>Creador</p>
-                      <p>Material</p>
-                      <p>Precio $$$</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="contenedor-imagen"><a href="/producto/detalle"><img src="/images/productos/producto-4.png" alt="producto4"></a>
-                  <div class="overlay">
-                    <h4><a href="/producto/detalle">Titulo</a></h4>
-                    <i class="fas fa-heart"></i>
-                    <div class="desc">
-                      <p>Creador</p>
-                      <p>Material</p>
-                      <p>Precio $$$</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="contenedor-imagen"><a href="/producto/detalle"><img src="/images/productos/producto-5.png" alt="producto5"></a>
-                  <div class="overlay">
-                    <h4><a href="/producto/detalle">Titulo</a></h4>
-                    <i class="fas fa-heart"></i>
-                    <div class="desc">
-                      <p>Creador</p>
-                      <p>Material</p>
-                      <p>Precio $$$</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="contenedor-imagen"><a href="/producto/detalle"><img src="/images/productos/producto-6.png" alt="producto6"></a>
-                  <div class="overlay">
-                    <h4><a href="/producto/detalle">Titulo</a></h4>
-                    <i class="fas fa-heart"></i>
-                    <div class="desc">
-                      <p>Creador</p>
-                      <p>Material</p>
-                      <p>Precio $$$</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                <% } %>
               <button aria-label="Previous" class="glider-prev"><i class="fa-solid fa-chevron-left"></i></button>
               <button aria-label="Next" class="glider-next"><i class="fa-solid fa-chevron-right"></i></button>
               
@@ -156,12 +94,9 @@
           <h2 class="subt">RECOMENDADOS PARA TI</h2>
           <div class="productosOfertas">
               <div class="grupo">
-                <a href="/producto"><img src="/images/productos/producto-1.png" alt="producto1"></a>
-                <a href="/producto"><img src="/images/productos/producto-2.png" alt="producto2"></a>
-                <a href="/producto"><img src="/images/productos/producto-3.png" alt="producto3"></a>
-                <a href="/producto"><img src="/images/productos/producto-4.png" alt="producto4"></a>
-                <a href="/producto"><img src="/images/productos/producto-5.png" alt="producto5"></a>
-                <a href="/producto"><img src="/images/productos/producto-6.png" alt="producto6"></a>
+              <% for( let i = 0; i < producto.length; i++ ) { %>
+                <a href="/producto/<%= producto[i].id%>"><img src="/images/productos/<%= producto[i].imagen %>" alt="producto1"></a>
+              <% } %>
               </div>
           </div>
       </section>

@@ -13,4 +13,4 @@
 1. Reducir la procrastinación estableciendo plazos más claros y concretos para las tareas, y asignando responsabilidades específicas a cada miembro del equipo.
 
 # "Dejar de hacer..."
-1. Aband  onar la tendencia a procrastinar las actividades, ya que esto ha causado estrés y ha afectado negativamente la hora de entrega de las tareas.
+1. Abandonar la tendencia a procrastinar las actividades, ya que esto ha causado estrés y ha afectado negativamente la hora de entrega de las tareas.

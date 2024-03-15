@@ -167,7 +167,7 @@
     display: none;
 }
     .main-login form section.datos-login2{}
-    .main-login{display: flex;backdrop-filter: blur(10px);flex-wrap: wrap;}
+    .main-login{margin: 0;gap: 0;display: flex;backdrop-filter: blur(10px);flex-wrap: wrap;}
     .main-login form div.botones-login p{}
     .main-login div.acceder-login{
     width: 50%;

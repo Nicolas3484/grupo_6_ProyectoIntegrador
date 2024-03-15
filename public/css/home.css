@@ -1,4 +1,5 @@
 .main-home {
+    display: block;
     background-color: var(--colorHueso);
     text-align: center;
 }

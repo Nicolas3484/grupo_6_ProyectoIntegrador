@@ -4,6 +4,7 @@
     margin: 0;
 }
 .main-registro .main-register{
+    margin: 0;
     color: var(--colorHueso);
     background-image: url("../images/otros/fondo-register.jpg");
     background-position: center;
@@ -29,6 +30,7 @@
 }
 .main-registro .formulario-register .datos-register .descripcion-register .label-register{width: 100%;display: flex;}
 .main-registro .main-register .formulario-register .datos-register .descripcion-register .cuadro-register{
+    color: var(--colorMarron);
     padding-left: 15px;
     width: 100%;
     border: none;
@@ -38,7 +40,7 @@
 
 .main-registro .formulario-register .datos-register .descripcion-register .icon-register{
     right: 10px;
-    top: 25px;
+    top: 51px;
     position: absolute;
     display: flex;
     color: var(--colorMarron);
@@ -107,7 +109,7 @@
     
     .main-registro .formulario-register .datos-register .descripcion-register .icon-register{
         right: 10px;
-        top: 30px;
+        top: 48px;
         position: absolute;
         display: flex;
         color: var(--colorMarron);
@@ -183,7 +185,7 @@
     
     .main-registro .formulario-register .datos-register .descripcion-register .icon-register{
         right: 10px;
-        top: 29px;
+        top: 49px;
         position: absolute;
         display: flex;
         color: var(--colorMarron);
