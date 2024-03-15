@@ -2,28 +2,15 @@
    {
       "id": 1,
       "title": "Galaxia",
-      "price": 10530,
-      "description": "Con una gran experiencia Roberto Nishida te enseña los secretos de las técnicas básicas en la elaboración del sushi, vas a descubrir la importancia de cada ingrediente para que realices una gran variedad de rolls, sashimis y niguiris.",
-      "image": "Sushi-web.jpg",
-      "chef": "Roberto Nishida",
-      "sale": false,
-      "newest": false,
-      "free": true,
-      "available": true
+      "price": 30000,
+      "description": "En el centro del lienzo, un vórtice de colores etéreos captura la atención del espectador, como si fuera un portal hacia lo desconocido. Los tonos profundos del azul medianoche se entrelazan con destellos de púrpura intenso y rosa brillante, creando una danza cósmica de luz y sombra.",
+      "image": "imagePrincipal-1710537767325.png"
    },
    {
       "id": 2,
-      "title": "asdasd",
-      "price": 10512330,
-      "description": "das una asdasdasdasd experiencia asdasd Nishida te enseña asdd secretoasdasasds de las técnicas básicas en la elaboración del sushi, vas a descubrir la importancia de cada ingrediente para que realices una gran variedad de rolls, sashimis y niguiris.",
-      "image": "asdasdasd-web.jpg",
-      "chef": "Roberasdasdto Nishida",
-      "sale": false,
-      "newest": false,
-      "free": true,
-      "available": true
-   },
-   {
-      "id": 3
+      "title": "Cuadro artístico Mujer en blanco y negro ilustracion",
+      "price": 123650,
+      "description": "En el lienzo, una mujer emerge en una representación de elegancia atemporal y fuerza serena. El artista ha capturado su esencia con trazos meticulosos que exploran el contraste entre la luz y la oscuridad, creando una imagen que despierta la imaginación y provoca la reflexión.\r\n\r\nEn el primer plano, la figura de la mujer se destaca en blanco y negro, un juego de tonos que resalta su belleza etérea y su presencia magnética. Su mirada es profunda y penetrante, como si pudiera leer los secretos del universo en cada línea y sombra de su entorno.",
+      "image": "imagePrincipal-1710537777160.png"
    }
 ]

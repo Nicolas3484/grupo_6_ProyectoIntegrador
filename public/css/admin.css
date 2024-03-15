@@ -4,6 +4,49 @@
 html {
   box-sizing: border-box;
 }
+.table {
+  overflow-x: auto;
+}
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tr:hover {
+  background-color: #ddd;
+}
+
+.boton {
+  margin-bottom: 10px;
+}
+
+.image-wrapper img {
+  max-width: 50px; /* Ajusta el ancho máximo de la imagen */
+  height: auto; /* Mantiene la proporción de aspecto */
+}
+
+.info {
+  max-width: 200px; /* Ajusta el ancho máximo del contenedor de texto */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
 
 *,
 *:before,
@@ -355,7 +398,7 @@ label.error {
 table {
   border-collapse: collapse;
   width: 96%;
-  margin: 2%;
+  /* margin: 2%; */
 }
 
 th {
@@ -481,4 +524,9 @@ td {
 }
 .virtual-list .table-list{
   
+}
+.item-list-column2{
+  display: flex;
+  position: relative;
+  right: 210px;
 }
