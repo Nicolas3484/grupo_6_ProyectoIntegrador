@@ -513,6 +513,7 @@ td {
     clear: none;
   }
   .panel.important {
+    display: flex;
     width: 96%;
   }
   .panel.secondary {
