@@ -23,24 +23,24 @@
                 <tr>
                     <td>
                         <div class="name-column-wrapper">
-                            <div class="image-wrapper"><img class="img-product" src="/images/productos/<%= product.image %>" alt="aa"></div>
+                            <div class="image-wrapper"><img class="img-product" src="/images/productos/<%= product.imagen %>" alt="aa"></div>
                             <div class="info">
-                                <div class="name"><%= product.title %></a><span></span></div>
-                                <div class="tagline"><%= product.subname %></div>
+                                <div class="name"><%= product.titulo %></a><span></span></div>
+                                <div class="tagline"><%= product.subtitulo %></div>
                                 <div class="labels"></div>
                             </div>
                         </div>
                     </td>
                     <td><%= product.id %></td>
-                    <td><%= product.description %></td>
+                    <td><%= product.descripcion %></td>
                     
-                    <td><%= product.autor %></td>
-                    <td><%= product.price %></td>
+                    <td><%= product.autores %></td>
+                    <td><%= product.precio %></td>
                     <td><%= product.wea %></td>
                     
                     <td align="center">
                         <a href="/admin/editar-producto/<%= product.id %>" class="btn btn-default"><em class="fa fa-pencil"></em></a>
-                        <a href="/admin/eliminar-producto?id=<%= product.id %>&title=<%= product.title %>" class="btn btn-danger"><em class="fa fa-trash"></em></a></>
+                        <a href="/admin/eliminar-producto?id=<%= product.id %>&title=<%= product.titulo %>" class="btn btn-danger"><em class="fa fa-trash"></em></a></>
                     </td>
                 </tr>
             <% }); %>

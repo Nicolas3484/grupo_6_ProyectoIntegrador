@@ -1,49 +1,42 @@
-module.exports = (req, res) => {
+/* 
+module.exports = (req,res) => {
     const arrProductos = [
-      {
-        id: 1,
-        name: "Card 1",
-      },
-      {
-        id: 2,
-        name: "Card 2",
-      },
-      {
-        id: 3,
-        name: "Card 3",
-      },
-      {
-        id: 4,
-        name: "Card 4",
-      },
-      {
-        id: 5,
-        name: "Card 5",
-      },
-      {
-        id: 6,
-        name: "Card 6",
-      },
-      {
-        id: 10,
-        name: "Card 10",
-      },
+        {
+            id:1,
+            name: "Galaxia"
+        },
+        {
+            id:2,
+            name:"Cuadro bonito pero sucio"
+        },
+        {
+            id: 3,
+            name: "Cuadro de Messi levantando la copa del mundo"
+        }
+
     ];
-  
-    const idProduct = parseInt(req.params.id);
+    const idProduct = parseInt(req.params.id)
     const nameCategory = req.params.category
-    const priceQuery = req.query.precio;
+    const priceQuery = req.query.precio
     const categoryQuery = req.query.category
-  
     const productFind = arrProductos.find(product => product.id === idProduct)
-  
-    if(!productFind) {
-      return res.send("El producto con el ID número " + idProduct + " no existe.")
-    }
-  
-    if(nameCategory || categoryQuery) {
-      return  res.send("ESTE ES EL PRODUCTO CON EL ID NÚMERO: " + productFind.name + " Y SU CATEGORIA ES: " + (nameCategory ? nameCategory : categoryQuery) + ", el precio es: $" + priceQuery)
-    }
-  
-    res.send("ESTE ES EL PRODUCTO CON EL ID NÚMERO: " + productFind.name);
-  };
+   if(!productFind){
+    
+   return res.send("El producto con el numero de ID " + idProduct + " no existe")
+}
+   if(nameCategory || categoryQuery){
+    return res.send("ESTE PRODUCTO CON EL NUMERO DE ID: " + productFind.name + " Y SU CATEGORIA ES: " + (nameCategory ? nameCategory : categoryQuery) + ", el precio es de: $" + priceQuery)
+    } 
+    res.send("ESTE PRODUCTO CON EL NUMERO DE ID: "  + productFind.name)
+} */
+module.exports = (req,res) =>{
+  const fs = require('fs')
+  const path = require('path')
+  let products = JSON.parse(fs.readFileSync(path.join(__dirname,'../../database/products.json'), 'utf-8'))
+  const id = req.params.id;
+const searchProduct = products.find((p)=>{
+return p.id == +id})
+  res.render("productoDetail",{
+      producto: searchProduct,
+  })
+}
