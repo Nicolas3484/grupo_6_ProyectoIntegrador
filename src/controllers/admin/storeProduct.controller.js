@@ -17,11 +17,11 @@ module.exports = (req, res) => {
   
   const newProduct = {
     id: newId,
-    title: title,
-    price: price,
-    description: description,
-    autor: autor,
-    image: req.file ? req.file.filename : "not-image"
+    titulo: title,
+    precio: price,
+    descripcion: description,
+    autores: autor,
+    imagen: req.file ? req.file.filename : "not-image"
     
   };
 
