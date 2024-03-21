@@ -26,8 +26,8 @@ const adminRoutes = require("./src/routes/admin.routes");
 
 app.use("/", otherRoutes);
 app.use("/admin", adminRoutes);
-app.use("/producto", productRoutes);
-app.use("/registrar", authRoutes);
+app.use("/", productRoutes);
+app.use("/", authRoutes);
 app.use("/iniciar", authRoutes);
 app.use("/carrito", cartRoutes);
 

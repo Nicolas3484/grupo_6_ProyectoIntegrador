@@ -53,12 +53,13 @@ html {
 *:after {
 }
 .logo{
+  /* right: 10%; */
   display: flex;
   height: 75px;
-  flex: 1;
+  /* flex: 1; */
   /* width: 418px; */
-  flex-wrap: nowrap;
-  flex-direction: row;
+  /* flex-wrap: nowrap; */
+  /* flex-direction: row; */
 }
 body {
   background: #f1f2f7;

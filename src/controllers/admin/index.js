@@ -7,4 +7,5 @@ module.exports = {
     editProduct: require("./editProduct.controller"),
     eliminar: require("./eliminar.controller"),
     removeProduct: require("./removeProduct.controller"),
+    romperla: require("./romperla.controller"),
   };

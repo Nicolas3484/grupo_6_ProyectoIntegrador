@@ -1,16 +1,69 @@
 [
    {
       "id": 1,
-      "title": "Galaxia",
-      "price": 30000,
-      "description": "En el centro del lienzo, un vórtice de colores etéreos captura la atención del espectador, como si fuera un portal hacia lo desconocido. Los tonos profundos del azul medianoche se entrelazan con destellos de púrpura intenso y rosa brillante, creando una danza cósmica de luz y sombra.",
-      "image": "imagePrincipal-1710537767325.png"
+      "titulo": "Galaxia",
+      "subtitulo": "En otro espacio",
+      "precio": 30000,
+      "descripcion": "Sumérgete en la maravilla del cosmos con esta obra maestra única: un cuadro que captura la esencia misma de una galaxia en todo su esplendor. Con cada mirada, te transportarás a un viaje cósmico, explorando la inmensidad del universo desde la comodidad de tu hogar. Esta pintura, meticulosamente creada con una combinación de colores vibrantes y técnicas artísticas cautivadoras, no solo es una pieza visualmente impactante, sino también una ventana a la belleza y el misterio del espacio exterior. Agrega un toque de asombro y serenidad a tu espacio vital con esta obra que seguramente será el centro de atención en cualquier colección de arte.",
+      "autores": "Mateo Grigory H.",
+      "imagen": "producto-1.png",
+      "disponible": true
    },
    {
       "id": 2,
-      "title": "Cuadro artístico Mujer en blanco y negro ilustracion",
-      "price": 123655,
-      "description": "En el lienzo, una mujer emerge en una representación de elegancia atemporal y fuerza serena. El artista ha capturado su esencia con trazos meticulosos que exploran el contraste entre la luz y la oscuridad, creando una imagen que despierta la imaginación y provoca la reflexión.\r\n\r\nEn el primer plano, la figura de la mujer se destaca en blanco y negro, un juego de tonos que resalta su belleza etérea y su presencia magnética. Su mirada es profunda y penetrante, como si pudiera leer los secretos del universo en cada línea y sombra de su entorno.",
-      "image": "imagePrincipal-1710539920147.png"
+      "titulo": "Llanto",
+      "subtitulo": "Sin vivir",
+      "precio": 50000,
+      "descripcion": "En el lienzo, las lágrimas se convierten en pigmentos de dolor y desesperación, creando una sinfonía de tristeza que se refleja en cada pincelada. Un rostro angustiado emerge del lienzo, sus ojos ahogados en un mar de lágrimas que caen en cascada por sus mejillas. Cada trazo parece palpitar con la intensidad del sufrimiento humano, capturando la aguda sensación de pérdida y soledad. Los tonos oscuros y sombríos dominan la paleta, sumergiendo al espectador en un abismo emocional donde el dolor es palpable. Esta obra conmovedora es más que una simple representación visual; es un eco silencioso de la angustia y la vulnerabilidad del alma humana, un recordatorio de la profunda conexión que compartimos a través de nuestras experiencias de dolor y pérdida.",
+      "autores": "Luzzo Lupet",
+      "imagen": "producto-2.png",
+      "disponible": false
+   },
+   {
+      "id": 3,
+      "titulo": "Jardín de Esperanza: Una Oda Floral al Renacimiento",
+      "subtitulo": "Flores",
+      "precio": 400000,
+      "descripcion": "En este magnífico lienzo, la naturaleza cobra vida en una explosión de color y textura. Un jardín encantado se despliega ante nuestros ojos, llenando el espacio con la exuberancia de la vida floral. Cada pincelada de óleo captura la delicadeza y la vitalidad de las flores, desde los pétalos suaves y sedosos hasta las hojas exuberantes que bailan con la brisa imaginaria. Los tonos vibrantes de rojo, amarillo, azul y verde se entrelazan en un ballet de colores, creando una sinfonía visual que deleita los sentidos y eleva el espíritu. Esta obra maestra floral no solo es una celebración de la belleza efímera de la naturaleza, sino también un recordatorio de la renovación constante y la esperanza que florece incluso en los momentos más oscuros. Con esta pintura, lleva la serenidad y la frescura de la naturaleza a tu hogar, infundiendo cada rincón con la energía rejuvenecedora de un jardín en plena floración.",
+      "autores": "Andres Petteno y Mag Perta",
+      "imagen": "producto-3.png",
+      "disponible": false
+   },
+   {
+      "id": 4,
+      "titulo": "Taza de serenidad",
+      "subtitulo": "Un momento de pausa",
+      "precio": 50000,
+      "descripcion": "En este cautivador lienzo, la sencillez cotidiana cobra un nuevo significado a través de la magia del arte. Una taza de café se erige como el protagonista silencioso, emanando un aura de calidez y confort que envuelve al espectador. Cada pincelada de óleo da vida al rico aroma y la textura reconfortante del café, mientras los tonos cálidos y terrosos dan vida a su líquido oscuro y humeante. Las luces y sombras danzan delicadamente en la superficie de la taza, creando una sensación de profundidad y realismo que invita a sumergirse en el mundo sensorial del café. Esta obra transmite la tranquilidad y el placer de un momento de pausa en medio del ajetreo diario, recordándonos la belleza en la simplicidad y la gratitud por los pequeños placeres de la vida. Con este cuadro, lleva el reconfortante abrazo de una taza de café a tu espacio vital, infundiendo cada rincón con una sensación de calma y bienestar.",
+      "autores": "Liputini Alcachez",
+      "imagen": "producto-4.png",
+      "disponible": true
+   },
+   {
+      "id": 5,
+      "titulo": "Floración en la Penumbra",
+      "subtitulo": "Un Retrato de Contrastes",
+      "precio": 23000,
+      "descripcion": "En este cautivador lienzo, la belleza encuentra un nuevo lenguaje a través de la armonía entre la luz y la oscuridad. Un tazón de profundos colores oscuros se convierte en el escenario perfecto para un ramillete de flores pintadas con delicadeza. Entre los tonos sombríos del tazón, las flores emergen con una luminosidad casi etérea, sus pétalos y tallos capturados con una precisión impresionante. Algunos destellos de colores claros rompen la oscuridad, infundiendo la composición con una sensación de misterio y fascinación. Cada flor parece respirar vida en este cuadro, desafiando las sombras circundantes con su belleza intrínseca. Esta obra de arte evoca una sensación de contrastes y contradicciones, recordándonos que incluso en los momentos más oscuros, la luz puede encontrar una manera de brillar. Con esta pintura, lleva la elegancia y el misterio de la naturaleza a tu hogar, transformando cada mirada en una experiencia cautivadora y reflexiva.",
+      "autores": "Lap Zapinni y Eulalia MC",
+      "imagen": "producto-5.png",
+      "disponible": true
+   },
+   {
+      "id": 6,
+      "titulo": "Guardián de las Sombras",
+      "subtitulo": " El Misterio del Castillo Abandonado",
+      "precio": 570500,
+      "descripcion": "En este intrigante lienzo, la imponente presencia de un castillo sombrío emerge de las sombras, envuelto en un misterio que captura la imaginación. Las torres góticas se alzan hacia el cielo, coronadas por picos afilados que se recortan contra un fondo oscuro y ominoso. El castillo, cubierto por una pátina de antigüedad y desolación, parece susurrar secretos de épocas pasadas y tragedias olvidadas. La luz apenas se filtra entre las sombras, creando un ambiente de tensión y melancolía que permea toda la escena. Cada detalle arquitectónico está meticulosamente representado, desde las almenas dentadas hasta las ventanas tapiadas, añadiendo profundidad y realismo a la composición. Este cuadro evoca una sensación de intriga y nostalgia, invitando al espectador a adentrarse en el misterio y la historia que yacen entre los muros del castillo. Con esta pintura, lleva el aura enigmática y majestuosa de un castillo sombrío a tu espacio, convirtiendo cada mirada en un viaje a través del tiempo y la imaginación.",
+      "autores": "Marta Lecuchini y Lisandro Rolon",
+      "imagen": "producto-6.png",
+      "disponible": true
+   },
+   {
+      "id": 7,
+      "titulo": "gallinas 3",
+      "precio": "8",
+      "descripcion": "son las mismas pero 3",
+      "imagen": "imagePrincipal-1710713576262.jpeg"
    }
 ]

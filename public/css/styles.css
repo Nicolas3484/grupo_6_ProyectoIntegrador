@@ -1,14 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css");
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-@import "./footer.css";
-@import "./header.css";
-@import "./general.css";
+ @charset "UTF-8";
+@import "https://assets.codepen.io/3351103/__reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+ @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+/* @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"); */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'); 
+ @import "./footer.css";  
+ @import "./general.css";
 @import "./registro.css";
-@import "./login.css";
-@import "./home.css";
-@import "./productDetail.css";
+@import "./login.css"; 
+ @import "./home.css"; 
+ @import "./productDetail.css";
 @import './productCart.css';
 @import "./producto.css";
-@import "./admin.css";
-@import "./asd.css";
+@import "./admin.css"; 
+ @import "./header.css";  
+ @import "./header2.css";  

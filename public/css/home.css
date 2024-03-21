@@ -1,6 +1,6 @@
 .main-home {
     display: block;
-    background-color: var(--colorHueso);
+    background-color: #ffffff;
     text-align: center;
 }
 
@@ -395,3 +395,4 @@ width: 90%;
 
     .main-home .carrusel .carrusel-div2 .carousel-item .img3 {}
 }
+
