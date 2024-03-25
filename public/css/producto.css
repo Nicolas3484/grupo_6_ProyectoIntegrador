@@ -20,9 +20,11 @@ img{
     justify-content: center;
 } */
 main{
-    display: flex;
+    /* display: flex; */
     gap: 30px;
     /* margin-bottom: 80px; */
+    /* align-content: center; */
+    align-items: baseline;
 }
 
 .contenedor{

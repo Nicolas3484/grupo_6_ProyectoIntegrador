@@ -1,41 +1,56 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
 <%- include('dashboard.ejs') %>
+<body>
+  
 
-<h1 class="text-center text-danger my-4">Editar Producto</h1>
+<div class="container">
 
-<a href="/admin/productos" class="btn btn-primary mb-4">Volver al listado</a>
+    <section class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Panel Edicion Producto</h3>
+      </div>
+      <div class="panel-body">
+        <h1 class="text-center text-danger my-4">Editar Producto</h1>
 
-<div class="card container p-4" style="width:60rem;">
-  <form action="/admin/editar-producto/<%= product.id %>?_method=PUT" method="POST" class="row justify-content-between" enctype="multipart/form-data"> 
+        <a href="/admin/productos" class="btn btn-primary mb-4">Volver al listado</a>
+        
+        <div class="card container p-4" style="width:60rem;">
+          <form action="/admin/nuevo-producto" method="post" class="row justify-content-between" enctype="multipart/form-data">
+        
+        
+            <div class="mb-3 col-6">
+              <label class="form-label">Titulo</label>
+              <input type="text" name="title" class="form-control">
+            </div>
+        
+            <div class="mb-3 col-6">
+              <label class="form-label">Precio</label>
+              <input type="number" name="price" class="form-control">
+            </div>
+        
+            <div class="mb-3 form-floating col-6">
+              <textarea class="form-control" name="description" placeholder="Colocar la descripción del curso"></textarea>
+              <label>Descripción</label>
+            </div>
 
-    <div class="mb-3 col-6">
-      <label class="form-label">Titulo</label>
-      <input type="text" name="title" class="form-control" value="<%= product.title %>">
-    </div>
-
-    <div class="mb-3 col-6">
-      <label class="form-label">Precio</label>
-      <input type="number" name="price" value="<%= product.price %>" class="form-control">
-    </div>
-
-    <div class="mb-3 form-floating col-6">
-      <textarea class="form-control" name="description" placeholder="Colocar la descripción del curso"><%= product.description %></textarea>
-      <label>Descripción</label>
-    </div>
-
-    <hr>
-    <div class="mb-3 form-check form-switch col-4">
-     
-      <label class="form-check-label" for="available">Disponible</label>
-    </div>
-
-    <div class="mb-3 col-8">
-      <label for="image" class="form-label">Seleccionar Imagen</label>
-      <input class="form-control form-control-sm" id="image" type="file" name="imagePrincipal">
-    </div>
-
-    <button type="submit" class="mb-3 btn btn-success col-4">Editar Producto</button>
-  </form>
-
-
-</div>
+        
+            <hr>
+            <div class="mb-3 form-check form-switch col-4">
+              <!-- <input class="form-check-input" type="checkbox" id="available" name="available" checked> -->
+              <label class="form-check-label" for="available">Disponible</label>
+            </div>
+        
+            <div class="mb-3 col-8">
+              <label for="image" class="form-label">Seleccionar la imagen principal</label>
+              <input class="form-control form-control-sm" id="image" type="file" name="imagePrincipal" accept="image/*">
+            </div>
+        
+            <button type="submit" class="mb-3 btn btn-success col-4">Editar Producto</button>
+          </form>
+        
+        
+        </div>
