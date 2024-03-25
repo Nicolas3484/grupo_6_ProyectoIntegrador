@@ -1,64 +1,90 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<style>
-    /* Estilos personalizados */
-    .accordion-item {
-      background-color: #f0f0f0; /* Cambia este color según tu preferencia */
-    }
+<link rel="stylesheet" href="/css/styles.css">
 
-    .accordion-item:not(:last-child) {
-      margin-bottom: 10px; /* Espacio entre los paneles */
-    }
-    .accordion-button-active-color{
-      color: black;
-    }
-    .accordion-button-show-color {
-      background-color: black; /* Cambia este color según tu preferencia */
-    }
-    .accordion-collapse .collapse .show{
-      color: black;
-    }
-    .accordion-button{
-      background-color: white;
-    }
-  </style>
+<main class="main-producto">
+  <div class="nicolas">
+  <div class="contenedor">
 
-
-<div class="accordion" id="accordionPanelsStayOpenExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-          Descripcion
-        </button>
-      </h2>
-      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-        <div class="accordion-body">
-          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-          Caracteristicas
-        </button>
-      </h2>
-      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-        <div class="accordion-body">
-          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-          Autores
-        </button>
-      </h2>
-      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-        <div class="accordion-body">
-          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
-      </div>
-    </div>
+      <img src="/images/productos/producto-1.png" alt="producto1">
+     
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+  <div class="infoGeneral-detalle">
+      <div class="titulo-detalle"><i class="fa-regular fa-heart" id="Heart"></i>
+          <h2>Galaxia</h2>
+       
+        <div class="price">
+        <span>AR$ 180.000</span>
+        <span id="span"><!-- espacio en blanco -->‎ Iva inc.</span>
+        <p>
+         Paga en 3 y 6 cuotas sin interes
+     </p>
+      </div>
+      <div class="precio-cuotas">
+          <p>12 cuotas de 
+              <span>$1900120313290</span>
+          </p>
+      </div>
+      
+  </div>
+      <div class="contenedor-carrito">
+          <div>
+              <div class="contador">
+                  <div class="input-container">
+                      <button><i class="fa-solid fa-minus"></i></button>
+                  <input type="number" id="contador"  placeholder="1" value="1" id="value1" min="1">
+                      <button><i class="fa-solid fa-plus"></i></button>
+
+              </div>
+                  <button class="boton-add-carrito" id="carrito"> 
+                      <i class ="fa-solid fa-plus"> </i><p>Añadir al carrito</p>
+                  </button>
+                  <i class ="fa-solid fa-cart-shopping" id="img-carrito"></i>
+              </div>
+             <div class="medios-de-pago">
+              <ul class="fila-pago">
+                  <li><a href="#"><img class="img-pago-producto" src ="./images/otros/pago-1.png" alt="pago-1"></a></li>
+                  <li><a href="#"><img class="img-pago-producto" src ="./images/otros/pago-2.jpg" alt="pago-2"></a></li>
+                  <li><a href="#"><img class="img-pago-producto" src ="./images/otros/pago-3.png" alt="pago-3"></a></li>
+
+              </ul>
+              
+              </div>
+              <div class="ver-medios-de-pago">
+                  <p>Ver medios de pago</p>
+              </div>
+             </div>
+              <div class="descripcion">
+                  <div class="titulo-descripcion">
+                  <h4>Descripcion</h4>
+                  <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="texto-descripcion">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem deserunt consequatur tempora labore numquam accusantium excepturi ipsa dolor minima possimus doloremque, aperiam nostrum autem atque hic obcaecati, vel praesentium id?</p>
+              </div>
+              </div>
+              <div class="caracteristicas-artist">
+                  <div class="titulo-caracteristicas">
+                      <h4>Caracteristicas</h4>
+                      <i class="fa-solid fa-chevron-down"></i>
+                      </div>
+                  <div class="texto-caracteristicas">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quam ratione necessitatibus odit delectus tenetur harum qui libero repudiandae consequuntur, quos cum neque illo, nihil ab, incidunt possimus voluptatem maxime.</p>
+                  </div>
+              </div>
+                  <div class="caracteristicas-artist">
+                  <div class="titulo-caracteristicas">
+                      <h4>Caracteristicas</h4>
+                      <i class="fa-solid fa-chevron-down"></i>
+                      </div>
+                  <div class="texto-caracteristicas">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quam ratione necessitatibus odit delectus tenetur harum qui libero repudiandae consequuntur, quos cum neque illo, nihil ab, incidunt possimus voluptatem maxime.</p>
+                  </div>
+              </div>
+
+          
+          </div>
+      </div>
+  </div>
+      
+  </div>
+</main>
