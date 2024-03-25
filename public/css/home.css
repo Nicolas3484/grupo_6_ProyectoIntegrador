@@ -21,7 +21,7 @@
     margin: 0 auto;
 }
 
-.main-home .pag .productos .grupo {gap: 10px;padding: 20px 0px;border-top: 1px solid var(--colorMarron);border-bottom: 1px solid var(--colorMarron);display: flex;flex-wrap: wrap;}
+.main-home .pag .productos .grupo {gap: 3px;padding: 20px 0px;border-top: 1px solid var(--colorMarron);border-bottom: 1px solid var(--colorMarron);display: flex;flex-wrap: wrap;}
 
 
 .main-home .pag .productos .grupo .contenedor-imagen {
@@ -213,6 +213,7 @@ color: white;
     .main-home .banner i{}
     
     .main-home .pag {
+    width: 100%;
     }
     
     .main-home .pag .subt {
@@ -321,6 +322,7 @@ width: 90%;
     .main-home .banner i{}
     
     .main-home .pag {
+    width: 100%;
     }
     
     .main-home .pag .subt {

@@ -8,7 +8,7 @@
 
 .dropdown {
   position: absolute;
-  top: 6%; /* Asegura que el menú deslizable aparezca debajo del encabezado */ /* Oculta el menú deslizable por defecto */
+  top: 3%; /* Asegura que el menú deslizable aparezca debajo del encabezado */ /* Oculta el menú deslizable por defecto */
   /* Estilos adicionales para el menú deslizable */
 }
 
@@ -43,7 +43,7 @@ a {
   transition: color 150ms, background-color 150ms;
 }
 #accordion ul > li > a {
-  background-color: var(--nav-link-bg-color-01);
+  background-color: hsl(36deg 100% 5.88%);
 }
 #accordion ul ul > li > a {
   background-color: var(--nav-link-bg-color-02);
@@ -56,6 +56,8 @@ a {
   background-color: var(--nav-bg-hover-color-01);
 }
 #accordion .toggle-button {
+  bottom: -55px;
+  position: relative;
   width: 30px;
   display: block;
   padding: 0.75rem 1rem;
@@ -65,6 +67,7 @@ a {
   user-select: none;
 }
 #accordion .dropdown-menu {
+  bottom: -62px;
   position: relative;
   height: 0;
   overflow: hidden;
@@ -126,6 +129,8 @@ nav .burger-toggle:checked + .toggle-button .burger .line3 {
 /* ---- END burger toggle ----- */
 /* ---- some custom styling ---- */
 #accordion {
+  bottom: 50px;
+  position: absolute;
   --nav-link-bg-color-01: hsl(200 80% 13%);
   --nav-link-bg-color-02: hsl(200 80% 11%);
   --nav-link-bg-color-03: hsl(200 80% 9%);
@@ -138,6 +143,9 @@ nav .burger-toggle:checked + .toggle-button .burger .line3 {
   --mobile-break: 400px;
 }
 #accordion .burger {
+  left: 0;
+  bottom: -7px;
+  position: absolute;
   margin: 0.15rem 0;
 }
 #accordion a {
