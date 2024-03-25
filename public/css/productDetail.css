@@ -1,3 +1,103 @@
+/* Global Styles */
+.img {
+    max-width: 100%;
+}
+
+/* Main Product Styles */
+.main-producto .nicolas {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    /* width: 100vw; */
+    background-color: var(--colorHueso);
+}
+
+.main-producto .nicolas .infoGeneral-detalle {
+    background-color: #FDFFF0;
+}
+
+.main-producto .nicolas .contenedor {
+    /* margin: 20px auto; */
+    /* width: 90%; */
+    /* align-items: center; */
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    justify-content: center;
+    background-color: #FAFAF9;
+}
+
+.main-producto .nicolas .contenedor img {
+    width: 60%;
+    margin-top: 10px;
+    border: 3px solid black;
+    margin-bottom: 10px;
+}
+
+.main-producto .nicolas .infoGeneral-detalle .titulo-detalle h2 {
+    border-bottom: black;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding-bottom: 5%;
+    text-decoration: underline;
+    font-size: 31px;
+}
+
+/* Responsive Styles */
+@media (min-width: 769px) {
+    /* Desktop Styles */
+    .main-producto .nicolas {
+        margin: 8rem;
+        /* padding: 80px; */
+        /* width: 100vw; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        background-color: var(--colorHueso);
+    }
+
+    .main-producto .nicolas .contenedor {
+        /* margin: 80px auto; */
+        /* width: 38%; */
+        align-items: center;
+        /* display: flex; */
+        flex-wrap: wrap;
+        order: 2;
+        /* justify-content: center; */
+        /* background-color: lightgray; */
+    }
+
+    .main-producto .nicolas .infoGeneral-detalle {
+        width: 41%;
+        background-color: var(--colorHueso);
+        padding-left: 0%;
+        background-position: 30%;
+        order: 1;
+    }
+
+    .main-producto .nicolas .contenedor img {
+        max-width: 100%;
+        /* width: 85%; */
+    }
+
+    .main-producto .nicolas .infoGeneral-detalle .titulo-detalle h2 {
+        border-bottom: black;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        padding-bottom: 5%;
+        text-decoration: underline;
+        font-size: 31px;
+    }
+}
+
+
 .img{
     max-width: 100%;
 }
@@ -9,17 +109,18 @@
     background-color: var(--colorHueso);
 }
 
-.main-producto .nicolas .infoGeneral-detalle{background-color: #FDFFF0;/* width: 100%; */}
+.main-producto .nicolas .infoGeneral-detalle{/* margin-bottom: 20px; */background-color: #FDFFF0;/* width: 100%; */}
 
 .main-producto .nicolas .contenedor{
-    margin: 20px auto;
+    padding: 30px;
+    /* margin: 20px auto; */
     /* width: 90%; */
     /* align-items: center; */
     /* display: flex; */
     /* flex-wrap: wrap; */
-    padding: 20px;
+    /* padding: 20px; */
     /* background-color: lightgray; */
-    flex-direction: row;
+    /* flex-direction: row; */
     /* justify-content: center; */
 }
 .main-producto .nicolas .contenedor-carrito{
@@ -27,16 +128,17 @@
 }
 
 .main-producto .nicolas .contenedor img {
-    /* position:relative; */
+    bottom: 107px;
+    position:relative;
     width: 60%;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     border: 3px solid black;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 .main-producto .nicolas .infoGeneral-detalle .titulo-detalle h2{border-bottom: black;position: relative;display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-evenly;padding-bottom: 5%;text-decoration: underline;font-size: 31px;}
 
 #span{
-    color: #9a9a9a;
+    color: #dedede;
 }
 
 .price {
@@ -93,7 +195,7 @@
 }
 .price p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #939393;
+    color: #dedede;
 }
 .precio-cuotas span{
     font-weight: 900;
@@ -163,27 +265,32 @@
 @media (min-width:769px){
  /* DESKTOP */
 .main-producto .nicolas {
+    /* width: 100vw; */
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+    background-color: #ffffff;
     flex-direction: row-reverse;
-    background-color: #fafced;
 }
 
 .main-producto .nicolas .contenedor {
-    margin: 80px auto;
-    width: 33%;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    order: 2;
-    justify-content: center;
-    background-color: lightgray;
+    bottom: 80px;
+    position: relative;
+    /* height: 608px; */
+    /* margin: 80px auto; */
+    /* width: 0%; */
+    /* align-items: center; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* order: 2; */
+    /* justify-content: center; */
+    /* background-color: lightgray; */
 }
 
 .main-producto .nicolas .infoGeneral-detalle {
+    bottom: 80px;
+    position: relative;
     width: 41%;
-    background-color: #fafced;
+    background-color: #ffffff;
     padding-left: 0%;
     background-position: 30%;
     order: 1;
@@ -193,7 +300,7 @@
     }
     
     .main-producto .nicolas .contenedor img {
-      width: 78%;
+      width: 62%;
     }
     .main-producto .nicolas .infoGeneral-detalle .titulo-detalle h2{border-bottom: black;position: relative;display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-evenly;padding-bottom: 5%;text-decoration: underline;font-size: 31px;}
     

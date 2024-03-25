@@ -1,5 +1,50 @@
 <link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/style.css">
+<header class="main-header">
+    <nav id='accordion' class='dropdown'>
+        <input type='checkbox' id='toggle-01' class='toggle burger-toggle' hidden>
+        <label for='toggle-01' class='toggle-button'>
+          <div class='burger'>
+            <div class='line1'></div>
+            <div class='line2'></div>
+            <div class='line3'></div>
+          </div>
+        </label>
+        <ul class='dropdown-menu lvl-1'>
+          <li class='item'><a href="/admin"><i class='bi bi-house-fill'></i> Admin</a></li>
+          <li class='item'><a><i class='bi bi-house-fill'></i> Home</a></li>
+          <li class='item'><a>About</a></li>
+          </li>
+          <li class='item'><a><i class='bi bi-envelope-fill'></i> Contact</a></li>
+        </ul>
+      </nav>
+    <figure>
+        <a href="/home"><img class="logo" src="/images/icons/logo_oscuro.jpeg" alt="Logo"></a>
+    </figure>
 
+    <form action="/buscar" method="get">
+   
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input class="input" type="text" id="search" name="buscador" placeholder="Artista, Categoría, Pintura...">
+    </form>
+    <nav class="nav-bar">
+        <ul class="nav-ul">
+            <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fa-solid fa-user user"></i> </button>
+                <div class="dropdown-content">
+                  <a href="#">Registrarse</a>
+                  <a href="#">Iniciar Sesion</a>
+                </div>
+              </div></a>
+              </div>
+            </li>
+            <li><a href="/carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+    </nav>
+</header>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.5/cdn.js"></script>
+<script src="/js/functions/header.js"></script>
 <main class="main-producto">
   <div class="nicolas">
   <div class="contenedor">
