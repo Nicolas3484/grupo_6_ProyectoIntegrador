@@ -3,6 +3,7 @@
 @import "https://assets.codepen.io/3351103/__reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
    .main-header {
+        padding: 20px 0;
         background-color: #1e1200;
         display: flex;
         flex-wrap: wrap;
@@ -31,6 +32,8 @@
 }
 
     .main-header figure .logo {
+    /* right: 50em; */
+    position: relative;
     width: 100px;
 }
     
@@ -49,8 +52,11 @@
      .main-header .nav-bar {
     display: none;
 }
-    
+    #nav-icons{
+        top: 5em;
+    }
     .main-header .nav-bar .nav-ul{
+        /* top: 5em; */
         list-style-type: none;
         display: flex;
         padding: 0;
@@ -66,7 +72,7 @@
     }
     
     .main-header .nav-bar .nav-ul li a {
-    color: #e9e9e9;
+    color: #ffffff;
 } 
 
 .menu-2:hover {
@@ -77,6 +83,7 @@
 
 @media (min-width: 426px) {
     .main-header {
+    padding: 20p;
     height: 90px;
     }
     
@@ -125,7 +132,7 @@
 } 
     
     .main-header .nav-bar .nav-ul{
-    gap: 41px;
+    gap: 1em;
     }
     
     .main-header .nav-bar .nav-ul li {
@@ -135,7 +142,7 @@
 }
     
     .main-header .nav-bar .nav-ul li a i{
-    font-size: 24px;
+    font-size: 22px;
 } 
 
 
@@ -174,6 +181,7 @@
     }
     
     .main-header i {
+    position: relative;
     }
     
     .main-header .logo {}
@@ -186,11 +194,12 @@
     }
     
     .main-header form .input{
+    width: 26em;
     padding: 10px 0px 3px 30px;
 }
     
    .main-header .nav-bar {
-    padding: 0px 30px 0px 0px;
+    /* padding: 0px 30px 0px 0px; */
     justify-content: right;
 } 
     
@@ -205,20 +214,21 @@
     .main-header .nav-bar .nav-ul li a i{} 
 
     .main-header figure {
+    bottom: 0.5em;
     order: 0;
-    left: 4em;
+    left: -41.5em;
     /* width: 10%; */
     /* justify-content: left; */
     /* right: 45%; */
 }
 
 .main-header form {
+    left: -12em;
     order: 0;
     display: flex;
     position: relative;
-    justify-content: center;
     align-items: center;
-    width: 16%;
+    width: 17%;
 }
 
 .main-header .menu-2 {}
@@ -230,45 +240,164 @@
 .main-header .menu-2 .m-menu .m-m-options a {}
 }
 /* // Dropdown Button // */
+/* Botón de desplegable */
 .dropbtn {
-    background-color: #1E1200;
+    position: relative;
+    bottom: 0.4em;
+    background-color: #1e1200;
     color: white;
-    /* padding: 16px; */
     font-size: 24px;
     border: none;
+    padding: 12px 20px; /* Añadido padding para mejorar aspecto */
+    border-radius: 5px; /* Añadido borde redondeado */
+    cursor: pointer; /* Cambio de cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
   }
   
-  /* The container <div> - needed to position the dropdown content */
+  /* Contenedor del desplegable */
   .dropdown {
+    z-index: 2;
+    top: 7.4em;
     position: relative;
     display: inline-block;
   }
   
-  /* Dropdown Content (Hidden by Default) */
+  /* Contenido del desplegable (Inicialmente oculto) */
   .dropdown-content {
+    bottom: -109px;
+    /* background-color: #1e1200; */
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
-    width: 86px;
+    background-color: #1e1200;
+    min-width: 120px; /* Aumento del ancho mínimo */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border-radius: 5px; /* Añadido borde redondeado */
   }
   
-  /* Links inside the dropdown */
+  /* Enlaces dentro del desplegable */
   .dropdown-content a {
-    color: black;
-    /* padding: 12px 16px; */
+    color: white;
+    padding: 10px 12px; /* Aumento del padding */
     text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+    border-bottom: 1px solid white;
+  }
+  
+  /* Cambio de color de los enlaces al pasar sobre ellos */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Mostrar el menú desplegable al pasar sobre el contenedor */
+  .dropdown:hover .dropdown-content {
+    /* background-color: #1e12; */
     display: block;
   }
   
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
+  /* Cambio del color de fondo del botón al mostrar el desplegable */
+  .dropdown:hover .dropbtn {
+    background-color: #261b0b; /* Cambio de color */
+  }
   
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #1E1200;}
+  header {
+    background-color: #6E422B; /* Color marrón */
+    /* padding: 20px 0; */
+}
 
- 
+.container {
+    width: 42%;
+    margin: 0 auto;
+}
+
+nav {
+    left: -2em;
+    width: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle {
+    /* left: -1em; */
+    /* bottom: -30em; */
+    /* left: 15em; */
+    z-index: 350;
+    position: relative;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px auto;
+    transition: transform 0.3s ease; /* Añadido para la transición al icono X */
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: -100%; /* Cambiado */
+    background-color: #6E422B; /* Color marrón */
+    width: 100%;
+    z-index: 2;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease, left 0.3s ease; /* Modificado */
+}
+
+.nav-list.active {
+    top: 9.9em;
+    width: 19em;
+    /* padding: 1em; */
+    display: flex;
+    opacity: 1;
+    left: -5.3em; /* Añadido */
+}
+
+.nav-list li {
+    background-color: #1e1200;
+    position: relative;
+    padding: 1em;
+    margin-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.nav-list li:last-child {
+    border-bottom: none;
+}
+
+.nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.content {
+    padding: 20px;
+}
+/* Nuevo estilo para el icono X */
+.menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+.nav-list li:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Cambia el color de fondo al pasar el mouse */
+}
