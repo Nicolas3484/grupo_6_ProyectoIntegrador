@@ -20,9 +20,12 @@ img{
     justify-content: center;
 } */
 main{
-    display: flex;
+    /* width: 174%; */
+    /* display: flex; */
     gap: 30px;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
+    /* align-content: center; */
+    align-items: baseline;
 }
 
 .contenedor{

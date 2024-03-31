@@ -33,6 +33,8 @@ html {
 }
 
 .boton {
+  /* background-color: cadetblue; */
+  display: flex;
   margin-bottom: 10px;
 }
 
@@ -53,17 +55,18 @@ html {
 *:after {
 }
 .logo{
+  /* right: 10%; */
   display: flex;
   height: 75px;
-  flex: 1;
+  /* flex: 1; */
   /* width: 418px; */
-  flex-wrap: nowrap;
-  flex-direction: row;
+  /* flex-wrap: nowrap; */
+  /* flex-direction: row; */
 }
 body {
-  background: #f1f2f7;
+  /* background: #f1f2f7; */
   font-family: "Open Sans", arial, sans-serif;
-  color: darkslategray;
+  color: #0d1111;
 }
 
 body.login {
@@ -87,7 +90,7 @@ body.login {
 .logito{
     display: flex;
     margin-right: 5px;
-    /* height: 60px; */
+    height: 78px;
     width: 200px;
     align-items: flex-end;
     justify-content: flex-start;
@@ -244,10 +247,18 @@ b {
 .hint {
   color: lightslategray;
 }
-
+ul.main{
+  
+position: relative;
+  
+top: -7.6em;
+  
+font-size: medium;
+}
 /* lists */
 ul,
 li {
+  bottom: 7em;
   position: relative;
   list-style-type: none;
   margin: 0;
@@ -396,6 +407,7 @@ label.error {
 
 /* tables */
 table {
+  /* display: flex; */
   border-collapse: collapse;
   width: 96%;
   /* margin: 2%; */
@@ -424,7 +436,7 @@ td {
 @media screen and (min-width: 600px) {
   html,
   body {
-    height: 100%;
+    /* height: 100%; */
   }
 
   header[role="banner"] {
@@ -451,6 +463,7 @@ td {
   }
 
   nav[role="navigation"] {
+    /* height: 40em; */
     position: fixed;
     width: 200px;
     top: 75px;
@@ -459,7 +472,7 @@ td {
   }
 
   main[role="main"] {
-    margin: 75px 0 40px 200px;
+    margin: 72px 0px 39px 258px;
   }
   main[role="main"]:after {
     content: "";
@@ -513,7 +526,10 @@ td {
     clear: none;
   }
   .panel.important {
+    /* order: 1; */
+    display: flex;
     width: 96%;
+    flex-wrap: wrap;
   }
   .panel.secondary {
     width: 23%;

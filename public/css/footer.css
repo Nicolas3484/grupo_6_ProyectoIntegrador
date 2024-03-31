@@ -318,7 +318,7 @@ justify-content: center;
 /*----------------footer Computadora-------------------*/
 @media (min-device-width: 769px){
 
-    .footer-gral{padding: 25px;color: var(--colorHueso);background-color: var(--colorMarron);display: flex;flex-wrap: wrap;}
+    .footer-gral{padding: 25px;color: var(--colorHueso);background-color: #020101;display: flex;flex-wrap: wrap;}
     .footer-gral .datos-footer{
         height: auto;
         width: 50%;
