@@ -44,6 +44,7 @@
 }
 .main-login form section.datos-login label{width: 100%;height: 40px;}
 .main-login form section.datos-login input{
+    color: var(--colorMarron);
     width: 100%;
     border: none;
     border-radius: 15px;
@@ -58,6 +59,7 @@
     height: 40px;
 }
 .main-login form section.datos-login2 input{
+    color: var(--colorMarron);
     width: 100%;
     border: none;
     border-radius: 15px;
@@ -138,6 +140,7 @@
     height: 40px;
 }
     .main-login form section.datos-login input{
+    color: var(--colorMarron);
     height: 35px;
 }
     .main-login form section.datos-login2 div{}

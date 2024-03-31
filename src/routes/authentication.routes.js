@@ -8,4 +8,6 @@ router.post("/nuevo-usuario",authController.newUser)
 router.put("/nuevo-usuario")
 router.patch("/nuevo-usuario")
 router.delete("/nuevo-usuario")
+router.post("/iniciar",authController.loginProcess)
+
 module.exports = router
