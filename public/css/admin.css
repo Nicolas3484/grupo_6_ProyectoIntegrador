@@ -259,7 +259,7 @@ font-size: medium;
 ul,
 li {
   bottom: 7em;
-  position: relative;
+  /* position: relative; */
   list-style-type: none;
   margin: 0;
   padding: 0;
