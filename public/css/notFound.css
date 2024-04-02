@@ -1,0 +1,59 @@
+    body {
+        font-family: Arial, sans-serif;
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .overlay {
+        height: 100vw;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        text-align: center;
+        color: #fff;
+    }
+
+    h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+    .main-error404{
+    position: relative;
+    height: 100vw;
+    width: 100vw;
+    display: flex;
+}
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 105%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2; 
+}
+
+    a:hover {
+        text-decoration: underline;
+    }

@@ -1,6 +1,6 @@
 .main-home {
     display: block;
-    background-color: var(--colorHueso);
+    background-color: #ffffff;
     text-align: center;
 }
 
@@ -21,7 +21,7 @@
     margin: 0 auto;
 }
 
-.main-home .pag .productos .grupo {gap: 10px;padding: 20px 0px;border-top: 1px solid var(--colorMarron);border-bottom: 1px solid var(--colorMarron);display: flex;flex-wrap: wrap;}
+.main-home .pag .productos .grupo {gap: 3px;padding: 20px 0px;border-top: 1px solid var(--colorMarron);border-bottom: 1px solid var(--colorMarron);display: flex;flex-wrap: wrap;}
 
 
 .main-home .pag .productos .grupo .contenedor-imagen {
@@ -213,6 +213,7 @@ color: white;
     .main-home .banner i{}
     
     .main-home .pag {
+    width: 100%;
     }
     
     .main-home .pag .subt {
@@ -321,6 +322,7 @@ width: 90%;
     .main-home .banner i{}
     
     .main-home .pag {
+    width: 100%;
     }
     
     .main-home .pag .subt {
@@ -395,3 +397,12 @@ width: 90%;
 
     .main-home .carrusel .carrusel-div2 .carousel-item .img3 {}
 }
+#carouselExampleCaptions .carousel-item img {
+    width: 100%; /* Establecer el ancho al 100% para que las imágenes ocupen todo el ancho del carrusel */
+    height: auto; /* Ajustar automáticamente la altura para mantener la proporción de la imagen */
+  }#carouselExampleCaptions .carousel-item img {
+    width: 10; /* Establecer el ancho al 100% para que las imágenes ocupen todo el ancho del carrusel */
+    height: 380px; /* Establecer una altura fija */
+    /* object-fit: cover; */
+  }
+

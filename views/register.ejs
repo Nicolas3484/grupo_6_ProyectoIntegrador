@@ -6,7 +6,7 @@
     <!-- header -->
     <%- include("./partials/header") %>
     <main class="main-register">
-        <form class="formulario-register" action="/register" method="POST">
+        <form class="formulario-register" action="/registrar" method="post">
             <!-- NOMBRE -->
              <section class="datos-register"> 
                <div class="descripcion-register">
@@ -22,6 +22,15 @@
                 <input class="cuadro-register" type="email" name="email" value="" id="email" placeholder="Ej: julianaagus@gmail.com">
               </div>
             </section>
+            <!-- INSERTAR UBICACION -->
+                <!-- INSERTAR PROVINCIA -->
+                <!-- INSERTAR LOCALIDAD -->
+                <!-- INSERTAR CASA N°/PISO -->
+
+            <!-- INSERTAR CODIGO POSTAL -->
+            <!-- INSERTAR DOCUMENTO -->
+
+
             <!-- CONTRASEÑA -->
             <section class="datos-register"> 
                 <div class="descripcion-register">
@@ -30,11 +39,11 @@
                </div>
             </section>
             <!-- CONFIRMAR CONTRASEÑA -->
-            <section class="datos-register"> 
+             <section class="datos-register"> 
                 <div class="descripcion-register">
                  <label class="label-register" for="contrasenia">Confirmar contraseña</label>
-                 <input class="cuadro-register" type="password" name="contrasenia" value="" id="contrasenia">               </div>
-            </section>
+                 <input class="cuadro-register" type="password" name="confirmarcontrasenia" value="" id="conrfimarcontrasenia">               </div>
+            </section>  
             <!--  BOTONES -->
                 <div class="botones-register">
                     <button class="enviar-register" type="submit">REGISTRARSE</button>
@@ -43,9 +52,13 @@
                 <div class="tengoC-register">
                  <a href="/login" class="texto-register-fin" >Ya tengo cuenta</a>
                </div>
- 
+            </form>
    </main>
       <!-- Footer -->
       <%- include("./partials/footer") %>
+      <script>
+    
+    </script>
 </body>
+
 </html>

@@ -9,6 +9,7 @@ const {uploadProducts} = require("../middlewares/uploads")
 
 
 // "/admin"
+router.get("/romperla", adminController.romperla); 
 router.get("/", adminController.asd); 
 router.get("/productos", adminController.listProducts); 
 router.get("/nuevo-producto", adminController.newProduct); 
