@@ -2,5 +2,6 @@ module.exports = {
     login: require("./login.controller"),
     register: require("./register.controller"),
     newUser: require("./newUser.controller"),
-    loginProcess: require("./loginProcess.controller"),
+    logginProcces: require("./loginProcess.controller"),
+    registerProcess: require ("./proccesRegister.controller")
 };

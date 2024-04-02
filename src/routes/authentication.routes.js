@@ -1,13 +1,17 @@
 const express = require("express")
 const router = express.Router();
-const authController = require("../controllers/autentication")
 
-router.get("/iniciar",authController.login)
-router.get("/registrar",authController.register)
-router.post("/nuevo-usuario",authController.newUser)
-router.put("/nuevo-usuario")
-router.patch("/nuevo-usuario")
-router.delete("/nuevo-usuario")
-router.post("/iniciar",authController.loginProcess)
 
+const { login, register, logginProcces, registerProcess } = require("../controllers/autentication");
+
+
+// /auth
+router.get("/iniciar", login);
+router.post("/iniciar", logginProcces)
+
+router.get("/registrar", register);
+
+router.post("/registrar", registerProcess)
+
+module.exports = router;
 module.exports = router
