@@ -248,12 +248,9 @@ b {
   color: lightslategray;
 }
 ul.main{
-  
-position: relative;
-  
-top: -7.6em;
-  
-font-size: medium;
+  position: relative;
+  top: -12.6em;
+  font-size: medium;
 }
 /* lists */
 ul,
