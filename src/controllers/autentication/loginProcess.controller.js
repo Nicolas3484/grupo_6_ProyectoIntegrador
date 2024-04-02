@@ -1,35 +1,58 @@
 const { compareSync } = require("bcryptjs");
 const { loadData } = require("../../database");
+const { validationResult } = require("express-validator");
 
 module.exports = (req, res) => {
-  const { email, contraseña,  } = req.body;
+  // Obtiene los errores de validación de la solicitud
+  const errors = validationResult(req);
+
+  // Si hay errores de validación, retorna un mensaje de error
+  if (!errors.isEmpty()) {
+    const validationErrors = errors.array().map(error => error.msg); // Obtener solo los mensajes de error
+    console.log(validationErrors); // Imprimir los errores en la consola
+    return res.status(400).json({ errors: validationErrors }); // Devolver los errores al cliente
+  }
+
+  // Obtiene los datos de la solicitud
+  const { email, contraseña, recordarme } = req.body;
+
+  // Carga los usuarios de la base de datos
   const users = loadData("usuarios");
 
+  // Verifica si se proporcionó un email
   if (!email) {
-    return res.send("Debe ingresar un email");
+    return res.status(400).send("Debe ingresar un email");
   }
 
-  const userFind = users.find((u) => u.email === email.toLowerCase());
+  // Busca el usuario por email en la base de datos
+  const user = users.find((u) => u.email === email.toLowerCase());
 
-  if (!userFind) {
-    return res.send("El usuario no existe");
+  // Si no se encuentra el usuario, retorna un mensaje de error
+  if (!user) {
+    return res.status(404).send("El usuario no existe");
   }
-console.log(userFind)
-  const isValidPass = compareSync(contraseña, userFind.contraseña);
-  console.log(isValidPass)
+
+  // Compara la contraseña proporcionada con la contraseña almacenada en la base de datos
+  const isValidPass = compareSync(contraseña, user.contraseña);
+
+  // Si las contraseñas no coinciden, retorna un mensaje de error
   if (!isValidPass) {
-    return res.send("Credenciales invalidas");
+    return res.status(401).send("Credenciales inválidas");
   }
- const { name, role,  } = userFind;
+
+  // Si las credenciales son válidas, crea la sesión del usuario
+  const { nombre, role } = user;
   req.session.userLogin = {
-    name,
+    nombre,
     email,
     role,
   };
 
- /*  if (remember) {
-    res.cookie("userLogin", req.session.userLogin, { maxAge: 5000 });
-  } */
+  // Si se seleccionó recordarme, establece una cookie de sesión con una duración prolongada
+  if (recordarme) {
+    res.cookie("userLogin", req.session.userLogin, { maxAge: 1000 * 60 * 60 * 24 * 30 }); // Por ejemplo, una duración de 30 días
+  } 
 
+  // Redirige al usuario a la página principal
   res.redirect("/");
-};
+}

@@ -33,5 +33,19 @@
       "email": "asdasdasdasdasd@asdasd.com",
       "contraseña": "$2a$12$X65L11DjuQQ7nliHYOgvM.WyRkl1gEVj5byEa5HT4SBa.9X9o5j1y",
       "role": "USUARIO"
+   },
+   {
+      "id": 6,
+      "nombre": "asdads",
+      "email": "canedapablomartin@gmail.com",
+      "contraseña": "$2a$12$40BvKN.LEWwM3l0FqTNnM.2JA2PweSU6JCO1sGJKH3t08uoWF8FM2",
+      "role": "USUARIO"
+   },
+   {
+      "id": 7,
+      "nombre": "asddas",
+      "email": "caneda_pablito@hotmail.com",
+      "contraseña": "$2a$12$L36NOfh8w4as6jw5T3Q5auPqIohk4/Dj9yBQpBQbOWq1zmUguoLkS",
+      "role": "USUARIO"
    }
 ]

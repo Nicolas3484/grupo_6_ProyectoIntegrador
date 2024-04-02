@@ -26,6 +26,7 @@
     <nav class="nav-bar">
         <ul class="nav-ul">
             <li id="nav-icons"><a href=""><i class="fa-solid fa-heart"></i></a></li>
+            <% if (!locals.userLogin) { %>
             <div class="dropdown">
                 <button class="dropbtn"><i class="fa-solid fa-user user"></i> </button>
                 <div class="dropdown-content">
@@ -34,6 +35,11 @@
                 </div>
               </div></a>
               </div>
+              <% } else { %>
+                <div class="dropdown">
+                    <button class="dropbtn"><i class="fa-solid fa-user user"></i> </button>
+                    <div class="dropdown-content">
+                      <a href="/perfil]"><%= locals.userLogin.nombre%></a><% } %>
             </li>
             <li id="nav-icons"><a href="/carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
         </ul>
