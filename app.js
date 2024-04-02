@@ -36,11 +36,14 @@ app.use("/", authRoutes);
 app.use("/iniciar", authRoutes);
 app.use("/carrito", cartRoutes);
 
-// Manejo de Errores (ejemplo)
+// Manejo de Errores
 app.use((err, req, res, next) => {
     console.error(err.stack);
     res.status(500).send('Error interno del servidor');
 });
+app.use((req,res, next) => {
+    res.status(404).render("notFound")
+  })
 // Servidor
 const port = 3030;
 app.listen(port, () => console.log(`Servidor iniciado en http://localhost:${port}`));
