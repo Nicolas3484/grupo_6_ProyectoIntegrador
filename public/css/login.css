@@ -101,6 +101,11 @@
 .main-login div.registrarse-login button{}
 .main-login div.registrarse-login button a{}
 
+#checkbox2 {
+    width: 100%
+}
+
+
 /*----------------login Tablet-------------------*/
 @media (min-device-width: 426px){
     .main-login form div.botones-login p a{}

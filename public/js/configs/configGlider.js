@@ -4,10 +4,7 @@ new Glider(document.querySelector('.glider'), {
     slidesToScroll: 1,
     scrollLock: true,
     dots: '#resp-dots',
-    arrows: {
-      prev: '.glider-prev',
-      next: '.glider-next'
-    },
+    draggable: true,
     responsive: [
       {
         // screens greater than >= 368px
@@ -18,10 +15,6 @@ new Glider(document.querySelector('.glider'), {
           slidesToScroll: '1',
           itemWidth: 150,
           duration: 0.25,
-          arrows: {
-            prev: '.glider-prev',
-            next: '.glider-next'
-          },
         }
       },{
         // screens greater than >= 769px
@@ -31,10 +24,7 @@ new Glider(document.querySelector('.glider'), {
           slidesToScroll: 1,
           itemWidth: 150,
           duration: 0.25,
-          arrows: {
-            prev: '.glider-prev',
-            next: '.glider-next'
-          },
+          
         }
       }
     ]

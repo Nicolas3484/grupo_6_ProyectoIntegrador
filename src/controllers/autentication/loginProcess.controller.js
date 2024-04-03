@@ -9,7 +9,6 @@ module.exports = (req, res) => {
   // Si hay errores de validación, retorna un mensaje de error
   if (!errors.isEmpty()) {
     const validationErrors = errors.array().map(error => error.msg); // Obtener solo los mensajes de error
-    console.log(validationErrors); // Imprimir los errores en la consola
     return res.status(400).json({ errors: validationErrors }); // Devolver los errores al cliente
   }
 
