@@ -47,5 +47,19 @@
       "email": "caneda_pablito@hotmail.com",
       "contraseña": "$2a$12$L36NOfh8w4as6jw5T3Q5auPqIohk4/Dj9yBQpBQbOWq1zmUguoLkS",
       "role": "USUARIO"
+   },
+   {
+      "id": 8,
+      "nombre": "meiko",
+      "email": "meikosoyregay@gmail.com",
+      "contraseña": "$2a$12$TsguLQmGSjm5XhxHfoGkPeA3ZsjXhs/8jMpPDRSii9j7csn2oRa8q",
+      "role": "USUARIO"
+   },
+   {
+      "id": 9,
+      "nombre": "Meiko",
+      "email": "meiko123@gmail.com",
+      "contraseña": "$2a$12$gYJoqDSwz4V7Hm1wIpqONeao.o5/OZIbsOsfMb3tMISlFJGf1adPq",
+      "role": "USUARIO"
    }
 ]

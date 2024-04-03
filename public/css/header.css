@@ -143,7 +143,7 @@ top: 5em;
 }
     
     .main-header .nav-bar .nav-ul li a i{
-    font-size: 22px;
+    font-size: 24px;
 } 
 
 
@@ -205,6 +205,7 @@ top: 5em;
 } 
     
     .main-header .nav-bar .nav-ul{
+    /* font-size: 24px; */
     }
     
     .main-header .nav-bar .nav-ul li {
@@ -212,7 +213,9 @@ top: 5em;
     
     .main-header .nav-bar .nav-ul li a {}
     
-    .main-header .nav-bar .nav-ul li a i{} 
+    .main-header .nav-bar .nav-ul li a i{
+    font-size: 24px;
+} 
 
     .main-header figure {
     bottom: 0.5em;
@@ -243,6 +246,7 @@ top: 5em;
 /* // Dropdown Button // */
 /* Botón de desplegable */
 .dropbtn {
+    /* padding: 12px 20px; */
     position: relative;
     bottom: 0.4em;
     background-color: #1e1200;
@@ -265,21 +269,26 @@ top: 5em;
   
   /* Contenido del desplegable (Inicialmente oculto) */
   .dropdown-content {
-    bottom: -109px;
+    bottom: -43px;
     /* background-color: #1e1200; */
     display: none;
     position: absolute;
     background-color: #1e1200;
-    min-width: 120px; /* Aumento del ancho mínimo */
+    min-width: 151px; /* Aumento del ancho mínimo */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 5px; /* Añadido borde redondeado */
   }
-  
+  #dropdown-contento{
+bottom: -64px;
+widht: -5px;
+height: 59px;
+top: 1.em;
+}
   /* Enlaces dentro del desplegable */
   .dropdown-content a {
     color: white;
-    padding: 10px 12px; /* Aumento del padding */
+    /* padding: 10px 12px; */ /* Aumento del padding */
     text-decoration: none;
     display: block;
     transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
@@ -401,4 +410,25 @@ nav {
 }
 .nav-list li:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Cambia el color de fondo al pasar el mouse */
+}
+.img-profile{
+    
+font-size: 0px;
+    
+width: 80px;
+    
+/* overflow: hidden; */
+    
+border-radius: 50%;
+}
+.nav-profile{
+    
+width: 35px;
+    
+font-size: 0;
+}
+#nombre-usuario{margin-top: 9px;/* bottom: -20px; */}
+
+#fuente{
+    font-size: 19px;
 }

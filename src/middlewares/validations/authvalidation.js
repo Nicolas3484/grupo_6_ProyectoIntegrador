@@ -14,12 +14,12 @@ const fieldPasswordDefault = body("contrasenia")
   .notEmpty()
   .withMessage("Campo requerido")
   .bail();
-
+  
 const fieldEmailRegister = fieldEmailDefault.custom((value, { req }) => {
   const users = loadData("usuarios");
   const existUser = users.find((u) => u.email === value.trim());
 
-  if (!existUser) {
+  if (existUser) {
     throw new Error("Email Incorrecto");
   }
 
@@ -33,21 +33,9 @@ const fieldPasswordRegister = fieldPasswordDefault
   .matches(regExPass)
   .withMessage("La contraseña es invalida");
 
-  const fieldEmailLogin = fieldEmailDefault.custom((value, { req }) => {
-    const users = loadData("usuarios");
-    const user = users.find((u) => u.email === value.trim());
-  
-    if (!user) {
-      throw new Error("No se encontró ningún usuario registrado con este correo electrónico");
-    }
-  
-    // Si lo deseas, también podrías almacenar el usuario encontrado en el objeto de solicitud para su posterior uso
-    req.user = user;
-  
-    return true;
-  });
+
 
 module.exports = {
-  loginValidation: [fieldEmailLogin,],
+
   registerValidation: [fieldEmailRegister, fieldPasswordRegister],
 };
