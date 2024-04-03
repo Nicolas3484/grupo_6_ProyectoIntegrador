@@ -12,54 +12,5 @@
       "email": "canedapablomartin@gmail.com",
       "contraseña": "$2a$12$RXL3rpWVnzImrm5G/F64DeeFTCOTnhLqFFBlduDVXmJKNA.rGGQOq",
       "role": "USUARIO"
-   },
-   {
-      "id": 3,
-      "nombre": "asdasd",
-      "email": "caneda_pablito@hotmail.com",
-      "contraseña": "$2a$12$BcO4AXmt4Z7r0di6gy5WveFx3a8JWvKj4Yh400gHeAGWeX1PWcGsW",
-      "role": "USUARIO"
-   },
-   {
-      "id": 4,
-      "nombre": "pablo",
-      "email": "canedapablomartin@gmail.com",
-      "contraseña": "$2a$12$0Pxikf24baLgeQKPEs7Y4Ogo8qcBJV1hfUUUjjR0zIjnE9JUjtT66",
-      "role": "USUARIO"
-   },
-   {
-      "id": 5,
-      "nombre": "pablo ",
-      "email": "asdasdasdasdasd@asdasd.com",
-      "contraseña": "$2a$12$X65L11DjuQQ7nliHYOgvM.WyRkl1gEVj5byEa5HT4SBa.9X9o5j1y",
-      "role": "USUARIO"
-   },
-   {
-      "id": 6,
-      "nombre": "asdads",
-      "email": "canedapablomartin@gmail.com",
-      "contraseña": "$2a$12$40BvKN.LEWwM3l0FqTNnM.2JA2PweSU6JCO1sGJKH3t08uoWF8FM2",
-      "role": "USUARIO"
-   },
-   {
-      "id": 7,
-      "nombre": "asddas",
-      "email": "caneda_pablito@hotmail.com",
-      "contraseña": "$2a$12$L36NOfh8w4as6jw5T3Q5auPqIohk4/Dj9yBQpBQbOWq1zmUguoLkS",
-      "role": "USUARIO"
-   },
-   {
-      "id": 8,
-      "nombre": "meiko",
-      "email": "meikosoyregay@gmail.com",
-      "contraseña": "$2a$12$TsguLQmGSjm5XhxHfoGkPeA3ZsjXhs/8jMpPDRSii9j7csn2oRa8q",
-      "role": "USUARIO"
-   },
-   {
-      "id": 9,
-      "nombre": "Meiko",
-      "email": "meiko123@gmail.com",
-      "contraseña": "$2a$12$gYJoqDSwz4V7Hm1wIpqONeao.o5/OZIbsOsfMb3tMISlFJGf1adPq",
-      "role": "USUARIO"
    }
 ]

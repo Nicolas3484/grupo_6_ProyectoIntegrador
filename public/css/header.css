@@ -280,7 +280,7 @@ top: 5em;
     border-radius: 5px; /* Añadido borde redondeado */
   }
   #dropdown-contento{
-bottom: -64px;
+bottom: -62.5px;
 widht: -5px;
 height: 59px;
 top: 1.em;
@@ -430,5 +430,10 @@ font-size: 0;
 #nombre-usuario{margin-top: 9px;/* bottom: -20px; */}
 
 #fuente{
-    font-size: 19px;
+    
+font-size: 19px;
+}
+#imgProfile{
+    border-radius: 50%;
+    overflow: hidden;
 }

@@ -1,5 +1,7 @@
 const { body } = require("express-validator");
 const { loadData } = require("../../database");
+const bcrypt = require("bcryptjs");
+
 
 const fieldEmailDefault = body("email")
   .notEmpty()
@@ -22,7 +24,7 @@ const fieldPasswordDefault = body("contraseña")
         throw new Error("No se encontró ningún usuario registrado con este correo electrónico");
     }
   
-    req.user = user; // Almacenar el usuario encontrado en el objeto de solicitud
+    req.user = user; 
   
     return true;
 });
@@ -31,15 +33,17 @@ const fieldPasswordLogin = fieldPasswordDefault.custom((value, { req }) => {
     if (!req.user) {
         throw new Error("Por favor, ingrese un correo electrónico válido");
     }
-  
-    const passwordMatch = value === req.user.contraseña;
-  
-    if (!passwordMatch) {
+
+    const contraseñaHash = bcrypt.compareSync(value, req.user.contraseña); 
+
+    if (!contraseñaHash) {
         throw new Error("La contraseña proporcionada es incorrecta");
     }
-  
+
     return true;
 });
 
 module.exports = {
     loginValidation: [fieldEmailLogin, fieldPasswordLogin],}
+
+    
