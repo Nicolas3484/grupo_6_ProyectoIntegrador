@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-     <!-- head -->
-     <%- include("./partials/headOther",{title:"Detalle de Producto"}) %>
-     <link rel="stylesheet" href="/css/styles.css"/>
+    <!-- head -->
+    <%- include("./partials/headOther",{title:"Detalle de Producto"}) %>
+    <link rel="stylesheet" href="/css/styles.css"/>
 
 <body>
     <!-- header -->
@@ -10,21 +10,19 @@
     <main class="main-producto">
         <div class="nicolas">
         <div class="contenedor">
-
             <img src="/images/productos/<%= producto.imagen %>" alt="producto">
-           
         </div>
         
         <div class="infoGeneral-detalle">
             <div class="titulo-detalle"><i class="fa-regular fa-heart" id="Heart"></i>
                 <h2> <%= producto.titulo %></h2>
-             
-              <div class="price">
-              <span><%= producto.precio %></span>
-              <span id="span"><!-- espacio en blanco -->‎ Iva inc.</span>
-              <p>
-               Paga en 3 y 6 cuotas sin interes
-           </p>
+            
+            <div class="price">
+            <span>$<%= producto.precio %></span>
+            <span id="span"><!-- espacio en blanco -->‎ Iva inc.</span>
+        <p>
+            Paga en 3 y 6 cuotas sin interes
+        </p>
             </div>
             <div class="precio-cuotas">
                 <p>12 cuotas de 
@@ -47,11 +45,11 @@
                         </button>
                         <i class ="fa-solid fa-cart-shopping" id="img-carrito"></i>
                     </div>
-                   <div class="medios-de-pago">
+                    <div class="medios-de-pago">
                     <ul class="fila-pago">
-                        <li><a href="#"><img class="img-pago-producto" src ="./images/otros/pago-1.png" alt="pago-1"></a></li>
-                        <li><a href="#"><img class="img-pago-producto" src ="./images/otros/pago-2.jpg" alt="pago-2"></a></li>
-                        <li><a href="#"><img class="img-pago-producto" src ="./images/otros/pago-3.png" alt="pago-3"></a></li>
+                        <li><a href="#"><img class="img-pago-producto" src ="/images/otros/pago-1.png" alt="pago-1"></a></li>
+                        <li><a href="#"><img class="img-pago-producto" src ="/images/otros/pago-2.jpg" alt="pago-2"></a></li>
+                        <li><a href="#"><img class="img-pago-producto" src ="/images/otros/pago-3.png" alt="pago-3"></a></li>
 
                     </ul>
                     
@@ -59,7 +57,7 @@
                     <div class="ver-medios-de-pago">
                         <p>Ver medios de pago</p>
                     </div>
-                   </div>
+                    </div>
                     <div class="descripcion">
                         <div class="titulo-descripcion">
                         <h4>Descripcion</h4>
@@ -95,8 +93,8 @@
             
         </div>
     </main>
-      <!-- Footer -->
-      <%- include("./partials/footer") %>
+    <!-- Footer -->
+    <%- include("./partials/footer") %>
 </body>
 
 </html>

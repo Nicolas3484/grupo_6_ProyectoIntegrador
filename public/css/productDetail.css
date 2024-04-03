@@ -129,7 +129,7 @@
 
 .main-producto .nicolas .contenedor img {
     bottom: 107px;
-    position:relative;
+    /* position:relative; */
     width: 60%;
     /* margin-top: 10px; */
     border: 3px solid black;
@@ -143,10 +143,8 @@
 
 .price {
     padding-bottom: 19px;
-    border-top: 1px solid #b1b1b1
-    /* display:flex; */
-    /* align-items: center; */
-    /* justify-content: space-between; */
+    border-top: 1px solid #b1b1b1;
+    padding-left: 15px;
 }
 .price span{
     font-size: 33px;
@@ -174,7 +172,8 @@
     background-color: white;
     height: 90%;
     align-items: baseline;
-    font-size: 11px;
+    font-size: 100%;
+    width: 30%;
 }
 #img-carrito{
     position: relative;
@@ -255,7 +254,7 @@
 .fila-pago{border: 17px black;justify-content: space-between;height: 20px;/* gap: 9px; */text-decoration: none;padding: 0;margin: 0;display: flex;flex-wrap: wrap;}
 .fila-pago li{display: flex;width: 20%;flex-wrap: wrap;}
 .fila-pago li a .img-pago-producto{
-    width: 30px;
+    width: 100px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -265,7 +264,6 @@
 @media (min-width:769px){
  /* DESKTOP */
 .main-producto .nicolas {
-    /* width: 100vw; */
     display: flex;
     flex-wrap: wrap;
     background-color: #ffffff;

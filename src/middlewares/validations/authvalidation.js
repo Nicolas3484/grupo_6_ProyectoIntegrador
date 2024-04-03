@@ -19,7 +19,7 @@ const fieldEmailRegister = fieldEmailDefault.custom((value, { req }) => {
   const users = loadData("usuarios");
   const existUser = users.find((u) => u.email === value.trim());
 
-  if (!existUser) {
+  if (existUser) {
     throw new Error("Email Incorrecto");
   }
 

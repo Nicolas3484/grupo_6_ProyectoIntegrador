@@ -173,7 +173,7 @@
         align-items: center;
     }
 
-    .carrito .header-cart .back-container button {
+    .carrito .header-cart .back-container .button {
         border: none;
         border-radius: 10px;
         background-color: var(--colorMarron);
