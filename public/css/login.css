@@ -212,24 +212,23 @@
     background-color: var(--colorHueso);
 }
     .main-login div.registrarse-login{
+    height: 500px;
     backdrop-filter: blur(6px);
     width: 50%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 }
     .main-login div.registrarse-login h2{
     width: 100%;
     font-size: 40px;
     display: flex;
     margin: 0;
-    align-items: flex-end;
     justify-content: center;
 }
     .main-login div.registrarse-login p{
-    height: 250px;
+    height: 350px;
     text-align: center;
     width: 70%;
     display: flex;

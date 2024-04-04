@@ -18,11 +18,10 @@
         justify-content: center;
         align-items: center;
     }
-
-  /*   .container {
+ .container-error {
         text-align: center;
         color: #fff;
-    } */
+    } 
 
     h1 {
         font-size: 48px;
@@ -57,3 +56,5 @@ video {
     a:hover {
         text-decoration: underline;
     }
+
+    

@@ -32,7 +32,8 @@
 }
 
     .main-header figure .logo {
-    /* right: 50em; */
+    bottom: 20px;
+    right: 50%;
     position: relative;
     width: 100px;
 }
