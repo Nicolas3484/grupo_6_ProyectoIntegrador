@@ -20,7 +20,7 @@ const fieldEmailRegister = fieldEmailDefault.custom((value, { req }) => {
   const existUser = users.find((u) => u.email === value.trim());
 
   if (existUser) {
-    throw new Error("Email Incorrecto");
+    throw new Error("Credenciales Invalidas");
   }
 
   return true;

@@ -47,3 +47,5 @@ module.exports = {
     loginValidation: [fieldEmailLogin, fieldPasswordLogin],}
 
     
+
+    
