@@ -58,12 +58,5 @@
       "autores": "Marta Lecuchini y Lisandro Rolon",
       "imagen": "producto-6.png",
       "disponible": true
-   },
-   {
-      "id": 7,
-      "titulo": "gallinas 3",
-      "precio": "8",
-      "descripcion": "son las mismas pero 3",
-      "imagen": "imagePrincipal-1710713576262.jpeg"
    }
 ]

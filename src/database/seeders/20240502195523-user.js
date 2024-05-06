@@ -1,0 +1,23 @@
+'use strict';
+const usersJSON = require("../usuarios.json")
+const usersDB = usersJSON.map(c => {
+  return {
+    nombre: c.nombre,
+    email: c.email,
+    contraseña: c.contraseña,
+    role: c.role,
+  }
+})
+/** @type {import('sequelize-cli').Migration} */
+module.exports = {
+  async up (queryInterface, Sequelize) {
+
+     await queryInterface.bulkInsert('users', usersDB, {});
+  },
+
+  async down (queryInterface, Sequelize) {
+
+      await queryInterface.bulkDelete('users', null, {});
+    
+  }
+};
