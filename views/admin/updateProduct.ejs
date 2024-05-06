@@ -19,22 +19,31 @@
         <a href="/admin/productos" class="btn btn-primary mb-4">Volver al listado</a>
         
         <div class="card container p-4" style="width:60rem;">
-          <form action="/admin/nuevo-producto" method="post" class="row justify-content-between" enctype="multipart/form-data">
+          <form action="/admin/editar-producto/<%= product.id %>?_method=PUT" method="POST" class="row justify-content-between" enctype="multipart/form-data">
         
         
             <div class="mb-3 col-6">
               <label class="form-label">Titulo</label>
-              <input type="text" name="title" class="form-control">
+              <input type="text" name="titulo" class="form-control" value="<%= locals.old?.titulo || locals.old?.titulo === "" ? locals.old?.titulo : product.titulo %>">
+              <p class="text-danger">
+                <%= locals.errors?.titulo?.msg %>
+              </p>
             </div>
         
             <div class="mb-3 col-6">
               <label class="form-label">Precio</label>
-              <input type="number" name="price" class="form-control">
+              <input type="number" name="precio" value="<%= locals.old?.precio || locals.old?.precio === "" ? locals.old?.precio : product.precio %>" class="form-control">
+              <p class="text-danger">
+                <%= locals.errors?.precio?.msg %>
+              </p>
             </div>
-        
+            <label>Descripción</label>
             <div class="mb-3 form-floating col-6">
-              <textarea class="form-control" name="description" placeholder="Colocar la descripción del curso"></textarea>
-              <label>Descripción</label>
+              
+              <textarea class="form-control" name="descripcion" placeholder="Colocar la descripción del curso"><%= locals.old?.descripcion || locals.old?.descripcion === "" ? locals.old?.descripcion : product.descripcion %></textarea>
+              <p class="text-danger">
+                <%= locals.errors?.descripcion?.msg %>
+              </p>
             </div>
 
         
@@ -45,8 +54,11 @@
             </div>
         
             <div class="mb-3 col-8">
-              <label for="image" class="form-label">Seleccionar la imagen principal</label>
-              <input class="form-control form-control-sm" id="image" type="file" name="imagePrincipal" accept="image/*">
+              <label for="image" class="form-label text-info">Seleccionar la imagen principal</label>
+              <input class="form-control form-control-sm" id="image" type="file" name="imagenPrincipal"> 
+              <p class="text-danger col-12">
+                <%= locals.errors?.imagenPrincipal.msg %>
+              </p>
             </div>
         
             <button type="submit" class="mb-3 btn btn-success col-4">Editar Producto</button>
