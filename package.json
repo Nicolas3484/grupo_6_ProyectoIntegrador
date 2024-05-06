@@ -9,12 +9,15 @@
     "express-partials": "^0.3.0",
     "express-session": "^1.18.0",
     "express-validator": "^7.0.1",
+    "global": "^4.4.0",
     "http-errors": "^2.0.0",
     "method-override": "^3.0.0",
+    "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.1",
     "mysql2": "^3.9.7",
     "nodemon": "^3.0.3",
-    "sequelize": "^6.37.3"
+    "sequelize": "^6.37.3",
+    "sequelize-cli": "^6.6.2"
   },
   "name": "grupo_6_proyectointegrador",
   "version": "1.0.0",

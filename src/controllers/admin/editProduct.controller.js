@@ -1,40 +1,49 @@
-const { saveData, loadData } = require("../../database");
+const { validationResult } = require("express-validator");
+const db = require("../../database/models");
 
 module.exports = (req, res) => {
-    const products = loadData()
+  const errors = validationResult(req);
   const { id } = req.params;
-  const { title, price, description,} = req.body;
 
-  // const productFind = products.find(p => p.id === +id)
+  if (errors.isEmpty()) {
+    const {
+      titulo,
+      precio,
+      descripcion,
+   
+    } = req.body;
 
-  /* const productEdit = {
-    id: +id,
-    title: title ? title.trim() : productFind.title,
-    price: price ? +price : productFind.price,
-    description: description ? description.trim() : productFind.description,
-    chef: chef ? chef.trim() : productFind.chef,
-    sale: section === "sale",
-    newest: section === "newest",
-    free: section === "free",
-    available: available ? available : productFind.available
-  } */
+    db.product.update(
+      {
+        titulo: titulo.trim(),
+        precio: +precio,
+        descripcion: descripcion.trim(),
+        imagen: req.file ? req.file.filename : null,
 
-  const productsMap = products.map((p) => {
-    if (p.id === +id) {
-      const productEdit = {
-        ...p,
-        title: title.trim(),
-        price: +price,
-        description: description.trim(),
-        image: req.file ? req.file.filename : "not-image"
-      };
+      },
+      {
+        where: {
+          id,
+        },
+      }
+    )
+      .then(() => {
+        res.redirect("/admin/productos");
+      })
+      .catch((err) => res.send(err.message));
+  } else {
+    const errorsMapped = errors.mapped();
+    const productPromise = db.Product.findByPk(id);
 
-      return productEdit;
-    }
-
-    return p;
-  });
-
-  saveData(productsMap);
-  res.redirect("/admin/productos");
+    productPromise.then((product) => {
+      res.render(
+        "admin/updateProduct",
+        { product, errors: errorsMapped, old: req.body },
+        (err, contentView) => {
+          err && res.send(err.message);
+          res.render("partials/dashboard", );
+        }
+      );
+    });
+  }
 };
