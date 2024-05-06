@@ -33,9 +33,26 @@ const fieldPasswordRegister = fieldPasswordDefault
   .matches(regExPass)
   .withMessage("La contraseña es invalida");
 
-
+  const fieldImagePrincipalUpdate = body("imagePrincipal").custom(
+    (value, { req }) => {
+      const lengthImages = req.files?.imagePrincipal?.length;
+  
+      if (lengthImages) {
+        if (lengthImages > 1)
+          throw new Error("No puedes ingresar mas de 1 archivo");
+  
+        const extFile = path.extname(req.files.imagePrincipal[0].originalname);
+        const isFormatSuccess = regExpFiles.test(extFile);
+  
+        if (!isFormatSuccess)
+          throw new Error("El formato de la imagen principal es invalido");
+      }
+      return true;
+    }
+  );
 
 module.exports = {
 
   registerValidation: [fieldEmailRegister, fieldPasswordRegister],
+  
 };
