@@ -1,7 +1,12 @@
-const { loadData } = require("../../database");
-module.exports = (req, res) => {
-  const products = loadData() 
-  const { id } = req.params; 
-  const product = products.find((p) => p.id === +id); 
+const db = require("../../database/models");
 
-  res.render("admin/updateProduct", { product,})}
+module.exports = (req, res) => {
+  const { id } = req.params;
+  const product = db.product.findByPk(id);
+
+  product.then((product) => {
+    res.render("admin/updateProduct", { product });
+  }).catch((err) => {
+    res.send(err.message);
+  });
+};

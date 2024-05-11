@@ -12,5 +12,21 @@
       "email": "canedapablomartin@gmail.com",
       "contraseña": "$2a$12$RXL3rpWVnzImrm5G/F64DeeFTCOTnhLqFFBlduDVXmJKNA.rGGQOq",
       "role": "USUARIO"
+   },
+   {
+      "id": 3,
+      "nombre": "Hiakus",
+      "email": "hiakus2com@gmail.com",
+      "contraseña": "$2a$12$GXsyUXr4wb3dSryhqOWXBuO5YeA3whJLS.yfat1foi3gTZuVtf/dO",
+      "role": "USUARIO",
+      "avatar": "/images/icons/elpesho.png"
+   },
+   {
+      "id": 4,
+      "nombre": "pablito",
+      "email": "caneda_pablito@hotmail.com",
+      "contraseña": "$2a$12$mIn6GsRS9BSi4vnWy2WJceCmonITyoppkeeDw.BtOgZSxx5oac9R6",
+      "role": "USUARIO",
+      "avatar": "/images/icons/elpesho.png"
    }
 ]
