@@ -1,3 +1,4 @@
 module.exports = {
-    detail: require("./detail.controller")
+    detail: require("./detail.controller"),
+    list: require("./list.controller.js")
 }

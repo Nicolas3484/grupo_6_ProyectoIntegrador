@@ -1,5 +1,6 @@
-const { body } = require("express-validator");
+/* const { body } = require("express-validator");
 const { loadData } = require("../../database");
+const db = require("../../database/models");
 const regExPass = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/;
 
 const fieldEmailDefault = body("email")
@@ -50,7 +51,42 @@ const fieldPasswordRegister = fieldPasswordDefault
       return true;
     }
   );
-
+ */
+  const { body } = require("express-validator");
+  const db = require("../../database/models");
+  const regExPass = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/;
+  
+  const fieldEmailDefault = body("email")
+    .notEmpty()
+    .withMessage("Campo requerido")
+    .bail()
+    .isEmail()
+    .withMessage("Formato inválido")
+    .bail();
+  
+  const fieldPasswordDefault = body("contrasenia")
+    .notEmpty()
+    .withMessage("Campo requerido")
+    .bail();
+    
+  const fieldEmailRegister = fieldEmailDefault.custom((value, { req }) => {
+    const existUser = db.user.findOne({ where: { email: value.trim() } });
+  
+    if (!existUser) {
+      throw new Error("Email ya registrado");
+    }
+  
+    return true;
+  });
+  
+  const fieldPasswordRegister = fieldPasswordDefault
+    .isLength({ min: 8, max: 16 })
+    .withMessage("Longitud inválida")
+    .bail()
+    .matches(regExPass)
+    .withMessage("La contraseña es inválida");
+  
+ 
 module.exports = {
 
   registerValidation: [fieldEmailRegister, fieldPasswordRegister],

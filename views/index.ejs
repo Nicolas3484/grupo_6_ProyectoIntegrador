@@ -53,25 +53,25 @@
           <!-- SLIDER -->
           <div class="glider-contain productos">
             <div class="glider grupo">
-                <% for( let index = 0; index < producto.length; index++ ) { %>          
-                <div class="contenedor-imagen"><a href="/producto/<%=producto[index].id%>"><img src="/images/productos/<%=producto[index].imagen%>" alt="producto1"></a>
+              <% products.forEach(p => { %>     
+                <div class="contenedor-imagen"><a href="/producto/<%=p.id%>"><img src="/images/productos/<%=p.imagen%>" alt="producto1"></a>
                   <div class="overlay">
-                    <h4><a href="/producto/<%=producto[index].id%>"><%= producto[index].titulo%></a></h4>
+                    <h4><a href="/producto/<%=p.id%>"><%= p.titulo%></a></h4>
                     <i class="fas fa-heart"></i>
                     <div class="desc">
-                      <p>Creador <%=producto[index].autores%></p>
-                      <p>Precio <%=producto[index].precio%></p>
+                      <p>Creador <%=p.autores%></p>
+                      <p>Precio <%=p.precio%></p>
                     </div>
                   </div>
                 </div>
-                <% } %>
+                <% }) %>
             </div>
           <!-- PRODUCTOS <R. PARA TI>-->
           <h2 class="subt">RECOMENDADOS PARA TI</h2>
           <div class="productosOfertas">
               <div class="grupo">
-              <% for( let i = 0; i < producto.length; i++ ) { %>
-                <a href="/producto/<%= producto[i].id%>"><img src="/images/productos/<%= producto[i].imagen %>" alt="producto1"></a>
+              <% for( let i = 0; i < products.length; i++ ) { %>
+                <a href="/producto/<%= products.id%>"><img src="/images/productos/<%= products[i].imagen %>" alt="producto1"></a>
               <% } %>
               </div>
           </div>

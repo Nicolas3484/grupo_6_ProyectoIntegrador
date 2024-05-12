@@ -7,19 +7,22 @@
 <body>
     <!-- header -->
     <%- include("./partials/header") %>
+   
     <main class="main-producto">
         <div class="nicolas">
+            
         <div class="contenedor">
-            <img src="/images/productos/<%= producto.imagen %>" alt="producto">
+            <img src="/images/productos/<%= products.imagen %>" alt="producto">
         </div>
         
         <div class="infoGeneral-detalle">
             <div class="titulo-detalle"><i class="fa-regular fa-heart" id="Heart"></i>
-                <h2> <%= producto.titulo %></h2>
+                <h2> <%= products.titulo %></h2>
             
             <div class="price">
-            <span>$<%= producto.precio %></span>
+            <span>$<%= products.precio %></span>
             <span id="span"><!-- espacio en blanco -->‎ Iva inc.</span>
+            
         <p>
             Paga en 3 y 6 cuotas sin interes
         </p>
@@ -64,7 +67,7 @@
                         <i class="fa-solid fa-chevron-down "></i>
                     </div>
                     <div class="texto-descripcion">
-                        <p><%= producto.descripcion %></p>
+                        <p><%= products.descripcion %></p>
                     </div>
                     </div>
                     <div class="caracteristicas-artist">
@@ -82,7 +85,7 @@
                             <i class="fa-solid fa-chevron-down"></i>
                             </div>
                         <div class="texto-caracteristicas">
-                            <p>Pintada por <%= producto.autores %></p>
+                            <p>Pintada por <%= products.autores %></p>
                         </div>
                     </div>
 
@@ -90,10 +93,10 @@
                 </div>
             </div>
         </div>
-            
+      
         </div>
     </main>
-    <!-- Footer -->
+    <!-- Footer --> 
     <%- include("./partials/footer") %>
 </body>
 

@@ -1,8 +1,10 @@
+const { newProductForm, storeProduct } = require("./storeProduct.controller");
+
 module.exports = {
     listProducts: require("./listProduct.controller"),
     asd: require("./dashboard"),
-    newProduct: require ("./newProduct.controller"),
-    storeProduct: require("./storeProduct.controller"),
+    newProductForm,
+    storeProduct,
     updateProduct: require("./updateProduct.controller"),
     editProduct: require("./editProduct.controller"),
     eliminar: require("./eliminar.controller"),
