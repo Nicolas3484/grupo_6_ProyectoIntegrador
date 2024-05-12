@@ -26,7 +26,7 @@
     <% if (!locals.userLogin) { %>
     <nav class="nav-bar">
         <ul class="nav-ul">
-            <li id="nav-icons"><a href=""><i class="fa-solid fa-heart"></i></a></li>
+            <li id="nav-icons"><a href="/iniciar"><i class="fa-solid fa-heart"></i></a></li>
             <div class="dropdown">
                 <button class="dropbtn"><i class="fa-solid fa-user user"></i> </button>
                 <div class="dropdown-content">
@@ -34,7 +34,7 @@
                   <a href="/iniciar">Iniciar Sesion</a>
                 </div>
               </div>
-              <li id="nav-icons"><a href="/carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              <li id="nav-icons"><a href="/iniciar"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
               <% } else { %>
                 <nav class="nav-bar">
@@ -45,7 +45,7 @@
                                 <img id="imgProfile" src ="/images/icons/elpesho.png" alt="">
                                 <div id="dropdown-contento" class="dropdown-content">
                                   <a id="fuente" href="/perfil">Mi perfil</a>
-                                  <a id="fuente" href="/">Cerrar sesión</a>
+                                  <a href="/cerrar-sesion">Cerrar Sesión</a>
                                 </div>
                               </div>
                      

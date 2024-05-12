@@ -1,12 +1,12 @@
-const db = require("../../database/models")
+/* const db = require("../../database/models")
 
 module.exports = (req, res) => {
 
   db.product.findAll()
-
   .then((products) => {
-    res.render("../views/index", {
+    res.render("../views/productoDetail", {
       products
     })
   })
 };
+ */

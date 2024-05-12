@@ -33,13 +33,13 @@ module.exports = (req, res) => {
       .catch((err) => res.send(err.message));
   } else {
     const errorsMapped = errors.mapped();
-    const productPromise = db.Product.findByPk(id);
+    const product = db.Product.findByPk(id);
 
-    productPromise.then((product) => {
+    product.then((product) => {
       res.render(
         "admin/updateProduct",
         { product, errors: errorsMapped, old: req.body },
-        (err, contentView) => {
+        (err,) => {
           err && res.send(err.message);
           res.render("partials/dashboard", );
         }

@@ -12,5 +12,12 @@
       "email": "canedapablomartin@gmail.com",
       "contraseña": "$2a$12$RXL3rpWVnzImrm5G/F64DeeFTCOTnhLqFFBlduDVXmJKNA.rGGQOq",
       "role": "USUARIO"
-   }
-]
+   },
+{
+   "id": 3,
+   "nombre": "zaasddasdas",
+   "email": "pepito@gmail.com",
+   "contraseña": "$12$5IsInCupaTfNVFqoPnXu4e0To8Oe0zQozG297gyKeL/.DQ34Fwoo6",
+   "role": "USUARIO"
+}
+] 

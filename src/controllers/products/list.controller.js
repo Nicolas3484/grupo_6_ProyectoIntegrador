@@ -1,3 +1,8 @@
+/* const db = require("../../database/models");
+
 module.exports = (req, res) => {
-    res.send("ESTA ES LA VISTA DE LISTADO DE PRODUCTOS (/productos)")
-  }
+  db.Product.findAll({
+  }).then((products) => {
+    res.render("products/list", { products });
+  });
+}; */
