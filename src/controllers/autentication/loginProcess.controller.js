@@ -73,7 +73,7 @@ module.exports = (req, res) => {
 
     const isPasswordValid = bcrypt.compareSync(password, user?.password);
 
-    if (!isPasswordValid) res.send("El password es incorrecto");
+    if (!isPasswordValid) res.send("La contraseña es incorrecta");
 
     req.session.userLogin = {
       id: user.id,
@@ -84,7 +84,7 @@ module.exports = (req, res) => {
     };
 
     if (remember)
-      res.cookie("userLogin", req.session.userLogin, { maxAge: 6000 * 30 });
+      res.cookie("userLogin", req.session.userLogin, { maxAge: 1000 * 60 * 60 * 24 * 30 });
 
     res.redirect("/");
   });
