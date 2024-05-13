@@ -17,16 +17,6 @@ const db = require("../../database/models")
 
 module.exports = (req, res) => {
   const {id} = req.params
-
-  
-  
-
-  db.ImageSecondary.destroy({
-    where:{
-      productId: id
-    }
-  })
-  .then(() => {
     
     db.Product.destroy({
       where:{
@@ -36,6 +26,6 @@ module.exports = (req, res) => {
     .then(() => {
       res.redirect("/admin/productos")
     })
-  })
+  
 
 };
