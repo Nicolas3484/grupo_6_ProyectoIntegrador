@@ -406,7 +406,7 @@ width: 90%;
     width: 100%; /* Establecer el ancho al 100% para que las imágenes ocupen todo el ancho del carrusel */
     height: auto; /* Ajustar automáticamente la altura para mantener la proporción de la imagen */
   }#carouselExampleCaptions .carousel-item img {
-    width: 10; /* Establecer el ancho al 100% para que las imágenes ocupen todo el ancho del carrusel */
+    /* width: 100px; */ /* Establecer el ancho al 100% para que las imágenes ocupen todo el ancho del carrusel */
     height: 380px; /* Establecer una altura fija */
     /* object-fit: cover; */
   }

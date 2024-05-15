@@ -6,6 +6,7 @@ const usersDB = usersJSON.map(c => {
     email: c.email,
     contraseña: c.contraseña,
     role: c.role,
+    avatar: c.avatar
   }
 })
 /** @type {import('sequelize-cli').Migration} */

@@ -30,7 +30,12 @@ app.use(checkUsser)
 
 
 
-// Rutas
+// Rutas API
+const apiUsersRoutes = require("./src/routes/api/users.api.");
+const apiProductsRoutes = require('./src/routes/api/products.api');
+const apiOrderRoutes = require('./src/routes/api/order.api');
+
+//rutas
 const authRoutes = require("./src/routes/authentication.routes");
 const cartRoutes = require("./src/routes/cart.routes");
 const otherRoutes = require("./src/routes/other.routes");
@@ -43,6 +48,11 @@ app.use("/", productRoutes);
 app.use("/", authRoutes);
 app.use("/iniciar", authRoutes);
 app.use("/carrito", cartRoutes);
+
+/* ENRUTADOR API */
+app.use("/api", apiUsersRoutes);
+app.use('/api', apiProductsRoutes);
+app.use('/api/order', apiOrderRoutes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

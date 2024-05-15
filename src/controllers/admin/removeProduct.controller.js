@@ -18,7 +18,7 @@ const db = require("../../database/models")
 module.exports = (req, res) => {
   const {id} = req.params
     
-    db.Product.destroy({
+    db.product.destroy({
       where:{
         id
       }

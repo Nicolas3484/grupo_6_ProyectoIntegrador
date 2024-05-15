@@ -1,51 +1,46 @@
 'use strict';
-
-const { toDefaultValue } = require('sequelize/lib/utils');
-
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('products', {
+    await queryInterface.createTable('Addresses', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      titulo: {
-        type: Sequelize.STRING
-      },
-      subtitulo: {
-        type: Sequelize.STRING
-      },
-      precio: {
+      userId: {
         type: Sequelize.INTEGER
       },
-      descripcion: {
-        type: Sequelize.TEXT
-      },
-      autores: {
+      street: {
         type: Sequelize.STRING
       },
-      imagen: {
+      streetNumber: {
         type: Sequelize.STRING
       },
-      disponible: {
-        type: Sequelize.BOOLEAN
+      city: {
+        type: Sequelize.STRING
+      },
+      provincia: {
+        type: Sequelize.STRING
+      },
+      postalCode: {
+        type: Sequelize.STRING
+      },
+      country: {
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE,
-        defaultValue: new Date()
+        type: Sequelize.DATE
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE,
-        defaultValue: new Date()
+        type: Sequelize.DATE
       }
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('products');
+    await queryInterface.dropTable('Addresses');
   }
 };

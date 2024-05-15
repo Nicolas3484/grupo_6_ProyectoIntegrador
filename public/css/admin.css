@@ -5,6 +5,8 @@ html {
   box-sizing: border-box;
 }
 .table {
+  display: flex;
+  border-radius: -28%;
   overflow-x: auto;
 }
 
@@ -20,7 +22,8 @@ html {
 }
 
 .table th {
-  background-color: #f2f2f2;
+  /* border-radius: 50%; */
+  background-color: #ffffff;
   text-align: left;
 }
 
@@ -66,6 +69,9 @@ html {
 body {
   /* background: #f1f2f7; */
   font-family: "Open Sans", arial, sans-serif;
+
+
+  
   color: #0d1111;
 }
 
@@ -248,9 +254,12 @@ b {
   color: lightslategray;
 }
 ul.main{
-  position: relative;
-  top: -12.6em;
-  font-size: medium;
+  
+position: relative;
+  
+top: -12.6em;
+  
+font-size: medium;
 }
 /* lists */
 ul,

@@ -10,6 +10,7 @@ const productsDB = productsJSON.map(c => {
     autores: c.autores,
     imagen: c.imagen,
     disponible: c.disponible,
+    categoryId: c.categoryId
   }
 })
 
