@@ -1,7 +1,7 @@
 module.exports = {
     development: {
       username: "root",
-      password: "ikavhim2",
+      password: "Hiakus1971",
       database: "pintec-db",
       host: "127.0.0.1",
       dialect: "mysql",
