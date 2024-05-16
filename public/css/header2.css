@@ -1,4 +1,4 @@
-body {
+* {
     margin: 0px;
     padding: 0px;
     font-family: var(--cuerpo-font-family);
@@ -13,10 +13,10 @@ body {
     background-color: #1e1200;
     display: flex;
     flex-wrap: wrap;
-    height: 100px;
+    height: 90px;
     justify-content: space-between;
-    align-items: center;
     text-align: center;
+    align-items: center;
     }
 
             /* BURGER MENU */
@@ -90,9 +90,6 @@ body {
 }
 
 .menu-toggle {
-    /* left: -1em; */
-    /* bottom: -30em; */
-    /* left: 15em; */
     z-index: 350;
     position: relative;
     cursor: pointer;
@@ -115,22 +112,19 @@ body {
     flex-direction: column;
     position: absolute;
     top: calc(100% + 10px);
-    left: -100%; /* Cambiado */
-    background-color: #6E422B; /* Color marrón */
+    left: -100%;
+    background-color: #6E422B; 
     width: 100%;
     z-index: 2;
     display: none;
     opacity: 0;
-    transition: opacity 0.3s ease, left 0.3s ease; /* Modificado */
+    transition: opacity 0.3s ease, left 0.3s ease; 
 }
 
 .nav-list.active {
-    top: 9.9em;
-    width: 19em;
-    padding: 1em;
     display: flex;
     opacity: 1;
-    left: -5.3em; /* Añadido */
+    top: 88px;
 }
 
 .content {
@@ -161,29 +155,34 @@ body {
     position: absolute;
     color: black;
     z-index: 20;
-    right: 105px;
-    top: 25px;
-    margin: 0 auto;
+    right: 18%;
+    top: 12px;
+    font-size: 25px;
 }
 
 .buscador .input {
     width: 70%;
     height: 3em;
     border-radius: 30px;
+    height: 50px;
+    font-size: 20px;
+    outline: none;
+    padding-left: 20px;
 }
 
             /* MINIMENU USER */
 
 .dropbtn {
     position: relative;
+    top: 0px;
     bottom: 0.4em;
     background-color: #1e1200;
     color: white;
     font-size: 24px;
     border: none;
-    padding: 12px 20px; 
-    border-radius: 5px; 
-    cursor: pointer; 
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
             /* Contenedor del desplegable */
@@ -234,4 +233,24 @@ body {
 
 .nav-bar {
     width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
+
+.nav-ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-ul li {}
+
+.nav-ul li a {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-ul li a i {}
