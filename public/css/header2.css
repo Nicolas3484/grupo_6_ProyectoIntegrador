@@ -59,6 +59,7 @@ body {
     display: none;
     opacity: 0;
     transition: opacity 0.3s ease, left 0.3s ease;
+    
 }
 
 .nav-list.active {
@@ -126,7 +127,7 @@ body {
 .nav-list.active {
     top: 9.9em;
     width: 19em;
-    /* padding: 1em; */
+    padding: 1em;
     display: flex;
     opacity: 1;
     left: -5.3em; /* Añadido */
