@@ -1,7 +1,7 @@
- const path = require('path');
+/*  const path = require('path');
 
 module.exports = (req, res) =>{
-     const { image } = req.params;
-     const imagePath = path.join(__dirname, '../../../public/images/icons', image);
+     const { imagen } = req.params;
+     const imagePath = path.join(__dirname, '../../../public/images/icons', imagen);
      res.sendFile(imagePath);
-    }; 
+    };  */
