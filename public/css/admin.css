@@ -286,7 +286,7 @@ form select {
   width: 100%;
   display: block;
   border: solid 1px #fff;
-  padding: 0.5em;
+  /* padding: 0.5em; */
 }
 form input:after,
 form textarea:after,

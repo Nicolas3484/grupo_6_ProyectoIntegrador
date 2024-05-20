@@ -1,3 +1,7 @@
+@charset "UTF-8";
+@import "https://assets.codepen.io/3351103/__reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
 * {
     margin: 0px;
     padding: 0px;
@@ -10,7 +14,7 @@
             /* HEADER */
 
 .main-header {
-    background-color: #1e1200;
+    background-color: black;
     display: flex;
     flex-wrap: wrap;
     height: 90px;
@@ -139,7 +143,7 @@
 
 .logo-container {width: 20%;text-align: left;}
 
-.logo-container .logo {width: 100px;}
+.logo-container .logo {width: 100px;height: 50px;}
 
 
 
@@ -149,6 +153,8 @@
     width: 40%;
     position: relative;
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .buscador i {
@@ -156,18 +162,18 @@
     color: black;
     z-index: 20;
     right: 18%;
-    top: 12px;
+    top: 13px;
     font-size: 25px;
 }
 
 .buscador .input {
     width: 70%;
-    height: 3em;
     border-radius: 30px;
     height: 50px;
-    font-size: 20px;
+    font-size: 16px !important;
     outline: none;
     padding-left: 20px;
+    border: 0;
 }
 
             /* MINIMENU USER */
@@ -176,7 +182,7 @@
     position: relative;
     top: 0px;
     bottom: 0.4em;
-    background-color: #1e1200;
+    background-color: black;
     color: white;
     font-size: 24px;
     border: none;
@@ -244,13 +250,11 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    padding-right: 20px;
 }
-
-.nav-ul li {}
 
 .nav-ul li a {
     color: white;
     font-size: 24px;
 }
 
-.nav-ul li a i {}
