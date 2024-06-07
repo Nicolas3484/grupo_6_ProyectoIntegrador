@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body .main-producto{
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+}
+
+/* header{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    justify-content: center;
+} */
+main{
+    /* width: 174%; */
+    /* display: flex; */
+    gap: 30px;
+    /* margin-bottom: 80px; */
+    /* align-content: center; */
+    align-items: baseline;
+}
+
+.contenedor{
+    flex: 1;
+}
+.infoGeneral{
+    flex: 1;
+}

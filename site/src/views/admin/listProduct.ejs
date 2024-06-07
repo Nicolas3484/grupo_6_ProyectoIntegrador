@@ -1,0 +1,52 @@
+<!-- listProduct.ejs -->
+
+<%- include('dashboard.ejs') %>
+<body>
+
+<section class="panel important">
+    <div class="boton"><a href="./nuevo-producto" class="btn btn-primary mb-4">Crear Producto</a></div>        
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>ID</th>
+                <th>Descripción</th>
+                <th>Autores</th>
+                <th>Price</th>
+                <th>Date</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% products.forEach(product => { %>    
+                <tr>
+                    <td>
+                        <div class="name-column-wrapper">
+                            <div class="image-wrapper"><img class="img-product" src="/images/productos/<%= product.imagen %>" alt="aa"></div>
+                            <div class="info">
+                                <div class="name"><%= product.titulo %></a><span></span></div>
+                                <div class="tagline"><%= product.subtitulo %></div>
+                                <div class="labels"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td><%= product.id %></td>
+                    <td><%= product.descripcion %></td>
+                    
+                    <td><%= product.autores %></td>
+                    <td><%= product.precio %></td>
+                    <td><%= product.wea %></td>
+                    
+                    <td align="center">
+                        <a href="/admin/editar-producto/<%= product.id %>" class="btn btn-default"><em class="fa fa-pencil"></em></a>
+                        <a href="/admin/eliminar-producto?id=<%= product.id %>&title=<%= product.titulo %>" class="btn btn-danger"><em class="fa fa-trash"></em></a></>
+                    </td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</section>
+
+<script src="/js/functions/dashboard.js"></script>
+</body>
