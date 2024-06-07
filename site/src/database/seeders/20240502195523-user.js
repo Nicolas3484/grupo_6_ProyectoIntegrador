@@ -4,7 +4,7 @@ const usersDB = usersJSON.map(c => {
   return {
     nombre: c.nombre,
     email: c.email,
-    contraseña: c.contraseña,
+    password: c.contraseña,
     role: c.role,
     avatar: c.avatar
   }

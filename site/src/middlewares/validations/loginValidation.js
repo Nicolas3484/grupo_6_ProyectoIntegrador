@@ -1,45 +1,32 @@
-const { body } = require("express-validator");
-const db = require("../../database/models");
-const bcrypt = require("bcryptjs");
+const { check, body } = require('express-validator')
+const db = require('../../database/models')
+const bcryptjs = require('bcryptjs')
 
-const fieldEmailDefault = body("email")
-  .notEmpty()
-  .withMessage("Campo requerido")
-  .bail()
-  .isEmail()
-  .withMessage("Formato inválido")
-  .bail();
+module.exports = [
+     /* EMAIL */ 
+    check('email').trim()
+        .notEmpty().withMessage('Debe ingresar su email').bail()
+        .isEmail().withMessage('Debe ingresar un email valido'),
 
-const fieldPasswordDefault = body("contraseña")
-  .notEmpty()
-  .withMessage("Campo requerido")
-  .bail();
+    /* CONTRASEÑA */
+    check('pass').trim()
+        .notEmpty().withMessage('Debe ingresar su contraseña').bail()
+        .isLength({ min: 8 }).withMessage('Debe contener al menos 8 caracteres'),
 
-const fieldEmailLogin = fieldEmailDefault.custom(async (value, { req }) => {
-  const existUser = await db.user.findOne({ where: { email: value.trim() } });
-
-  if (!existUser) {
-    throw new Error("No se encontró ningún usuario registrado con este correo electrónico");
-  }
-
-  req.user = existUser; 
-  return true;
-});
-
-const fieldPasswordLogin = fieldPasswordDefault.custom((value, { req }) => {
-  if (!req.user) {
-    throw new Error("Por favor, ingrese un correo electrónico válido");
-  }
-
-  const contraseñaHash = bcrypt.compareSync(value, req.user.contraseña);
-
-  if (!contraseñaHash) {
-    throw new Error("La contraseña proporcionada es incorrecta");
-  }
-
-  return true;
-});
-
-module.exports = {
-  loginValidation: [fieldEmailLogin, fieldPasswordLogin]
-};
+    body('pass')
+        .custom((value, { req }) => {
+            return db.user.findOne({
+                where: {
+                    email: req.body.email
+                }
+            })
+                .then(user => {
+                    if (!bcryptjs.compareSync(value, user.dataValues.password)) {
+                        return Promise.reject()
+                    }
+                })
+                .catch(() => {
+                    return Promise.reject("Email o contraseña incorrecta")
+                })
+        })
+]

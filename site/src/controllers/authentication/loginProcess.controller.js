@@ -5,12 +5,13 @@ const db = require("../../database/models");
 
 module.exports = (req, res) => {
   const errors = validationResult(req);
+  console.log("errors -->", req.body, errors);
 
   if (!errors.isEmpty()) {
     const validationErrors = errors.array().map(error => error.msg); 
     return res.status(400).json({ errors: validationErrors }); 
   }
-  const { email, contraseña, recordarme } = req.body;
+  const { email, password, recordarme } = req.body;
 
   db.user.findOne({
     where: {
@@ -18,13 +19,14 @@ module.exports = (req, res) => {
     }
   }) 
   .then(user => {
+    console.log(user);
     if (!user) {
       return res.status(404).send("El usuario no existe");
     }
 
-    const contraseñaHash = bcrypt.compareSync(contraseña, user.contraseña);
+    const passHash = bcrypt.compareSync(password, user.password);
 
-    if (!contraseñaHash) {
+    if (!passHash) {
       return res.status(401).send("Credenciales inválidas");
     }
 

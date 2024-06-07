@@ -1,5 +1,5 @@
 const bcryptjs = require('bcryptjs');
-let pass = "pepito"
+let pass = "juancarlos"
 
 let hash = bcryptjs.hashSync(pass, 10);
 
