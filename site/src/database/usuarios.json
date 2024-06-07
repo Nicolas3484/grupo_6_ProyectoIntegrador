@@ -32,7 +32,7 @@
    {    
       "id": 5,
       "nombre": "Martin",
-      "email": "martin.araneda@outlook.com.com",
+      "email": "martin.araneda@outlook.com",
       "contraseña": "$2a$10$NLvvaeNXJpUyP/hGQrzd3OYkOIgHhREoTgCyPVa7PTeiUQCQuKfGO",
       "role": "ADMINISTRADOR",
       "avatar": ""
