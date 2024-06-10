@@ -1,20 +1,20 @@
 const bcrypt = require("bcryptjs");
 const db = require("../../database/models");
-const { validationResult } = require("express-validator");
+const  validationResult  = require("express-validator");
 
 module.exports = (req, res) => {
   const errors = validationResult(req);
 
   if (errors.isEmpty()) {
-    const { nombre, email, contrasenia, confirmarcontrasenia } = req.body;
+    const { nombre, email, password, confirmarcontrasenia } = req.body;
     
-    if (contrasenia === confirmarcontrasenia) {
-      bcrypt.hash(contrasenia.trim(), 12)
+    if (password === confirmarcontrasenia) {
+      bcrypt.hash(password.trim(), 12)
         .then(hashedPassword => {
           return db.user.create({
             nombre: nombre,
             email: email?.trim().toLowerCase(),
-            contraseña: hashedPassword,
+            password: hashedPassword,
             role: "USUARIO",
             avatar: "/images/icons/elpesho.png"
           });

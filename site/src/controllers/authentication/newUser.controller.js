@@ -1,10 +1,10 @@
 module.exports = (req,res) => {
 
 
-    const {nombre,email,contrasenia} = req.body;
+    const {nombre,email,pass} = req.body;
     const newUsuario = {
         user: email,
-        password: contrasenia,
+        password: pass,
         name: nombre,
     };
     res.send(newUsuario);

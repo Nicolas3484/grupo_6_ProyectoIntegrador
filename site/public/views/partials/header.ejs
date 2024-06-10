@@ -1,0 +1,50 @@
+<header class="main-header">
+
+    <div class="img-logo">
+        <a href="/home">
+            <img class="logo" src="/images/icons/logo_oscuro.ico" alt="Logo">
+        </a>
+    </div>
+
+    <form action="/buscar" method="get" class="search-form">
+        <input class="input-search" type="text" id="search" name="buscador" placeholder="Artista, Categoría, Pintura...">
+        <button type="submit" class="btn-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </form>
+
+    <div class="burger-menu">
+        <label for="burger" class="burger-menu-label" id="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input id="burger" class="burger" type="checkbox">
+    </div>
+    
+    <nav class="nav-bar" id="nav-bar">
+        <ul class="nav-bar-list">
+            <li class="nav-bar-item">
+                <a href="/productos">Productos</a>
+            </li>
+            <li class="nav-bar-item">
+                <a href="/categorias">Categorías</a>
+            </li class="nav-bar-item">
+            <li class="nav-bar-item">
+                <a href="/about">Quienes somos</a>
+            </li>
+            <!-- <li class="nav-bar-item">
+                <a href="/admin">Administrador</a>
+            </li> -->
+        </ul>
+        <div class="usuarios">
+            <a href="/iniciar">
+                <i class="fa-solid fa-user"></i>
+            </a>
+            <a href="/carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+    </nav>
+</header>
+
+
+<script src="/js/functions/header.js"></script>

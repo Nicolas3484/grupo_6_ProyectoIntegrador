@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   const menuToggle = document.getElementById('mobile-menu');
-  const navList = document.querySelector('.nav-list');
+  const navList = document.getElementById('nav-bar');
 
   menuToggle.addEventListener('click', () => {
       navList.classList.toggle('active');
