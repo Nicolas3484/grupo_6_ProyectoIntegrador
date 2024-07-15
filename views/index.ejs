@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-  <link rel="stylesheet" href="./css/styles.css"/>
-     <!-- head -->
-     <%- include("./partials/headHome") %>
-<body>
+  <link rel="stylesheet" href="/public/css/home2.css">
+    <!-- head -->
+    <%- include("./partials/headHome") %>
+    
+<body class="background">
     <!-- header -->
     <%- include("./partials/header2") %>
     <main class="main-home">
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleCaptions" class="carousel slide carrusel1" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+        <div class="carousel-inner carrusel-inner">
+          <div class="carousel-item carrusel-item active">
             <img src="/images/banners/banner-1.webp" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Descubrí</h5>
@@ -23,14 +23,14 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="/images/banners/banner-2 jpg.jpg" class="d-block w-100" alt="...">
+            <img src="/images/banners/banner-2.webp" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Disfrutá</h5>
               <p>Despierta tus sentidos con un estallido de colores y creatividad.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="/images/banners/banner-3 .jpg" class="d-block w-100" alt="...">
+            <img src="/images/banners/banner-3.webp" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Explorá</h5>
               <p>Artistas famosos, arte histórico.</p>
@@ -46,26 +46,58 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      <div class="gradient-overlay"></div>
+
+
+      <!-- Presentación -->
+
+      <div class="bienvenido">
+        <h1>BIENVENIDO</h1>
+        <p>
+          En PINTEC® nos dedicamos a celebrar y promover la infinita diversidad del arte. Nuestra misión principal es dar a conocer y poner al alcance de todos una amplia gama de obras de arte, desde la pintura tradicional hasta el dibujo digital y las más innovadoras formas de expresión artística. Creemos que el arte es un lenguaje universal que trasciende fronteras y conecta corazones y mentes.
+
+          Nuestro equipo trabaja incansablemente para seleccionar y presentar obras de artistas emergentes y consagrados, ofreciendo una plataforma para que sus creaciones sean descubiertas y apreciadas por un público global. Cada pieza que encontrarás en PINTEC® ha sido cuidadosamente elegida por su calidad, originalidad y capacidad de inspirar.
+        </p>
+        <div class="generos">
+            <div class="genero-item">
+                <a href=""><img src="/images/productos/producto-1.png" alt="Pintura"></a>
+                <div class="overlay-genero">PINTURA</div>
+            </div>
+            <div class="genero-item">
+                <a href=""><img src="/images/productos/producto-2.png" alt="Escultura"></a>
+                <div class="overlay-genero">ESCULTURA</div>
+            </div>
+            <div class="genero-item">
+                <a href=""><img src="/images/productos/producto-3.png" alt="Dibujo"></a>
+                <div class="overlay-genero">DIBUJO</div>
+            </div>
+            <div class="genero-item">
+                <a href=""><img src="/images/productos/producto-4.png" alt="Grabado"></a>
+                <div class="overlay-genero">GRABADO</div>
+            </div>
+        </div>
+    </div>
 
       <!-- PRODUCTOS <DESTACADOS>-->
         <section class="pag">
           <h2 class="subt">DESTACADOS</h2>
           <!-- SLIDER -->
-          <div class="glider-contain productos">
-            <div class="glider grupo">
-                <% for( let index = 0; index < producto.length; index++ ) { %>          
-                <div class="contenedor-imagen"><a href="/producto/<%=producto[index].id%>"><img src="/images/productos/<%=producto[index].imagen%>" alt="producto1"></a>
-                  <div class="overlay">
-                    <h4><a href="/producto/<%=producto[index].id%>"><%= producto[index].titulo%></a></h4>
-                    <i class="fas fa-heart"></i>
-                    <div class="desc">
-                      <p>Creador <%=producto[index].autores%></p>
-                      <p>Precio <%=producto[index].precio%></p>
+            <div class="glider-contain productos">
+                <div class="glider grupo">
+                  <% producto.forEach(p => { %>     
+                    <div class="product-card"><a href="/producto/<%=p.id%>"><img src="/images/productos/<%=p.imagen%>" alt="producto1"></a>
+
+                        <h2><%= p.titulo%></h2>
+                        <p>Creador: <%=p.autores%></p>
+                        <p class="price"><span class="old-price">7.198.400</span> $<%=p.precio%> ARS</p>
+            
                     </div>
-                  </div>
-                </div>
-                <% } %>
+                    
+
+
+                    <% }) %>
             </div>
+          </div>
           <!-- PRODUCTOS <R. PARA TI>-->
           <h2 class="subt">RECOMENDADOS PARA TI</h2>
           <div class="productosOfertas">

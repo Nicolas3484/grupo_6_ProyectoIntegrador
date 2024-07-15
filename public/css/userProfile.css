@@ -1,12 +1,15 @@
 .pf-view {
-    background-color: mistyrose;
+    background: linear-gradient(to bottom, lightblue, #ebebeb);
 }
 
 .pf-view .cont-principal {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border-bottom: 1px solid;
+    width: 80%;
+    margin: 30px auto 0;
+    background-color: white;
+    border-radius: 15px;
 }
 
 .pf-view .cont-principal .pfp {
@@ -56,7 +59,7 @@
 
 .pf-view .cont-secundario .nav-pf ul{display: flex;width: 100%;}
 
-.pf-view .cont-secundario .nav-pf ul li{position: static;padding: 16px;margin: 0;border: 1px solid;width: 100%;text-align: center;}
+.pf-view .cont-secundario .nav-pf ul li{position: static;padding: 16px;/* margin: 0; */border: 1px solid;width: 100%;text-align: center;}
 
 .pf-view .cont-secundario .nav-pf ul li a{
     color: black;

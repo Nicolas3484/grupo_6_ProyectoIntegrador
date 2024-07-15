@@ -2,13 +2,14 @@
         font-family: Arial, sans-serif;
         background-size: cover;
         background-position: center;
+        background-color: #ebebeb;
         margin: 0;
         padding: 0;
     }
 
     .overlay {
-        height: 100vw;
         width: 100vw;
+        height: 100vh;
         background-color: rgba(0, 0, 0, 0.6);
         position: absolute;
         top: 0;
@@ -23,17 +24,17 @@
         color: #fff;
     } 
 
-    h1 {
+    .container-error h1 {
         font-size: 48px;
         margin-bottom: 20px;
     }
 
-    p {
+    .container-error p {
         font-size: 24px;
         /* margin-bottom: 30px; */
     }
 
-    a {
+    .container-error a {
         color: white;
         text-decoration: none;
     }
@@ -53,7 +54,7 @@ video {
     z-index: -2;
 }
 
-    a:hover {
+.container-error a:hover {
         text-decoration: underline;
     }
 

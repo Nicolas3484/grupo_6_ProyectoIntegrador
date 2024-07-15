@@ -255,7 +255,6 @@ ul.main{
 /* lists */
 ul,
 li {
-  bottom: 7em;
   /* position: relative; */
   list-style-type: none;
   margin: 0;
@@ -263,9 +262,9 @@ li {
 }
 
 main li {
-  position: relative;
+  /* position: relative; */
   padding-left: 1.2em;
-  margin: 0.5em 0;
+  /* margin: 0.5em 0; */
 }
 main li:before {
   content: "";

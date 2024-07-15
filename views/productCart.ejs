@@ -1,74 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
-     <!-- head -->
-     <%- include("./partials/headOther",{title:"Tu Carrito"}) %>
+    <!-- head -->
+    <%- include("./partials/headOther",{title:"Tu Carrito"}) %>
+    <link rel="stylesheet" href="/public/css/home2.css">
 <body>
     <!-- header -->
-    <%- include("./partials/header") %>
+    <%- include("./partials/header2") %>
 
     <main class="carrito">
-        <section class="header-cart">
-            <h1>Adquiri tus articulos</h1>
-            <div class="back-container">
-                <a class="button" href="/">Atras</a>
-            </div>
-        </section>
-        <section class="productos">
+<div class="wrap cf">
+    <h1 class="projTitle">Carrito</h1>
+    <div class="cart">
+        <div class="heading cf">
+            <h1>My Cart</h1>
+            <a href="#" class="continue">Seguir comprando</a>
+          </div>
+      <ul class="cartWrap">
+        <li class="items odd">
+          
+      <div class="infoWrap"> 
+          <div class="cartSection">
+          <img src="/images/productos/producto-1.png" alt="" class="itemImg" />
+            <p class="itemNumber">#QUE-007544-002</p>
+            <h3>Item Name 1</h3>
+          
+             <p> <input type="text"  class="qty" placeholder="-"/> <p> <input type="text"  class="qty" placeholder="3"/></p> <p> <input type="text"  class="qty" placeholder="+"/></p> x $5.00</p>
+             
+            <p class="stockStatus"> In Stock</p>
+          </div>  
+      
+          
+          <div class="prodTotal cartSection">
+            <p>$15.00</p>
+          </div>
+                <div class="cartSection removeWrap">
+             <a href="#" class="remove">x</a>
+          </div>
+        </div>
+        </li>
+        <li class="items even">
+          
+         <div class="infoWrap"> 
+          <div class="cartSection">
+           
+          <img src="/images/productos/producto-2.png" alt="" class="itemImg" />
+            <p class="itemNumber">#QUE-007544-002</p>
+            <h3>Item Name 1</h3>
+          
+             <p> <input type="text"  class="qty" placeholder="-"/> <p> <input type="text"  class="qty" placeholder="3"/></p> <p> <input type="text"  class="qty" placeholder="+"/></p> x $5.00</p>
+          
+            <p class="stockStatus"> In Stock</p>
+          </div>  
+      
+          
+          <div class="prodTotal cartSection">
+            <p>$15.00</p>
+          </div>
+                <div class="cartSection removeWrap">
+             <a href="#" class="remove">x</a>
+          </div>
+        </div>
+        </li>
+        
+              <li class="items odd">
+               <div class="infoWrap"> 
+          <div class="cartSection">
+              
+          <img src="/images/productos/producto-3.png" alt="" class="itemImg" />
+            <p class="itemNumber">#QUE-007544-002</p>
+            <h3>Item Name 1</h3>
+          
+             <p> <input type="text"  class="qty" placeholder="-"/> <p> <input type="text"  class="qty" placeholder="3"/></p> <p> <input type="text"  class="qty" placeholder="+"/></p> x $5.00</p>
+          
+            <p class="stockStatus out"> Out of Stock</p>
+          </div>  
+      
+          
+          <div class="prodTotal cartSection">
+            <p>$15.00</p>
+          </div>
+                      <div class="cartSection removeWrap">
+             <a href="#" class="remove">x</a>
+          </div>
+                </div>
+        </li>
+        <li class="items even">
+         <div class="infoWrap"> 
+          <div class="cartSection info">
+               
+          <img src="/images/productos/producto-4.png" alt="" class="itemImg" />
+            <p class="itemNumber">#QUE-007544-002</p>
+            <h3>Item Name 1</h3>
+          
+            <p> <input type="text"  class="qty" placeholder="-"/> <p> <input type="text"  class="qty" placeholder="3"/></p> <p> <input type="text"  class="qty" placeholder="+"/></p> x $5.00</p>
+          
+            <p class="stockStatus"> In Stock</p>
             
-            <article class="card">
-                <button class="eliminar">Eliminar</button>
-                <div>
-                    <img class="muestraProducto" src="/images/productos/producto-1.png" alt="Galaxia">
-                </div>
-                <p class="productoALaVenta">Galaxia</p>
-                <div class="abm">
-                    <button>-</button>
-                    <p class="number">1</p>
-                    <button>+</button>
-                </div>
-                <span class="price">$180000</span>
-            </article>
-            <article class="card">
-                <button class="eliminar">Eliminar</button>
-                <div>
-                    <img class="muestraProducto" src="/images/productos/producto-2.png" alt="cuadro horrible 2">
-                </div>
-                <p class="productoALaVenta">Cuadro sucio pero impecable</p>
-                <div class="abm">
-                    <button>-</button>
-                    <p class="number">1</p>
-                    <button>+</button>
-                </div>
-                <span class="price">$18000</span>
-            </article>
-        </section>
-        <section class="compra">
-            <article>
-                <ul>
-                    <li>
-                        <p>Producto 1</p>
-                        <p>$180.000</p>
-                    </li>
-                    <li>
-                        <p>Producto 2</p>
-                        <p>$180.000</p>
-                    </li>
-                    <li>
-                        <p>Producto 3</p>
-                        <p>$180.000</p>
-                    </li>
-                    <li>
-                        <p>Total</p>
-                        <p>$540.000</p>
-                    </li>
-                </ul>
-        </section>
-        <section class="pago">
-            <button class="pago">Pagar</button>
-        </section>
+          </div>  
+      
+          
+          <div class="prodTotal cartSection">
+            <p>$15.00</p>
+          </div>
+      
+              <div class="cartSection removeWrap">
+             <a href="#" class="remove">x</a>
+          </div>
+           </div>
+    </div>
+    <div class="subtotal cf">
+    <ul>
+      <li class="totalRow"><span class="label">Subtotal</span><span class="value">$35.00</span></li>
+      
+          <li class="totalRow"><span class="label">Shipping</span><span class="value">$5.00</span></li>
+      
+            <li class="totalRow final"><span class="label">Total</span><span class="value">$40.00</span></li>
+      <li class="totalRow"><a href="#" class="btn continue">Checkout</a></li>
+    </ul>
+  </div>
+
+ <h2 class="subt"> También podría interesarte:</h2>
+ <div class="glider-contain productos">
+    <div class="glider grupo">
+      <% producto.forEach(p => { %>     
+        <div class="product-card"><a href="/producto/<%=p.id%>"><img src="/images/productos/<%=p.imagen%>" alt="producto1"></a>
+
+            <h2><%= p.titulo%></h2>
+            <p>Creador: <%=p.autores%></p>
+            <p class="price"><span class="old-price">7.198.400</span> $<%=p.precio%> ARS</p>
+
+        </div>
+        
+
+
+        <% }) %>
+</div>
+</div>
+
     </main>
     
       <!-- Footer -->
-      <%- include("./partials/footer") %>
+      <%- include("./partials/footer2") %>
 </body>
 </html>

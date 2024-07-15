@@ -52,11 +52,41 @@
    {
       "id": 6,
       "titulo": "Guardián de las Sombras",
-      "subtitulo": " El Misterio del Castillo Abandonado",
+      "subtitulo": "El Misterio del Castillo Abandonado",
       "precio": 570500,
       "descripcion": "En este intrigante lienzo, la imponente presencia de un castillo sombrío emerge de las sombras, envuelto en un misterio que captura la imaginación. Las torres góticas se alzan hacia el cielo, coronadas por picos afilados que se recortan contra un fondo oscuro y ominoso. El castillo, cubierto por una pátina de antigüedad y desolación, parece susurrar secretos de épocas pasadas y tragedias olvidadas. La luz apenas se filtra entre las sombras, creando un ambiente de tensión y melancolía que permea toda la escena. Cada detalle arquitectónico está meticulosamente representado, desde las almenas dentadas hasta las ventanas tapiadas, añadiendo profundidad y realismo a la composición. Este cuadro evoca una sensación de intriga y nostalgia, invitando al espectador a adentrarse en el misterio y la historia que yacen entre los muros del castillo. Con esta pintura, lleva el aura enigmática y majestuosa de un castillo sombrío a tu espacio, convirtiendo cada mirada en un viaje a través del tiempo y la imaginación.",
       "autores": "Marta Lecuchini y Lisandro Rolon",
       "imagen": "producto-6.png",
+      "disponible": true
+   },
+   {
+      "id": 7,
+      "titulo": "Baloncesto Cósmico",
+      "subtitulo": "",
+      "precio": 570500,
+      "descripcion": "Esta obra representa lo maravilloso de los sentimientos encontrados en momentos gratificantes como lo es la victoria, mostrando un sin fin de colores y sensaciones.",
+      "autores": "Lebron James",
+      "imagen": "producto-7.png",
+      "disponible": true
+   },
+   {
+      "id": 8,
+      "titulo": "Bosque Mágico",
+      "subtitulo": "",
+      "precio": 570500,
+      "descripcion": "Este lienzo muestra una variedad de colores formando un bosque profundo junto a un espectaculo de luces en el cielo, digna referencia a los famosos cuadros de Van Goh. ",
+      "autores": "Van Goh (El mismisimo)",
+      "imagen": "producto-8.png",
+      "disponible": true
+   },
+   {
+      "id": 9,
+      "titulo": "Celestial",
+      "subtitulo": " El Misterio del Castillo Abandonado",
+      "precio": 570500,
+      "descripcion": "En este intrigante lienzo, la imponente presencia de un castillo sombrío emerge de las sombras, envuelto en un misterio que captura la imaginación. Las torres góticas se alzan hacia el cielo, coronadas por picos afilados que se recortan contra un fondo oscuro y ominoso. El castillo, cubierto por una pátina de antigüedad y desolación, parece susurrar secretos de épocas pasadas y tragedias olvidadas. La luz apenas se filtra entre las sombras, creando un ambiente de tensión y melancolía que permea toda la escena. Cada detalle arquitectónico está meticulosamente representado, desde las almenas dentadas hasta las ventanas tapiadas, añadiendo profundidad y realismo a la composición. Este cuadro evoca una sensación de intriga y nostalgia, invitando al espectador a adentrarse en el misterio y la historia que yacen entre los muros del castillo. Con esta pintura, lleva el aura enigmática y majestuosa de un castillo sombrío a tu espacio, convirtiendo cada mirada en un viaje a través del tiempo y la imaginación.",
+      "autores": "Marta Lecuchini y Lisandro Rolon",
+      "imagen": "producto-9.png",
       "disponible": true
    }
 ]
