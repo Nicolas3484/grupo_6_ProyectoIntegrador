@@ -374,3 +374,12 @@ a.remove:hover {
   font-size: 1.25em;
   font-weight: bold;
 }
+
+.subt {
+  text-align: left;
+  padding: 30px 0px 15px 0px;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+  border-bottom: 1px solid;
+}

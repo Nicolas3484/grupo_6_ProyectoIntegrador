@@ -117,25 +117,9 @@
             <li class="totalRow final"><span class="label">Total</span><span class="value">$40.00</span></li>
       <li class="totalRow"><a href="#" class="btn continue">Checkout</a></li>
     </ul>
-  </div>
+</div>
 
  <h2 class="subt"> También podría interesarte:</h2>
- <div class="glider-contain productos">
-    <div class="glider grupo">
-      <% producto.forEach(p => { %>     
-        <div class="product-card"><a href="/producto/<%=p.id%>"><img src="/images/productos/<%=p.imagen%>" alt="producto1"></a>
-
-            <h2><%= p.titulo%></h2>
-            <p>Creador: <%=p.autores%></p>
-            <p class="price"><span class="old-price">7.198.400</span> $<%=p.precio%> ARS</p>
-
-        </div>
-        
-
-
-        <% }) %>
-</div>
-</div>
 
     </main>
     

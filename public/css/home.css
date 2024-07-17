@@ -62,7 +62,7 @@
 }
 
 .main-home .pag .productos .grupo .contenedor-imagen a img:hover {
-    transform: scale(1.1);
+    transform: scale(10);
 }
 
 .main-home .pag .productosOfertas {
@@ -72,7 +72,6 @@
 
 .main-home .pag .productosOfertas .grupo {
     padding: 20px 0px;
-    border-top: 1px solid var(--colorMarron);
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -93,7 +92,7 @@
     border: 1px solid var(--colorMarron);
     height: 100%;
     aspect-ratio: 1/1;
-    transition: transform 0.3s ease;
+    transition: transform 1s ease;
 }
 
 .main-home .pag .productosOfertas .grupo a img:hover {
@@ -428,6 +427,8 @@ width: 90%;
 .bienvenido h1 {
     font-size: 2em;
     margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid;
 }
 
 .bienvenido p {

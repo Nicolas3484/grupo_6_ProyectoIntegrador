@@ -88,5 +88,15 @@
       "autores": "Marta Lecuchini y Lisandro Rolon",
       "imagen": "producto-9.png",
       "disponible": true
+   },
+   {
+      "id": 10,
+      "titulo": "Soledad",
+      "subtitulo": "Un hombre sumiendose en su perdicion.",
+      "precio": 570500,
+      "descripcion": "La expresion de la soledad que viven los hombres dia a dia.",
+      "autores": "Richard Salomon",
+      "imagen": "producto-10.png",
+      "disponible": true
    }
 ]
